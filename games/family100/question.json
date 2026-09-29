@@ -1,0 +1,120 @@
+{
+  "question": "Sebutkan benda yang ada di dapur",
+  "answers": [
+    {
+      "id": 0,
+      "text": "PISAU",
+      "points": 30,
+      "found": true,
+      "foundBy": "Bintang Random"
+    },
+    {
+      "id": 1,
+      "text": "GARPU",
+      "points": 28,
+      "found": true,
+      "foundBy": "Bintang Random"
+    },
+    {
+      "id": 2,
+      "text": "SENDOK",
+      "points": 26,
+      "found": true,
+      "foundBy": "Bintang Random"
+    },
+    {
+      "id": 3,
+      "text": "PIRING",
+      "points": 24,
+      "found": true,
+      "foundBy": "Bintang Random"
+    },
+    {
+      "id": 4,
+      "text": "GELAS",
+      "points": 22,
+      "found": false,
+      "foundBy": null
+    },
+    {
+      "id": 5,
+      "text": "PANCI",
+      "points": 20,
+      "found": true,
+      "foundBy": "Bintang Random"
+    },
+    {
+      "id": 6,
+      "text": "WAJAN",
+      "points": 18,
+      "found": true,
+      "foundBy": "Bintang Random"
+    },
+    {
+      "id": 7,
+      "text": "KOMPOR",
+      "points": 17,
+      "found": true,
+      "foundBy": "Bintang Random"
+    },
+    {
+      "id": 8,
+      "text": "BLENDER",
+      "points": 15,
+      "found": false,
+      "foundBy": null
+    },
+    {
+      "id": 9,
+      "text": "TALENAN",
+      "points": 13,
+      "found": false,
+      "foundBy": null
+    },
+    {
+      "id": 10,
+      "text": "SPATULA",
+      "points": 11,
+      "found": false,
+      "foundBy": null
+    },
+    {
+      "id": 11,
+      "text": "KULKAS",
+      "points": 9,
+      "found": false,
+      "foundBy": null
+    },
+    {
+      "id": 12,
+      "text": "OVEN",
+      "points": 7,
+      "found": false,
+      "foundBy": null
+    },
+    {
+      "id": 13,
+      "text": "SARINGAN",
+      "points": 5,
+      "found": false,
+      "foundBy": null
+    },
+    {
+      "id": 14,
+      "text": "TOPLES",
+      "points": 3,
+      "found": false,
+      "foundBy": null
+    }
+  ],
+  "board": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7
+  ],
+  "boardSlots": 7
+}

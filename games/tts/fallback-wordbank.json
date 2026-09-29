@@ -1,0 +1,282 @@
+[
+  {
+    "name": "langit-lantai-angin",
+    "words": [
+      {
+        "answer": "LANGIT",
+        "direction": "across",
+        "clue": "Ruang di atas bumi"
+      },
+      {
+        "answer": "LANTAI",
+        "direction": "down",
+        "clue": "Bagian bawah ruangan"
+      },
+      {
+        "answer": "ANGIN",
+        "direction": "across",
+        "clue": "Udara yang bergerak"
+      },
+      {
+        "answer": "GUNUNG",
+        "direction": "down",
+        "clue": "Dataran tinggi menjulang"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah untuk makan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Jalan keluar masuk ruangan"
+      }
+    ]
+  },
+  {
+    "name": "sapi-pasir-nasi",
+    "words": [
+      {
+        "answer": "SAPI",
+        "direction": "across",
+        "clue": "Hewan penghasil susu"
+      },
+      {
+        "answer": "PASIR",
+        "direction": "down",
+        "clue": "Butiran halus di pantai"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia"
+      },
+      {
+        "answer": "IKAN",
+        "direction": "down",
+        "clue": "Hewan air bersisik"
+      },
+      {
+        "answer": "MAKAN",
+        "direction": "across",
+        "clue": "Aktivitas mengonsumsi makanan"
+      },
+      {
+        "answer": "NAMA",
+        "direction": "down",
+        "clue": "Identitas diri seseorang"
+      }
+    ]
+  },
+  {
+    "name": "daun-udara-dapur",
+    "words": [
+      {
+        "answer": "DAUN",
+        "direction": "across",
+        "clue": "Bagian tumbuhan berwarna hijau"
+      },
+      {
+        "answer": "UDARA",
+        "direction": "down",
+        "clue": "Zat yang kita hirup"
+      },
+      {
+        "answer": "DAPUR",
+        "direction": "across",
+        "clue": "Tempat memasak di rumah"
+      },
+      {
+        "answer": "GARPU",
+        "direction": "down",
+        "clue": "Alat makan bergigi"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "across",
+        "clue": "Bumbu dapur rasa asin"
+      },
+      {
+        "answer": "KAMAR",
+        "direction": "down",
+        "clue": "Ruangan untuk tidur"
+      }
+    ]
+  },
+  {
+    "name": "hujan-gajah-awan",
+    "words": [
+      {
+        "answer": "HUJAN",
+        "direction": "across",
+        "clue": "Air jatuh dari langit"
+      },
+      {
+        "answer": "GAJAH",
+        "direction": "down",
+        "clue": "Hewan besar berbelalai"
+      },
+      {
+        "answer": "AWAN",
+        "direction": "down",
+        "clue": "Gumpalan uap air di langit"
+      },
+      {
+        "answer": "SAWAH",
+        "direction": "across",
+        "clue": "Lahan tempat menanam padi"
+      },
+      {
+        "answer": "TANAH",
+        "direction": "across",
+        "clue": "Permukaan bumi tempat berpijak"
+      },
+      {
+        "answer": "MATA",
+        "direction": "down",
+        "clue": "Indera penglihatan"
+      }
+    ]
+  },
+  {
+    "name": "api-padi-atap",
+    "words": [
+      {
+        "answer": "API",
+        "direction": "across",
+        "clue": "Panas dan menyala"
+      },
+      {
+        "answer": "PADI",
+        "direction": "down",
+        "clue": "Bahan dasar beras"
+      },
+      {
+        "answer": "ATAP",
+        "direction": "across",
+        "clue": "Bagian atas rumah"
+      },
+      {
+        "answer": "AKAR",
+        "direction": "down",
+        "clue": "Bagian tumbuhan di dalam tanah"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas penghasil telur"
+      },
+      {
+        "answer": "SAYUR",
+        "direction": "across",
+        "clue": "Bahan makanan dari tumbuhan hijau"
+      }
+    ]
+  },
+  {
+    "name": "kursi-kucing-kaki",
+    "words": [
+      {
+        "answer": "KURSI",
+        "direction": "down",
+        "clue": "Tempat duduk"
+      },
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan suka mengeong"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh untuk berjalan"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Benda berisi lembaran untuk dibaca"
+      },
+      {
+        "answer": "BUNGA",
+        "direction": "down",
+        "clue": "Tumbuhan cantik berbau harum"
+      },
+      {
+        "answer": "BATU",
+        "direction": "across",
+        "clue": "Benda keras dari alam"
+      }
+    ]
+  },
+  {
+    "name": "laut-bulan-gula",
+    "words": [
+      {
+        "answer": "LAUT",
+        "direction": "across",
+        "clue": "Perairan luas asin"
+      },
+      {
+        "answer": "BULAN",
+        "direction": "down",
+        "clue": "Benda langit bercahaya malam hari"
+      },
+      {
+        "answer": "GULA",
+        "direction": "down",
+        "clue": "Pemanis dari tebu"
+      },
+      {
+        "answer": "GELAS",
+        "direction": "across",
+        "clue": "Wadah untuk minum"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman bergizi dari sapi"
+      },
+      {
+        "answer": "TELUR",
+        "direction": "across",
+        "clue": "Dihasilkan oleh ayam"
+      }
+    ]
+  },
+  {
+    "name": "meja-minyak-kopi",
+    "words": [
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabotan tempat menulis atau makan"
+      },
+      {
+        "answer": "MINYAK",
+        "direction": "down",
+        "clue": "Cairan untuk menggoreng"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "across",
+        "clue": "Minuman hitam pahit"
+      },
+      {
+        "answer": "ROTI",
+        "direction": "down",
+        "clue": "Makanan dari tepung yang dipanggang"
+      },
+      {
+        "answer": "TEMBOK",
+        "direction": "across",
+        "clue": "Pembatas ruangan dari batu bata"
+      },
+      {
+        "answer": "TEH",
+        "direction": "down",
+        "clue": "Minuman dari daun kering"
+      }
+    ]
+  }
+]

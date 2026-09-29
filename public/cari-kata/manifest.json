@@ -1,0 +1,9 @@
+{
+  "name": "Cari Kata Live",
+  "short_name": "Cari Kata",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14101f",
+  "theme_color": "#14101f",
+  "orientation": "portrait"
+}

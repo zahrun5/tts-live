@@ -1,0 +1,1152 @@
+[
+  {
+    "category": "Olahraga",
+    "question": "Olahraga apa yang menjadi kontestan pertama dalam Olimpiade modern pertama tahun 1896?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sepakbola"
+      },
+      {
+        "letter": "B",
+        "text": "Gymnastics"
+      },
+      {
+        "letter": "C",
+        "text": "Atletik"
+      },
+      {
+        "letter": "D",
+        "text": "Renang"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Musik",
+    "question": "Lagu klasik tahun 1976 'Hotel California' dibawakan oleh band mana?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "The Beatles"
+      },
+      {
+        "letter": "B",
+        "text": "The Rolling Stones"
+      },
+      {
+        "letter": "C",
+        "text": "Eagles"
+      },
+      {
+        "letter": "D",
+        "text": "The Who"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Geografi",
+    "question": "Ibu kota provinsi Bali adalah?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Denpasar"
+      },
+      {
+        "letter": "B",
+        "text": "Singaraja"
+      },
+      {
+        "letter": "C",
+        "text": "Kuta"
+      },
+      {
+        "letter": "D",
+        "text": "Ubud"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Negara mana yang merupakan negara terbesar di dunia berdasarkan luas wilayah?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "China"
+      },
+      {
+        "letter": "B",
+        "text": "Rusia"
+      },
+      {
+        "letter": "C",
+        "text": "Kanada"
+      },
+      {
+        "letter": "D",
+        "text": "Amerika Serikat"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Apa ibu kota Indonesia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bandung"
+      },
+      {
+        "letter": "B",
+        "text": "Jakarta"
+      },
+      {
+        "letter": "C",
+        "text": "Surabaya"
+      },
+      {
+        "letter": "D",
+        "text": "Medan"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Ibu kota negara Jepang adalah?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Beijing"
+      },
+      {
+        "letter": "B",
+        "text": "Tokyo"
+      },
+      {
+        "letter": "C",
+        "text": "Seoul"
+      },
+      {
+        "letter": "D",
+        "text": "Bangkok"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sejarah",
+    "question": "Proklamasi Kemerdekaan Indonesia dibacakan pada tanggal berapa?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "17 Agustus 1945"
+      },
+      {
+        "letter": "B",
+        "text": "17 Agustus 1946"
+      },
+      {
+        "letter": "C",
+        "text": "28 Oktober 1945"
+      },
+      {
+        "letter": "D",
+        "text": "1 Juni 1945"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Sains",
+    "question": "Berapa jumlah kaki yang dimiliki laba-laba dewasa?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "10"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Gunung apa yang merupakan gunung tertinggi di Pulau Jawa?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gunung Merapi"
+      },
+      {
+        "letter": "B",
+        "text": "Gunung Rinjani"
+      },
+      {
+        "letter": "C",
+        "text": "Gunung Semeru"
+      },
+      {
+        "letter": "D",
+        "text": "Gunung Kerinci"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Sains",
+    "question": "Mamalia terbesar di dunia adalah hewan apa?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gajah Afrika"
+      },
+      {
+        "letter": "B",
+        "text": "Paus biru"
+      },
+      {
+        "letter": "C",
+        "text": "Jerapah"
+      },
+      {
+        "letter": "D",
+        "text": "Hiu paus"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sains",
+    "question": "Berapa jumlah kaki serangga?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "4"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "8"
+      },
+      {
+        "letter": "D",
+        "text": "10"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Berapa jumlah kaki pada laba-laba?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "6"
+      },
+      {
+        "letter": "B",
+        "text": "8"
+      },
+      {
+        "letter": "C",
+        "text": "10"
+      },
+      {
+        "letter": "D",
+        "text": "12"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sejarah",
+    "question": "Siapa presiden pertama Indonesia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Soeharto"
+      },
+      {
+        "letter": "B",
+        "text": "B.J. Habibie"
+      },
+      {
+        "letter": "C",
+        "text": "Soekarno"
+      },
+      {
+        "letter": "D",
+        "text": "Megawati Soekarnoputri"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Sejarah",
+    "question": "Siapa proklamator kemerdekaan Indonesia yang pertama kali membacakan teks proklamasi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mohammad Hatta"
+      },
+      {
+        "letter": "B",
+        "text": "Soekarno"
+      },
+      {
+        "letter": "C",
+        "text": "Sutan Sjahrir"
+      },
+      {
+        "letter": "D",
+        "text": "Ki Hajar Dewantara"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Apa nama benua terluas di dunia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Afrika"
+      },
+      {
+        "letter": "B",
+        "text": "Asia"
+      },
+      {
+        "letter": "C",
+        "text": "Amerika Utara"
+      },
+      {
+        "letter": "D",
+        "text": "Eropa"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Apa ibu kota provinsi Jawa Barat?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Bandung"
+      },
+      {
+        "letter": "B",
+        "text": "Semarang"
+      },
+      {
+        "letter": "C",
+        "text": "Surabaya"
+      },
+      {
+        "letter": "D",
+        "text": "Jakarta"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Sains",
+    "question": "Planet apa yang terbesar di tata surya?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mars"
+      },
+      {
+        "letter": "B",
+        "text": "Jupiter"
+      },
+      {
+        "letter": "C",
+        "text": "Saturnus"
+      },
+      {
+        "letter": "D",
+        "text": "Neptunus"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Apa warna buah pisang yang matang?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Hijau"
+      },
+      {
+        "letter": "B",
+        "text": "Kuning"
+      },
+      {
+        "letter": "C",
+        "text": "Merah"
+      },
+      {
+        "letter": "D",
+        "text": "Ungu"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sejarah",
+    "question": "Peristiwa pembacaan teks Proklamasi Kemerdekaan Indonesia terjadi pada tanggal?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "17 Agustus 1945"
+      },
+      {
+        "letter": "B",
+        "text": "17 Agustus 1946"
+      },
+      {
+        "letter": "C",
+        "text": "1 Juni 1945"
+      },
+      {
+        "letter": "D",
+        "text": "10 November 1945"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Geografi",
+    "question": "Apa lapisan terluar Bumi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Kerak"
+      },
+      {
+        "letter": "B",
+        "text": "Mantel"
+      },
+      {
+        "letter": "C",
+        "text": "Inti luar"
+      },
+      {
+        "letter": "D",
+        "text": "Inti dalam"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Sains",
+    "question": "Gas apa yang paling banyak terdapat di atmosfer Bumi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oksigen"
+      },
+      {
+        "letter": "B",
+        "text": "Nitrogen"
+      },
+      {
+        "letter": "C",
+        "text": "Karbon dioksida"
+      },
+      {
+        "letter": "D",
+        "text": "Helium"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Apa ibukota Jepang?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Osaka"
+      },
+      {
+        "letter": "B",
+        "text": "Tokyo"
+      },
+      {
+        "letter": "C",
+        "text": "Kyoto"
+      },
+      {
+        "letter": "D",
+        "text": "Hiroshima"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Umum",
+    "question": "Berapa warna utama yang ada di bendera Indonesia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "1 warna"
+      },
+      {
+        "letter": "B",
+        "text": "2 warna"
+      },
+      {
+        "letter": "C",
+        "text": "3 warna"
+      },
+      {
+        "letter": "D",
+        "text": "4 warna"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Hewan",
+    "question": "Hewan apa yang menghasilkan madu?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Lebah"
+      },
+      {
+        "letter": "B",
+        "text": "Kalong"
+      },
+      {
+        "letter": "C",
+        "text": "Burung hantu"
+      },
+      {
+        "letter": "D",
+        "text": "Kupu-kupu"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Geografi",
+    "question": "Matahari terbit dari arah mana?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Barat"
+      },
+      {
+        "letter": "B",
+        "text": "Timur"
+      },
+      {
+        "letter": "C",
+        "text": "Utara"
+      },
+      {
+        "letter": "D",
+        "text": "Selatan"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Siapa penulis novel '1984'?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "J.K. Rowling"
+      },
+      {
+        "letter": "B",
+        "text": "George Orwell"
+      },
+      {
+        "letter": "C",
+        "text": "Ernest Hemingway"
+      },
+      {
+        "letter": "D",
+        "text": "Mark Twain"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Apa mata uang negara Jepang?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Won"
+      },
+      {
+        "letter": "B",
+        "text": "Yen"
+      },
+      {
+        "letter": "C",
+        "text": "Yuan"
+      },
+      {
+        "letter": "D",
+        "text": "Ringgit"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Negara mana yang memiliki wilayah daratan terluas di dunia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tiongkok"
+      },
+      {
+        "letter": "B",
+        "text": "Kanada"
+      },
+      {
+        "letter": "C",
+        "text": "Rusia"
+      },
+      {
+        "letter": "D",
+        "text": "Amerika Serikat"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Negara mana yang pertama kali meluncurkan satelit buatan ke luar angkasa?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Amerika Serikat"
+      },
+      {
+        "letter": "B",
+        "text": "Tiongkok"
+      },
+      {
+        "letter": "C",
+        "text": "Uni Soviet"
+      },
+      {
+        "letter": "D",
+        "text": "Jepang"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Geografi",
+    "question": "Lautan mana yang menyelimuti sekitar 71% permukaan Bumi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Samudra Atlantik"
+      },
+      {
+        "letter": "B",
+        "text": "Samudra Pasifik"
+      },
+      {
+        "letter": "C",
+        "text": "Samudra Hindia"
+      },
+      {
+        "letter": "D",
+        "text": "Lautan yang mana saja"
+      }
+    ],
+    "correctLetter": "D"
+  },
+  {
+    "category": "Makanan",
+    "question": "Apa bahan utama dalam masakan rendang?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Daging sapi"
+      },
+      {
+        "letter": "B",
+        "text": "Ayam"
+      },
+      {
+        "letter": "C",
+        "text": "Ikan"
+      },
+      {
+        "letter": "D",
+        "text": "Tahu"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Olahraga",
+    "question": "Siapa pemegang rekor dunia lari 100 meter pria tercepat sepanjang masa?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tyson Gay"
+      },
+      {
+        "letter": "B",
+        "text": "Usain Bolt"
+      },
+      {
+        "letter": "C",
+        "text": "Christian Coleman"
+      },
+      {
+        "letter": "D",
+        "text": "Yohandri"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Fauna",
+    "question": "Hewan darat apa yang dinobatkan sebagai yang tercepat di dunia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Singa"
+      },
+      {
+        "letter": "B",
+        "text": "Cheetah"
+      },
+      {
+        "letter": "C",
+        "text": "Kuda"
+      },
+      {
+        "letter": "D",
+        "text": "Kijang"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Umum",
+    "question": "Ibu kota Prancis adalah?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Paris"
+      },
+      {
+        "letter": "B",
+        "text": "London"
+      },
+      {
+        "letter": "C",
+        "text": "Berlin"
+      },
+      {
+        "letter": "D",
+        "text": "Madrid"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Olahraga",
+    "question": "Siapa yang memegang rekor gol terbanyak dalam sejarah Piala Dunia (termasuk pertandingan kualifikasi)?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Miroslav Klose"
+      },
+      {
+        "letter": "B",
+        "text": "Ronaldo"
+      },
+      {
+        "letter": "C",
+        "text": "Pele"
+      },
+      {
+        "letter": "D",
+        "text": "Gerd Müller"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Sains",
+    "question": "Planet apa yang dijuluki 'Planet Merah'?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Venus"
+      },
+      {
+        "letter": "B",
+        "text": "Jupiter"
+      },
+      {
+        "letter": "C",
+        "text": "Mars"
+      },
+      {
+        "letter": "D",
+        "text": "Saturnus"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Geografi",
+    "question": "Negara mana yang memiliki Menara Eiffel?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Jepang"
+      },
+      {
+        "letter": "B",
+        "text": "Prancis"
+      },
+      {
+        "letter": "C",
+        "text": "Italia"
+      },
+      {
+        "letter": "D",
+        "text": "Spanyol"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sains",
+    "question": "Berapa jumlah warna pada pelangi?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "5"
+      },
+      {
+        "letter": "B",
+        "text": "6"
+      },
+      {
+        "letter": "C",
+        "text": "7"
+      },
+      {
+        "letter": "D",
+        "text": "8"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Olahraga",
+    "question": "Olahraga apa yang menggunakan istilah 'strike' untuk menghitung poin?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Tenis"
+      },
+      {
+        "letter": "B",
+        "text": "Bisbol"
+      },
+      {
+        "letter": "C",
+        "text": "Sepak Bola"
+      },
+      {
+        "letter": "D",
+        "text": "Bola Basket"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sains",
+    "question": "Unsur kimia dengan simbol O adalah apa?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oksigen"
+      },
+      {
+        "letter": "B",
+        "text": "Emas"
+      },
+      {
+        "letter": "C",
+        "text": "Perak"
+      },
+      {
+        "letter": "D",
+        "text": "Tembaga"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Geografi",
+    "question": "Lautan mana yang paling besar di dunia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Laut Hindia"
+      },
+      {
+        "letter": "B",
+        "text": "Laut Atlantik"
+      },
+      {
+        "letter": "C",
+        "text": "Laut Pasifik"
+      },
+      {
+        "letter": "D",
+        "text": "Laut Arktik"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Astronomi",
+    "question": "Planet apa yang memiliki cincin paling terkenal di Tata Surya?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Mars"
+      },
+      {
+        "letter": "B",
+        "text": "Jupiter"
+      },
+      {
+        "letter": "C",
+        "text": "Saturnus"
+      },
+      {
+        "letter": "D",
+        "text": "Venus"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Apa nama mata uang resmi negara Thailand?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Baht"
+      },
+      {
+        "letter": "B",
+        "text": "Dong"
+      },
+      {
+        "letter": "C",
+        "text": "Peso"
+      },
+      {
+        "letter": "D",
+        "text": "Ringgit"
+      }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Geografi",
+    "question": "Apakah ibu kota negara Australia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sydney"
+      },
+      {
+        "letter": "B",
+        "text": "Canberra"
+      },
+      {
+        "letter": "C",
+        "text": "Melbourne"
+      },
+      {
+        "letter": "D",
+        "text": "Brisbane"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Benua terluas di dunia adalah...",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Afrika"
+      },
+      {
+        "letter": "B",
+        "text": "Asia"
+      },
+      {
+        "letter": "C",
+        "text": "Amerika"
+      },
+      {
+        "letter": "D",
+        "text": "Eropa"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Apa nama ibu kota resmi negara Australia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Sydney"
+      },
+      {
+        "letter": "B",
+        "text": "Melbourne"
+      },
+      {
+        "letter": "C",
+        "text": "Canberra"
+      },
+      {
+        "letter": "D",
+        "text": "Perth"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Fauna",
+    "question": "Hewan darat tercepat di dunia adalah?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Singa"
+      },
+      {
+        "letter": "B",
+        "text": "Kuda"
+      },
+      {
+        "letter": "C",
+        "text": "Cheetah"
+      },
+      {
+        "letter": "D",
+        "text": "Zebra"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Sains",
+    "question": "Hewan darat apa yang mampu berlari paling cepat di dunia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Singa"
+      },
+      {
+        "letter": "B",
+        "text": "Cheetah"
+      },
+      {
+        "letter": "C",
+        "text": "Kuda nil"
+      },
+      {
+        "letter": "D",
+        "text": "Jerapah"
+      }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Danau terluas di Indonesia adalah...",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Danau Poso"
+      },
+      {
+        "letter": "B",
+        "text": "Danau Singkarak"
+      },
+      {
+        "letter": "C",
+        "text": "Danau Toba"
+      },
+      {
+        "letter": "D",
+        "text": "Danau Sentani"
+      }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Fauna",
+    "question": "Hewan apakah yang dinobatkan sebagai mamalia terbesar di dunia?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Gajah afrika"
+      },
+      {
+        "letter": "B",
+        "text": "Hiu paus"
+      },
+      {
+        "letter": "C",
+        "text": "Paus biru"
+      },
+      {
+        "letter": "D",
+        "text": "Jerapah"
+      }
+    ],
+    "correctLetter": "C"
+  }
+]

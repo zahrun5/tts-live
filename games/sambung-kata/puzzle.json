@@ -1,0 +1,47 @@
+{
+  "rows": 6,
+  "cols": 7,
+  "words": [
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 0,
+      "answer": "RAGU",
+      "clue": "x"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 1,
+      "col": 2,
+      "answer": "BUNGA",
+      "clue": "x"
+    },
+    {
+      "number": 2,
+      "direction": "across",
+      "row": 1,
+      "col": 2,
+      "answer": "BENAR",
+      "clue": "x"
+    },
+    {
+      "number": 3,
+      "direction": "across",
+      "row": 3,
+      "col": 0,
+      "answer": "UANG",
+      "clue": "x"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 5,
+      "col": 0,
+      "answer": "RUANG",
+      "clue": "x"
+    }
+  ],
+  "baseLetters": "UANGBER"
+}

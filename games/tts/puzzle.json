@@ -1,0 +1,54 @@
+{
+  "rows": 9,
+  "cols": 6,
+  "words": [
+    {
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "col": 4,
+      "answer": "TAKSI",
+      "clue": "Kendaraan sewa berargo"
+    },
+    {
+      "number": 2,
+      "direction": "across",
+      "row": 1,
+      "col": 1,
+      "answer": "BOLA",
+      "clue": "Benda bulat untuk olahraga"
+    },
+    {
+      "number": 3,
+      "direction": "across",
+      "row": 3,
+      "col": 1,
+      "answer": "KAOS",
+      "clue": "Baju tanpa kerah dan kancing"
+    },
+    {
+      "number": 3,
+      "direction": "down",
+      "row": 3,
+      "col": 1,
+      "answer": "KELAS",
+      "clue": "Ruang belajar siswa"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 4,
+      "col": 0,
+      "answer": "BERSIH",
+      "clue": "Bebas dari kotoran"
+    },
+    {
+      "number": 4,
+      "direction": "down",
+      "row": 4,
+      "col": 0,
+      "answer": "BECAK",
+      "clue": "Kendaraan roda tiga tradisional"
+    }
+  ]
+}

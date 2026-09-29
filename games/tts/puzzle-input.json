@@ -1,0 +1,34 @@
+{
+  "words": [
+    {
+      "answer": "TAKSI",
+      "direction": "down",
+      "clue": "Kendaraan sewa berargo"
+    },
+    {
+      "answer": "KAOS",
+      "direction": "across",
+      "clue": "Baju tanpa kerah dan kancing"
+    },
+    {
+      "answer": "KELAS",
+      "direction": "down",
+      "clue": "Ruang belajar siswa"
+    },
+    {
+      "answer": "BERSIH",
+      "direction": "across",
+      "clue": "Bebas dari kotoran"
+    },
+    {
+      "answer": "BECAK",
+      "direction": "down",
+      "clue": "Kendaraan roda tiga tradisional"
+    },
+    {
+      "answer": "BOLA",
+      "direction": "across",
+      "clue": "Benda bulat untuk olahraga"
+    }
+  ]
+}

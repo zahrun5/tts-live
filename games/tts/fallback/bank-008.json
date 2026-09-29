@@ -1,0 +1,3002 @@
+[
+  {
+    "name": "kucing-gigi-nasi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "down",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "across",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "down",
+        "clue": "Papan buka-tutup untuk keluar masuk ruangan"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "across",
+        "clue": "Minuman hitam berkafein yang biasa diminum pagi hari"
+      },
+      {
+        "answer": "GARPU",
+        "direction": "across",
+        "clue": "Alat makan bergigi penusuk, pasangan dari sendok"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas empuk di tempat tidur untuk berbaring"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman sehat berwarna putih hasil perahan sapi"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Bahan pembersih berbusa yang digunakan saat mandi"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat pembersih lantai dari ijuk atau lidi"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat bertenaga listrik yang berfungsi menerangi ruangan"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah ceper tempat menaruh nasi dan lauk saat makan"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "across",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah yang dibuka dan ditutup untuk keluar masuk"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "down",
+        "clue": "Lembaran kertas berjilid yang biasa dibaca atau ditulisi"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman sehat berwarna putih yang kaya akan kalsium"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "across",
+        "clue": "Pembersih badan berbusa yang dipakai saat mandi"
+      },
+      {
+        "answer": "SEPATU",
+        "direction": "down",
+        "clue": "Alas kaki yang biasa dipakai saat pergi ke sekolah atau kantor"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "across",
+        "clue": "Hewan ternak penghasil susu dan daging berkaki empat"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "down",
+        "clue": "Alat pembersih lantai yang terbuat dari ijuk atau lidi"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "across",
+        "clue": "Alat penerang ruangan yang menyala menggunakan listrik"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "down",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "across",
+        "clue": "Wadah bundar dan ceper untuk tempat meletakkan nasi dan lauk"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "across",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "down",
+        "clue": "Hewan ternak berkaki empat penghasil susu dan daging"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah yang dibuka dan ditutup untuk keluar masuk ruangan"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "down",
+        "clue": "Kegiatan mengistirahatkan tubuh dan pikiran dengan memejamkan mata"
+      },
+      {
+        "answer": "GARPU",
+        "direction": "across",
+        "clue": "Alat makan dengan ujung runcing bergigi penusuk makanan"
+      },
+      {
+        "answer": "HIJAU",
+        "direction": "down",
+        "clue": "Warna daun segar dan rumput di taman"
+      },
+      {
+        "answer": "MINUM",
+        "direction": "across",
+        "clue": "Aktivitas memasukkan cairan seperti air ke dalam mulut"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat bertenaga listrik yang menghasilkan cahaya untuk menerangi ruangan"
+      }
+    ]
+  },
+  {
+    "name": "sapu-susu-lampu",
+    "words": [
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat pembersih debu di lantai"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman putih sehat hasil perasan sapi"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat penerang ruangan yang memakai listrik"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan pemanis teh dan kopi"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan lembaran kertas yang dibaca"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Tempat tinggal dan berlindung bersama keluarga"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas peliharaan yang sering digoreng"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Bagian tubuh untuk melihat"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Tetesan air yang turun dari langit mendung"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna cabai matang atau bendera atas RI"
+      },
+      {
+        "answer": "HITAM",
+        "direction": "down",
+        "clue": "Warna gelap kebalikan dari putih"
+      }
+    ]
+  },
+  {
+    "name": "rumah-merah-mata",
+    "words": [
+      {
+        "answer": "RUMAH",
+        "direction": "across",
+        "clue": "Bangunan tempat tinggal manusia"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "down",
+        "clue": "Warna darah atau buah tomat yang sudah matang"
+      },
+      {
+        "answer": "MATA",
+        "direction": "down",
+        "clue": "Anggota tubuh yang digunakan untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas peliharaan yang menghasilkan telur"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat penerang ruangan yang menggunakan daya listrik"
+      },
+      {
+        "answer": "APEL",
+        "direction": "across",
+        "clue": "Buah bulat renyah yang biasanya berwarna merah atau hijau"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "down",
+        "clue": "Perabot rumah berkaki empat untuk meletakkan barang"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "across",
+        "clue": "Titik-titik air yang turun dari langit saat cuaca mendung"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas tidur yang empuk di atas ranjang"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan pemanis untuk kopi dan teh"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "across",
+        "clue": "Anggota tubuh bagian bawah yang digunakan untuk berjalan"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-buku",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "down",
+        "clue": "Kumpulan lembaran kertas bertulis untuk dibaca"
+      },
+      {
+        "answer": "KURSI",
+        "direction": "down",
+        "clue": "Perabot berkaki tempat orang duduk"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman putih bergizi dari sapi"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Aktivitas istirahat memejamkan mata di kasur"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Pembersih berbusa wangi untuk mandi"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat pembersih debu di lantai"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Jalan keluar masuk ruangan di rumah"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat listrik penerang ruangan saat gelap"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan pemanis rasa kopi atau teh"
+      }
+    ]
+  },
+  {
+    "name": "sepatu-susu-lampu",
+    "words": [
+      {
+        "answer": "SEPATU",
+        "direction": "across",
+        "clue": "Alas kaki yang dipakai saat bepergian atau sekolah"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman putih bernutrisi yang biasa dihasilkan sapi"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Benda penerang rumah saat gelap atau malam"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan pemanis untuk kopi dan teh"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "down",
+        "clue": "Bumbu dapur berwarna putih dengan rasa asin"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Indra pada wajah untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas peliharaan yang jantannya berkokok pagi hari"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna buah tomat matang dan cabai"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal dan berkumpul keluarga"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabot berkaki empat tempat meletakkan buku atau piring"
+      },
+      {
+        "answer": "HIJAU",
+        "direction": "down",
+        "clue": "Warna khas daun tumbuhan yang masih segar"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah bundar dan ceper untuk tempat nasi dan lauk"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "across",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah tempat keluar masuk ruangan"
+      },
+      {
+        "answer": "PUTIH",
+        "direction": "down",
+        "clue": "Warna beras, susu, atau awan cerah"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Istirahat lelap dengan memejamkan mata"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "down",
+        "clue": "Minuman seduh hitam penahan kantuk"
+      },
+      {
+        "answer": "SEPATU",
+        "direction": "down",
+        "clue": "Alas kaki tertutup yang sering dipakai ke sekolah atau kantor"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat bertangkai untuk membersihkan lantai"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas tidur empuk yang diletakkan di ranjang"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "across",
+        "clue": "Benda penerang ruangan saat gelap"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-kuda",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan berbulu peliharaan yang suaranya meong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian putih di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "KUDA",
+        "direction": "down",
+        "clue": "Hewan berkaki empat yang bisa ditunggangi atau menarik delman"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "across",
+        "clue": "Bagian tubuh paling bawah untuk berdiri dan berjalan"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "down",
+        "clue": "Minuman berkafein warna gelap yang bikin melek"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan lembaran kertas bertulis untuk dibaca"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Istirahat malam hari dengan memejamkan mata di kasur"
+      },
+      {
+        "answer": "GARPU",
+        "direction": "down",
+        "clue": "Alat makan bertusuk runcing pasangannya sendok"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah yang dibuka dan ditutup untuk keluar masuk"
+      },
+      {
+        "answer": "HITAM",
+        "direction": "down",
+        "clue": "Warna gelap seperti arang atau aspal"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Bagian tubuh yang berfungsi untuk melihat"
+      }
+    ]
+  },
+  {
+    "name": "merah-rumah-garam",
+    "words": [
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna darah atau buah stroberi matang"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal manusia bersama keluarga"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "down",
+        "clue": "Bumbu dapur berwarna putih pemberi rasa asin"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas berkokok yang menghasilkan telur"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "across",
+        "clue": "Alas empuk di tempat tidur"
+      },
+      {
+        "answer": "KAPAL",
+        "direction": "down",
+        "clue": "Kendaraan pengangkut penumpang atau barang di laut"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat pembersih untuk menyapu kotoran di lantai"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat penerang ruangan yang dialiri listrik"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "across",
+        "clue": "Hewan ternak penghasil susu dan daging"
+      },
+      {
+        "answer": "KURSI",
+        "direction": "down",
+        "clue": "Tempat duduk yang memiliki kaki dan sandaran"
+      }
+    ]
+  },
+  {
+    "name": "rumah-merah-mata",
+    "words": [
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal bersama keluarga"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna cabai yang sudah matang atau warna darah"
+      },
+      {
+        "answer": "MATA",
+        "direction": "down",
+        "clue": "Anggota tubuh yang digunakan untuk melihat"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabot berkaki empat tempat meletakkan barang atau makanan"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas peliharaan yang berkokok di pagi hari"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang turun dari langit"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Butiran putih pemanis teh atau kopi"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat penerang ruangan yang menyala memakai listrik"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang dimasak dari beras"
+      },
+      {
+        "answer": "HIJAU",
+        "direction": "down",
+        "clue": "Warna daun pohon yang segar"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman putih bernutrisi yang biasa dihasilkan oleh sapi"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah ceper tempat menaruh nasi dan lauk saat makan"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "across",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah yang digunakan untuk berjalan"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok sehari-hari masyarakat Indonesia"
+      },
+      {
+        "answer": "MINUM",
+        "direction": "down",
+        "clue": "Kegiatan menelan air ke dalam tubuh saat haus"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah yang dibuka dan ditutup untuk keluar masuk"
+      },
+      {
+        "answer": "HIJAU",
+        "direction": "down",
+        "clue": "Warna umum pada daun tumbuhan segar"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Aktivitas mengistirahatkan tubuh dan memejamkan mata"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman putih bergizi yang dihasilkan sapi atau kambing"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "across",
+        "clue": "Hewan ternak berkaki empat penghasil susu dan daging"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-pintu",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian putih di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "down",
+        "clue": "Papan penutup yang dibuka untuk keluar masuk ruangan"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Kegiatan istirahat memejamkan mata di malam hari"
+      },
+      {
+        "answer": "KUDA",
+        "direction": "down",
+        "clue": "Hewan berkaki empat yang bisa ditunggangi atau menarik delman"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Lembaran kertas berjilid yang berisi bacaan atau tulisan"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas empuk di tempat tidur agar nyaman saat berbaring"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "across",
+        "clue": "Anggota tubuh bagian bawah yang dipakai berjalan"
+      },
+      {
+        "answer": "HIJAU",
+        "direction": "down",
+        "clue": "Warna daun segar atau warna rumput"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "across",
+        "clue": "Bangunan tempat tinggal dan berlindung keluarga"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok sehari-hari masyarakat Indonesia"
+      }
+    ]
+  },
+  {
+    "name": "sapu-sepatu-susu",
+    "words": [
+      {
+        "answer": "SAPU",
+        "direction": "down",
+        "clue": "Alat rumah tangga untuk membersihkan debu di lantai"
+      },
+      {
+        "answer": "SEPATU",
+        "direction": "across",
+        "clue": "Alas kaki berpenutup yang dipakai saat bersekolah"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman sehat berwarna putih perahan sapi"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "CELANA",
+        "direction": "down",
+        "clue": "Pakaian penutup tubuh bagian bawah dari pinggang"
+      },
+      {
+        "answer": "BANTAL",
+        "direction": "down",
+        "clue": "Alas kepala yang empuk saat berbaring di kasur"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas penghasil telur yang sering digoreng"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan pemanis untuk kopi dan teh"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Benda penerang rumah yang dinyalakan dengan listrik"
+      },
+      {
+        "answer": "MANDI",
+        "direction": "across",
+        "clue": "Membersihkan seluruh badan dengan air dan sabun"
+      }
+    ]
+  },
+  {
+    "name": "pintu-piring-gigi",
+    "words": [
+      {
+        "answer": "PINTU",
+        "direction": "down",
+        "clue": "Tempat keluar dan masuk ke dalam ruangan"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "across",
+        "clue": "Wadah ceper tempat menaruh nasi saat makan"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian di dalam mulut yang berfungsi mengunyah makanan"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "KUCING",
+        "direction": "down",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "across",
+        "clue": "Minuman berkafein yang biasa diseduh di pagi hari"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "across",
+        "clue": "Anggota tubuh bagian bawah untuk berjalan"
+      },
+      {
+        "answer": "AIR",
+        "direction": "down",
+        "clue": "Zat cair bening yang kita minum saat haus"
+      },
+      {
+        "answer": "ROTI",
+        "direction": "across",
+        "clue": "Makanan berbahan tepung yang sering diolesi selai"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "down",
+        "clue": "Aktivitas istirahat memejamkan mata di malam hari"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bumbu dapur berbutir putih dengan rasa manis"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-buku",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "down",
+        "clue": "Lembaran kertas berjilid tempat membaca dan menulis"
+      },
+      {
+        "answer": "BIRU",
+        "direction": "across",
+        "clue": "Warna langit pada siang hari saat cerah"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas empuk di atas ranjang tempat kita berbaring"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman bergizi berwarna putih yang diperah dari sapi"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan pemanis minuman yang terbuat dari tebu"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat penerang ruangan yang dinyalakan dengan sakelar listrik"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat pembersih lantai yang terbuat dari ijuk atau lidi"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang turun dari awan mendung"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal bersama keluarga"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-tangan",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "down",
+        "clue": "Anggota tubuh dari pergelangan sampai jari untuk memegang"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Bagian tubuh di wajah yang berguna untuk melihat"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "down",
+        "clue": "Bumbu dapur berwarna putih yang rasanya asin"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Pemanis alami untuk kopi atau teh"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas peliharaan yang berkokok di pagi hari"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal dan berkumpulnya keluarga"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Pembersih berbusa dan wangi untuk membersihkan badan saat mandi"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabot berkaki empat tempat menaruh barang atau makanan"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Air yang turun rintik-rintik atau deras dari langit"
+      }
+    ]
+  },
+  {
+    "name": "nasi-tangan-mata",
+    "words": [
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia dari beras"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "down",
+        "clue": "Bagian tubuh yang punya jari untuk memegang benda"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Bagian tubuh yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas bertelur yang sering digoreng untuk lauk"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Pembersih berbusa yang dipakai saat mandi"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "across",
+        "clue": "Titik-titik air yang turun dari langit"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "across",
+        "clue": "Benda penerang ruangan yang dialiri listrik"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "down",
+        "clue": "Alat rumah tangga untuk membersihkan lantai dari kotoran"
+      },
+      {
+        "answer": "GULA",
+        "direction": "down",
+        "clue": "Bahan berbutir putih pemberi rasa manis"
+      },
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas empuk yang dipakai untuk tidur"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-buku",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan yang suka mengeong dan menangkap tikus"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras berwarna putih di dalam mulut untuk mengunyah"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "down",
+        "clue": "Kumpulan lembaran kertas berjilid untuk dibaca atau ditulis"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah yang dibuka dan ditutup untuk keluar masuk"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "down",
+        "clue": "Minuman hitam berkafein yang diseduh dengan air panas"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang jatuh dari langit saat cuaca mendung"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Benda pembersih berbusa dan wangi yang dipakai saat mandi"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman sehat berwarna putih yang dihasilkan oleh sapi"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat pembersih lantai yang terbuat dari ijuk atau lidi"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "down",
+        "clue": "Hewan ternak berkaki empat penghasil susu dan daging"
+      }
+    ]
+  },
+  {
+    "name": "rumah-garam-ayam",
+    "words": [
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal dan berkumpul keluarga"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "across",
+        "clue": "Bumbu dapur warna putih pemberi rasa asin"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas peliharaan yang menghasilkan telur dan daging"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Organ tubuh manusia yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "down",
+        "clue": "Warna cabai matang atau warna darah"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabot rumah berkaki empat tempat meletakkan barang"
+      },
+      {
+        "answer": "AIR",
+        "direction": "across",
+        "clue": "Cairan bening yang sangat penting untuk diminum"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas empuk di tempat tidur untuk berbaring"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat pembersih lantai yang terbuat dari ijuk atau lidi"
+      },
+      {
+        "answer": "API",
+        "direction": "down",
+        "clue": "Menghasilkan panas dan cahaya yang membakar benda"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-ikan",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Benda keras putih di dalam mulut untuk mengunyah"
+      },
+      {
+        "answer": "IKAN",
+        "direction": "down",
+        "clue": "Hewan bersisik yang hidup dan berenang di air"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah yang digunakan untuk berjalan"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "across",
+        "clue": "Minuman hitam berkafein untuk penahan kantuk"
+      },
+      {
+        "answer": "SENDOK",
+        "direction": "down",
+        "clue": "Alat makan cekung untuk menyuap nasi atau kuah"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "across",
+        "clue": "Pembersih tubuh berbusa yang dipakai saat mandi"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman putih menyehatkan yang dihasilkan oleh sapi"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Tetesan air yang turun membasahi bumi dari langit"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bukaan di dinding untuk keluar masuk ruangan"
+      }
+    ]
+  },
+  {
+    "name": "nasi-tangan-mata",
+    "words": [
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "down",
+        "clue": "Anggota tubuh yang digunakan untuk memegang barang"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Bagian tubuh yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "MAKAN",
+        "direction": "down",
+        "clue": "Aktivitas memasukkan dan mengunyah makanan"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas bertelur yang jantannya suka berkokok pagi hari"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabot rumah berkaki empat tempat meletakkan barang atau makanan"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "down",
+        "clue": "Warna cabai matang atau darah"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "across",
+        "clue": "Titik-titik air yang turun dari langit"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal sebuah keluarga"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Alat pembersih badan berbusa saat mandi"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan berasa manis yang biasa dicampur ke teh atau kopi"
+      }
+    ]
+  },
+  {
+    "name": "sapu-pasar-garpu",
+    "words": [
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat dari ijuk atau lidi untuk membersihkan lantai"
+      },
+      {
+        "answer": "PASAR",
+        "direction": "down",
+        "clue": "Tempat ramai bertemunya penjual dan pembeli sayuran"
+      },
+      {
+        "answer": "GARPU",
+        "direction": "across",
+        "clue": "Alat makan berigi runcing pasangan sendok"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal dan berkumpulnya keluarga"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna cabai matang atau bagian atas bendera Indonesia"
+      },
+      {
+        "answer": "MATA",
+        "direction": "down",
+        "clue": "Organ tubuh yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas peliharaan yang jantannya berkokok di pagi hari"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "down",
+        "clue": "Perabot berkaki empat tempat menaruh piring atau laptop"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "across",
+        "clue": "Alat penerang ruangan yang dinyalakan dengan sakelar"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang turun dari langit mendung"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Benda pembersih berbusa dan wangi yang dipakai saat mandi"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "down",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "across",
+        "clue": "Wadah ceper tempat menaruh nasi dan lauk saat makan"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "SENIN",
+        "direction": "across",
+        "clue": "Hari pertama masuk sekolah atau kerja setelah akhir pekan"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang dimasak dari beras"
+      },
+      {
+        "answer": "AIR",
+        "direction": "down",
+        "clue": "Cairan bening yang diminum saat haus"
+      },
+      {
+        "answer": "CABAI",
+        "direction": "across",
+        "clue": "Bumbu dapur berwarna merah atau hijau yang rasanya pedas"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "down",
+        "clue": "Alat rumah tangga untuk membersihkan lantai"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman putih hasil perahan sapi yang kaya kalsium"
+      },
+      {
+        "answer": "API",
+        "direction": "across",
+        "clue": "Panas dan cahaya yang muncul saat membakar sesuatu"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "down",
+        "clue": "Istirahat malam hari dengan memejamkan mata di kasur"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-ikan",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berkaki empat yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "IKAN",
+        "direction": "down",
+        "clue": "Hewan bersisik yang hidup dan bernapas di dalam air"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah untuk berdiri dan berjalan"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang digunakan untuk melihat"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "down",
+        "clue": "Bumbu dapur yang rasanya asin"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas bertelur yang berkokok di pagi hari"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat penerang ruangan yang dialiri listrik"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Pemanis alami yang rasanya manis"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Tempat tinggal dan berlindung bersama keluarga"
+      }
+    ]
+  },
+  {
+    "name": "sapu-pisau-nasi",
+    "words": [
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat rumah tangga untuk membersihkan debu di lantai"
+      },
+      {
+        "answer": "PISAU",
+        "direction": "down",
+        "clue": "Alat dapur berbilah tajam untuk memotong sayur dan daging"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Pembersih berbusa dan wangi yang dipakai saat mandi"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "across",
+        "clue": "Alat penerang ruangan yang dinyalakan dengan sakelar listrik"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas bertelur yang sering diolah jadi hidangan goreng"
+      },
+      {
+        "answer": "MATA",
+        "direction": "down",
+        "clue": "Bagian tubuh di wajah yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas empuk di atas ranjang tempat kita berbaring"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan kertas bertulis atau bergambar yang dijilid"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna cabai matang atau bagian atas bendera Indonesia"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal bersama keluarga"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-piring",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "down",
+        "clue": "Hewan peliharaan berbulu yang bersuara meong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "across",
+        "clue": "Bagian keras warna putih di dalam mulut untuk mengunyah"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "across",
+        "clue": "Wadah bulat pipih tempat menaruh makanan yang hendak disantap"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan lembaran kertas bertulis untuk dibaca"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "down",
+        "clue": "Istirahat malam dengan memejamkan mata di atas kasur"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah yang dibuka dan ditutup untuk keluar masuk ruangan"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "down",
+        "clue": "Minuman hitam beraroma wangi yang biasanya diminum pagi hari"
+      },
+      {
+        "answer": "SENDOK",
+        "direction": "across",
+        "clue": "Alat makan cekung bertangkai untuk menyuap nasi atau kuah"
+      },
+      {
+        "answer": "SEPATU",
+        "direction": "down",
+        "clue": "Alas kaki tertutup yang biasa dipakai pergi ke kantor atau sekolah"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "across",
+        "clue": "Anggota tubuh dari pergelangan sampai jari untuk memegang benda"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang turun dari langit saat cuaca mendung"
+      }
+    ]
+  },
+  {
+    "name": "kucing-kuning-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "down",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "KUNING",
+        "direction": "across",
+        "clue": "Warna khas dari kulit buah pisang yang sudah matang"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "across",
+        "clue": "Wadah ceper tempat meletakkan makanan"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah yang digunakan untuk berjalan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah yang dibuka-tutup untuk jalan keluar masuk"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang turun dari langit"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan kertas berjilid untuk membaca atau menulis"
+      },
+      {
+        "answer": "HIJAU",
+        "direction": "down",
+        "clue": "Warna rumput dan sebagian besar daun tanaman"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Kegiatan mengistirahatkan tubuh dengan memejamkan mata"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Hewan unggas yang biasa berkokok di pagi hari"
+      }
+    ]
+  },
+  {
+    "name": "nasi-tangan-mata",
+    "words": [
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "down",
+        "clue": "Bagian tubuh berjemari untuk memegang sesuatu"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang digunakan untuk melihat"
+      },
+      {
+        "answer": "MAKAN",
+        "direction": "down",
+        "clue": "Aktivitas memasukkan santapan ke dalam perut"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas bertelur yang berkokok di pagi hari"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "down",
+        "clue": "Bumbu dapur berwarna putih yang rasanya asin"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna cabai matang atau darah"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal sebuah keluarga"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "across",
+        "clue": "Titik-titik air yang turun dari langit"
+      },
+      {
+        "answer": "IKAN",
+        "direction": "down",
+        "clue": "Hewan yang hidup di air dan berenang menggunakan sirip"
+      },
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      }
+    ]
+  },
+  {
+    "name": "nasi-tangan-mata",
+    "words": [
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok sehari-hari masyarakat Indonesia"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "down",
+        "clue": "Anggota tubuh yang dipakai untuk memegang sesuatu"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Bagian tubuh yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "MAKAN",
+        "direction": "down",
+        "clue": "Aktivitas memasukkan makanan ke dalam mulut"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas bertelur yang suka berkokok di pagi hari"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "down",
+        "clue": "Warna cabai matang atau darah"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabot berkaki untuk meletakkan barang atau alas menulis"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal bersama keluarga"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "across",
+        "clue": "Air yang turun dari langit atau awan"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat bertenaga listrik untuk menerangi ruangan"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Pemanis rasa untuk teh atau kopi"
+      }
+    ]
+  },
+  {
+    "name": "merah-rumah-mata",
+    "words": [
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna darah atau warna cabai matang"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal dan berteduh bersama keluarga"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "HITAM",
+        "direction": "down",
+        "clue": "Warna gelap seperti arang atau malam tanpa cahaya"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas peliharaan yang berkokok di pagi hari"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "down",
+        "clue": "Perabot berkaki empat tempat menaruh barang atau makanan"
+      },
+      {
+        "answer": "AIR",
+        "direction": "across",
+        "clue": "Cairan bening pelepas dahaga yang kita minum"
+      },
+      {
+        "answer": "IKAN",
+        "direction": "down",
+        "clue": "Hewan bersirip yang hidup dan berenang di air"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok sebagian besar orang Indonesia"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah untuk berdiri dan berjalan"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "across",
+        "clue": "Wadah ceper tempat meletakkan nasi saat makan"
+      }
+    ]
+  },
+  {
+    "name": "nasi-tangan-mata",
+    "words": [
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berwarna putih"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "down",
+        "clue": "Bagian tubuh yang memiliki lima jari untuk memegang"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang digunakan untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Hewan unggas jantan yang berkokok di pagi hari"
+      },
+      {
+        "answer": "MANDI",
+        "direction": "across",
+        "clue": "Kegiatan membersihkan badan dengan air dan sabun"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "down",
+        "clue": "Hewan ternak pemakan rumput yang berbunyi 'moo'"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah ceper berbentuk bulat tempat menaruh makanan"
+      },
+      {
+        "answer": "KUNING",
+        "direction": "across",
+        "clue": "Warna kulit buah pisang yang sudah matang"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Bagian tubuh bagian bawah untuk berjalan"
+      },
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "AIR",
+        "direction": "across",
+        "clue": "Benda cair bening yang diminum setiap hari"
+      }
+    ]
+  },
+  {
+    "name": "kasur-susu-buku",
+    "words": [
+      {
+        "answer": "KASUR",
+        "direction": "across",
+        "clue": "Alas empuk untuk tidur di kamar"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman sehat berwarna putih dari sapi"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "down",
+        "clue": "Lembaran kertas berjilid untuk dibaca"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal sebuah keluarga"
+      },
+      {
+        "answer": "DAPUR",
+        "direction": "across",
+        "clue": "Ruangan di rumah tempat memasak makanan"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "across",
+        "clue": "Alat penerang ruangan bertenaga listrik"
+      },
+      {
+        "answer": "MATA",
+        "direction": "down",
+        "clue": "Anggota tubuh untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas bertelur yang berkokok di pagi hari"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "across",
+        "clue": "Bumbu dapur berwarna putih yang rasanya asin"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "down",
+        "clue": "Warna buah tomat atau cabai matang"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabot berkaki tempat menaruh piring atau buku"
+      }
+    ]
+  },
+  {
+    "name": "merah-rumah-mata",
+    "words": [
+      {
+        "answer": "MERAH",
+        "direction": "across",
+        "clue": "Warna cabai matang atau darah"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal bersama keluarga"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang digunakan untuk melihat"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat penerang ruangan yang dinyalakan dengan listrik"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas bertelur yang sering digoreng untuk lauk"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat rumah tangga untuk membersihkan kotoran di lantai"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Air yang turun dari langit saat cuaca mendung"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "across",
+        "clue": "Perabot rumah berkaki empat untuk meletakkan barang atau piring"
+      },
+      {
+        "answer": "HIJAU",
+        "direction": "down",
+        "clue": "Warna khas pada daun pepohonan"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan lembaran kertas yang dibaca atau ditulisi"
+      },
+      {
+        "answer": "GULA",
+        "direction": "down",
+        "clue": "Butiran putih berasa manis yang disukai semut"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah ceper tempat meletakkan nasi dan lauk saat makan"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "across",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah yang digunakan untuk berjalan"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok sehari-hari orang Indonesia"
+      },
+      {
+        "answer": "TIKUS",
+        "direction": "down",
+        "clue": "Hewan pengerat kecil berekor panjang yang suka diburu kucing"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah untuk jalan keluar masuk ruangan"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Benda pembersih berbusa dan wangi yang dipakai saat mandi"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Kegiatan mengistirahatkan tubuh dan memejamkan mata"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman putih sehat yang dihasilkan oleh sapi"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat rumah tangga untuk membersihkan kotoran di lantai"
+      }
+    ]
+  },
+  {
+    "name": "nasi-sapi-makan",
+    "words": [
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok sehari-hari orang Indonesia"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "down",
+        "clue": "Hewan ternak berkaki empat penghasil susu murni"
+      },
+      {
+        "answer": "MAKAN",
+        "direction": "down",
+        "clue": "Kegiatan memasukkan dan mengunyah makanan ke dalam mulut"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Bagian tubuh di wajah yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas peliharaan yang menghasilkan telur dan berkokok"
+      },
+      {
+        "answer": "MEJA",
+        "direction": "down",
+        "clue": "Perabot berkaki dengan permukaan datar tempat menaruh barang"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "across",
+        "clue": "Alat penerang di ruangan yang dinyalakan dengan sakelar"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal bersama keluarga"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "down",
+        "clue": "Warna buah tomat matang atau warna darah"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Pembersih berbusa yang dipakai saat mandi"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan pemanis teh atau kopi dari sari tebu"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-pintu",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan lucu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah ceper tempat menaruh nasi saat makan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah untuk jalan keluar dan masuk"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "down",
+        "clue": "Kumpulan lembaran kertas bertulis untuk dibaca"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman bergizi warna putih yang dihasilkan sapi"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Istirahat dengan memejamkan mata di atas kasur"
+      },
+      {
+        "answer": "MANDI",
+        "direction": "down",
+        "clue": "Kegiatan membersihkan badan dengan air dan sabun"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok masyarakat Indonesia dari beras"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah untuk berjalan"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "across",
+        "clue": "Hewan ternak berkaki empat penghasil susu"
+      },
+      {
+        "answer": "API",
+        "direction": "down",
+        "clue": "Terasa panas, menyala merah, dan berasap"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-kursi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "KURSI",
+        "direction": "down",
+        "clue": "Tempat duduk santai yang biasanya memiliki empat kaki"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Istirahat malam hari dengan memejamkan mata di kasur"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman bergizi berwarna putih hasil perahan sapi"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal bersama keluarga"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan kertas berjilid untuk dibaca atau ditulisi"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Bagian tubuh bagian bawah yang digunakan untuk berjalan"
+      },
+      {
+        "answer": "AIR",
+        "direction": "across",
+        "clue": "Cairan bening yang kita minum saat haus"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "down",
+        "clue": "Hewan pemakan rumput bertubuh besar pembuat suara melenguh"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-kopi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah"
+      },
+      {
+        "answer": "KOPI",
+        "direction": "down",
+        "clue": "Minuman hitam berkafein penahan kantuk"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "across",
+        "clue": "Anggota tubuh bagian bawah untuk berjalan"
+      },
+      {
+        "answer": "KUDA",
+        "direction": "down",
+        "clue": "Hewan berkaki empat yang bisa ditunggangi"
+      },
+      {
+        "answer": "KEPALA",
+        "direction": "across",
+        "clue": "Bagian tubuh teratas tempat rambut tumbuh"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas empuk di kamar yang dipakai untuk tidur"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan lembaran kertas bertulis untuk dibaca"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman putih bergizi yang diperah dari sapi"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat listrik yang berfungsi menerangi ruangan"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Pemanis alami yang sering dimasukkan ke teh"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah berbentuk ceper tempat meletakkan makanan"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Jalan keluar masuk ruangan yang bisa dibuka dan ditutup"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Bagian tubuh manusia di bawah untuk berjalan"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "across",
+        "clue": "Bumbu dapur yang rasanya asin"
+      },
+      {
+        "answer": "MANDI",
+        "direction": "down",
+        "clue": "Kegiatan membersihkan badan memakai air dan sabun"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Aktivitas memejamkan mata dan beristirahat di kasur"
+      },
+      {
+        "answer": "RUMAH",
+        "direction": "down",
+        "clue": "Bangunan tempat tinggal dan berteduh bersama keluarga"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang berguna untuk melihat"
+      },
+      {
+        "answer": "HITAM",
+        "direction": "down",
+        "clue": "Warna paling gelap seperti arang"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-pintu",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan lucu yang bunyinya mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Benda putih di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "down",
+        "clue": "Bagian rumah tempat keluar masuk ruangan"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Kegiatan istirahat terpejam di atas kasur"
+      },
+      {
+        "answer": "BIRU",
+        "direction": "down",
+        "clue": "Warna langit saat cuaca cerah di siang hari"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan lembaran kertas bertulis untuk dibaca"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Bagian tubuh paling bawah untuk melangkah"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "down",
+        "clue": "Hewan berkaki empat penghasil susu dan daging"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "across",
+        "clue": "Alat penerang ruangan saat gelap"
+      },
+      {
+        "answer": "GULA",
+        "direction": "down",
+        "clue": "Bahan pemanis untuk kopi atau teh"
+      }
+    ]
+  },
+  {
+    "name": "kucing-kuning-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "KUNING",
+        "direction": "down",
+        "clue": "Warna kulit buah pisang yang sudah matang"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Akses keluar masuk rumah atau ruangan"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah ceper tempat menyajikan nasi dan lauk"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok masyarakat Indonesia"
+      },
+      {
+        "answer": "BUNGA",
+        "direction": "down",
+        "clue": "Bagian tanaman yang indah, harum, dan berwarna-warni"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Pemanis alami untuk kopi dan teh"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman putih menyehatkan yang dihasilkan sapi"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "across",
+        "clue": "Pembersih tubuh berbusa yang dipakai saat mandi"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang berjatuhan dari langit"
+      }
+    ]
+  },
+  {
+    "name": "kucing-gigi-kaki",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang bunyinya mengeong"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah yang dipakai untuk berjalan"
+      },
+      {
+        "answer": "AIR",
+        "direction": "across",
+        "clue": "Benda cair yang diminum saat merasa haus"
+      },
+      {
+        "answer": "TIKUS",
+        "direction": "down",
+        "clue": "Hewan pengerat bertubuh kecil yang suka dikejar kucing"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Aktivitas memejamkan mata untuk istirahat di kasur"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah yang dibuka dan ditutup untuk keluar masuk"
+      },
+      {
+        "answer": "NASI",
+        "direction": "down",
+        "clue": "Makanan pokok orang Indonesia yang dimasak dari beras"
+      },
+      {
+        "answer": "SEPATU",
+        "direction": "across",
+        "clue": "Alas kaki yang dipakai saat bersekolah atau bekerja"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman sehat warna putih yang diperah dari sapi"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Bahan pembersih badan yang berbusa saat mandi"
+      }
+    ]
+  },
+  {
+    "name": "rumah-merah-ayam",
+    "words": [
+      {
+        "answer": "RUMAH",
+        "direction": "across",
+        "clue": "Bangunan tempat tinggal dan berlindung bersama keluarga"
+      },
+      {
+        "answer": "MERAH",
+        "direction": "down",
+        "clue": "Warna darah atau warna buah tomat yang sudah matang"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "across",
+        "clue": "Unggas bertelur yang sering digoreng untuk lauk"
+      },
+      {
+        "answer": "MATA",
+        "direction": "down",
+        "clue": "Organ tubuh yang berfungsi untuk melihat"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat penerang ruangan yang dinyalakan dengan listrik"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat pembersih untuk menyapu kotoran di lantai"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "down",
+        "clue": "Alas tidur yang empuk di kamar"
+      },
+      {
+        "answer": "GULA",
+        "direction": "across",
+        "clue": "Bahan pemanis teh atau kopi"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman bergizi yang biasa diperah dari sapi"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang turun dari langit"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Lembaran kertas berjilid tempat membaca dan menulis"
+      }
+    ]
+  },
+  {
+    "name": "sapu-susu-sepatu",
+    "words": [
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat untuk membersihkan debu di lantai"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman putih sehat hasil perahan sapi"
+      },
+      {
+        "answer": "SEPATU",
+        "direction": "down",
+        "clue": "Alas kaki tertutup yang dipakai saat bersekolah"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "across",
+        "clue": "Pembersih berbusa dan wangi yang dipakai saat mandi"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Air yang turun beramai-ramai dari awan di langit"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "across",
+        "clue": "Alas empuk di kamar yang dipakai untuk merebahkan badan"
+      },
+      {
+        "answer": "KUDA",
+        "direction": "down",
+        "clue": "Hewan berkaki empat yang bisa ditunggangi atau menarik delman"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan lembaran kertas bertulis untuk dibaca"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang digunakan untuk melihat"
+      },
+      {
+        "answer": "GARAM",
+        "direction": "down",
+        "clue": "Bumbu dapur berwarna putih dengan rasa asin"
+      },
+      {
+        "answer": "AYAM",
+        "direction": "down",
+        "clue": "Unggas bertelur yang sering digoreng"
+      }
+    ]
+  },
+  {
+    "name": "nasi-sapi-sabun",
+    "words": [
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berwarna putih"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "down",
+        "clue": "Hewan ternak berkaki empat penghasil daging dan susu"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Benda pembersih berbusa yang dipakai saat mandi"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "across",
+        "clue": "Minuman bergizi yang dihasilkan oleh sapi"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "across",
+        "clue": "Anggota badan yang memiliki jari untuk memegang barang"
+      },
+      {
+        "answer": "KUCING",
+        "direction": "down",
+        "clue": "Hewan peliharaan lucu yang suka mengeong"
+      },
+      {
+        "answer": "IKAN",
+        "direction": "across",
+        "clue": "Hewan yang hidup dan berenang di dalam air"
+      },
+      {
+        "answer": "MATA",
+        "direction": "down",
+        "clue": "Indra penglihatan pada tubuh manusia"
+      },
+      {
+        "answer": "KASUR",
+        "direction": "across",
+        "clue": "Alas empuk di tempat tidur untuk berbaring"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "down",
+        "clue": "Papan pembuka untuk keluar masuk ke dalam ruangan atau rumah"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "across",
+        "clue": "Titik-titik air yang turun dari langit"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah ceper tempat menaruh nasi saat makan"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "across",
+        "clue": "Bagian keras di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "ANGIN",
+        "direction": "down",
+        "clue": "Udara yang bergerak dan berembus"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Akses keluar masuk ruangan yang bisa dibuka tutup"
+      },
+      {
+        "answer": "PUTIH",
+        "direction": "down",
+        "clue": "Warna susu atau beras"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Istirahat memejamkan mata di malam hari"
+      },
+      {
+        "answer": "HIJAU",
+        "direction": "down",
+        "clue": "Warna umum daun pohon yang segar"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "across",
+        "clue": "Titik-titik air yang turun dari langit"
+      },
+      {
+        "answer": "SUSU",
+        "direction": "down",
+        "clue": "Minuman sehat berwarna putih yang dihasilkan oleh sapi"
+      },
+      {
+        "answer": "SAPU",
+        "direction": "across",
+        "clue": "Alat bertangkai untuk membersihkan lantai dari debu"
+      }
+    ]
+  },
+  {
+    "name": "ikan-kaki-nasi",
+    "words": [
+      {
+        "answer": "IKAN",
+        "direction": "across",
+        "clue": "Hewan bersisik yang hidup dan berenang di dalam air"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Anggota tubuh bagian bawah yang dipakai untuk berjalan"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok orang Indonesia yang berasal dari beras"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "down",
+        "clue": "Benda pembersih berbusa dan wangi yang dipakai saat mandi"
+      },
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berkaki empat yang suka mengeong"
+      },
+      {
+        "answer": "SENDOK",
+        "direction": "down",
+        "clue": "Alat makan cekung bertangkai yang berpasangan dengan garpu"
+      },
+      {
+        "answer": "HUJAN",
+        "direction": "down",
+        "clue": "Titik-titik air yang turun berjatuhan dari langit"
+      },
+      {
+        "answer": "BUKU",
+        "direction": "across",
+        "clue": "Kumpulan lembaran kertas berjilid untuk dibaca atau ditulis"
+      },
+      {
+        "answer": "MATA",
+        "direction": "across",
+        "clue": "Anggota tubuh yang digunakan untuk melihat"
+      },
+      {
+        "answer": "HITAM",
+        "direction": "down",
+        "clue": "Warna gelap pekat seperti warna arang"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "across",
+        "clue": "Hewan ternak penghasil susu segar dan daging"
+      }
+    ]
+  },
+  {
+    "name": "kucing-piring-gigi",
+    "words": [
+      {
+        "answer": "KUCING",
+        "direction": "across",
+        "clue": "Hewan peliharaan berkumis yang suka mengeong"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "down",
+        "clue": "Wadah ceper bundar tempat menaruh makanan"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Benda keras putih di dalam mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "AIR",
+        "direction": "across",
+        "clue": "Cairan bening yang kita minum setiap hari"
+      },
+      {
+        "answer": "KAKI",
+        "direction": "down",
+        "clue": "Bagian tubuh bagian bawah untuk berjalan dan melompat"
+      },
+      {
+        "answer": "API",
+        "direction": "across",
+        "clue": "Panas dan menyala, biasa dipakai memasak"
+      },
+      {
+        "answer": "MANDI",
+        "direction": "down",
+        "clue": "Aktivitas membersihkan badan memakai air dan sabun"
+      },
+      {
+        "answer": "TIDUR",
+        "direction": "across",
+        "clue": "Istirahat terlelap dengan memejamkan mata"
+      },
+      {
+        "answer": "BIRU",
+        "direction": "down",
+        "clue": "Warna langit pada siang hari yang cerah"
+      },
+      {
+        "answer": "NASI",
+        "direction": "down",
+        "clue": "Beras yang sudah matang dan siap disantap"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "across",
+        "clue": "Pembersih berbusa yang dipakai saat mandi"
+      }
+    ]
+  },
+  {
+    "name": "pisang-piring-nasi",
+    "words": [
+      {
+        "answer": "PISANG",
+        "direction": "down",
+        "clue": "Buah berwarna kuning yang disukai monyet"
+      },
+      {
+        "answer": "PIRING",
+        "direction": "across",
+        "clue": "Wadah ceper tempat menaruh nasi saat makan"
+      },
+      {
+        "answer": "NASI",
+        "direction": "across",
+        "clue": "Makanan pokok utama orang Indonesia"
+      },
+      {
+        "answer": "TANGAN",
+        "direction": "down",
+        "clue": "Anggota tubuh yang punya lima jari untuk memegang"
+      },
+      {
+        "answer": "GIGI",
+        "direction": "down",
+        "clue": "Benda keras di mulut untuk mengunyah makanan"
+      },
+      {
+        "answer": "PINTU",
+        "direction": "across",
+        "clue": "Bagian rumah untuk jalan keluar masuk"
+      },
+      {
+        "answer": "KUCING",
+        "direction": "down",
+        "clue": "Hewan peliharaan berbulu yang suka mengeong"
+      },
+      {
+        "answer": "SAPI",
+        "direction": "down",
+        "clue": "Hewan ternak penghasil susu dan daging"
+      },
+      {
+        "answer": "SABUN",
+        "direction": "across",
+        "clue": "Bahan pembersih badan saat mandi"
+      },
+      {
+        "answer": "SEPATU",
+        "direction": "across",
+        "clue": "Alas kaki yang dipakai bersama kaus kaki"
+      },
+      {
+        "answer": "LAMPU",
+        "direction": "down",
+        "clue": "Alat untuk menerangi ruangan yang gelap"
+      }
+    ]
+  }
+]

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susun Kalimat Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#14101f">
+<style>
+  :root {
+    --bg-deep: #14101f;
+    --panel: #1f1a33;
+    --panel-light: #2a2340;
+    --accent: #8b6ef5;
+    --accent-soft: rgba(139, 110, 245, 0.25);
+    --gold: #f5b942;
+    --silver: #c9c9d4;
+    --bronze: #d08a5b;
+    --green: #4ade80;
+    --text-primary: #f5f3fb;
+    --text-muted: #9b93b8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+  #app {
+    position: fixed; inset: 0;
+    display: flex; flex-direction: column;
+    padding: 2.4vh 3vw;
+    gap: 1.8vh;
+  }
+
+  /* Header */
+  #headerBar {
+    flex: 0 0 auto;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #headerBar .title {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(14px, 3.6vw, 20px);
+    background: rgba(139, 110, 245, 0.18);
+    color: var(--accent);
+    padding: 6px 18px; border-radius: 999px;
+    letter-spacing: 0.3px;
+  }
+
+  /* Vote hint marquee */
+  #voteHintInline {
+    flex: 0 0 auto;
+    overflow: hidden; white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(11px, 2.6vw, 14px);
+    font-weight: 600; color: var(--text-muted);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    padding: 2px 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+  }
+  #voteHintInline b { color: var(--gold); font-weight: 800; }
+  #voteHintInline .marquee-track {
+    display: inline-block; padding-left: 100%;
+    animation: marqueeScroll 22s linear infinite;
+  }
+  @keyframes marqueeScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* Avatar zone */
+  #avatarZone {
+    flex: 0 0 auto;
+    height: clamp(60px, 12vh, 100px);
+    position: relative; background: transparent; overflow: visible;
+  }
+  .mini-avatar {
+    position: absolute; bottom: 4px;
+    display: flex; flex-direction: column; align-items: center;
+    pointer-events: none; will-change: left;
+  }
+  .mini-avatar .emoji {
+    display: block; font-size: 26px; line-height: 1;
+    animation: avatarBob 0.5s ease-in-out infinite alternate;
+  }
+  .mini-avatar.facing-left .emoji { transform: scaleX(-1); }
+  .mini-avatar .name-tag {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 8px;
+    color: var(--text-primary); background: rgba(0,0,0,0.45);
+    padding: 1px 6px; border-radius: 999px; margin-bottom: 2px;
+    white-space: nowrap; max-width: 84px; overflow: hidden; text-overflow: ellipsis;
+    order: -1;
+  }
+  .mini-avatar .comment-bubble {
+    font-family: 'Inter', sans-serif; font-weight: 600; font-size: 9.5px;
+    color: #14101f; background: var(--text-primary);
+    padding: 3px 9px; border-radius: 10px; margin-bottom: 4px;
+    white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    position: relative; order: -2;
+  }
+  .mini-avatar .comment-bubble::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+    border-width: 4px 4px 0 4px; border-style: solid;
+    border-color: var(--text-primary) transparent transparent transparent;
+  }
+  @keyframes avatarBob {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-4px); }
+  }
+
+  /* Area utama: daftar soal (1 ronde = beberapa kalimat, tiap kalimat 1 kartu) */
+  #wordArea {
+    flex: 1; display: flex; flex-direction: column;
+    gap: 1.2vh; min-height: 0;
+  }
+  #wordAreaLabel {
+    flex: 0 0 auto; text-align: center;
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: clamp(11px, 2.6vw, 14px); color: var(--text-muted);
+    letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  #wordAreaLabel b { color: var(--gold); font-weight: 800; }
+  #itemList {
+    flex: 1 1 auto; min-height: 0;
+    display: flex; flex-direction: column;
+    gap: 1.2vh; overflow-y: auto;
+    padding: 10px 10px 4px; /* ruang buat badge nomor yang nongol keluar kartu (overflow-y bikin kena clip) */
+  }
+  /* Centering "aman": margin auto di kartu pertama/terakhir. Beda sama
+     justify-content:center, kalau isinya kepenuhan (6 soal x 6 kata) bagian
+     atas nggak kepotong dan tetap bisa dijangkau. */
+  #itemList > .q-card:first-child { margin-top: auto; }
+  #itemList > .q-card:last-child  { margin-bottom: auto; }
+  .q-card {
+    position: relative; flex: 0 0 auto;
+    background: var(--panel); border-radius: 14px;
+    padding: 7px 12px 7px 20px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 3px; min-height: clamp(46px, 8.5vh, 76px);
+    transition: background .25s ease;
+  }
+  .q-card .num-badge {
+    position: absolute; top: -8px; left: -8px;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 11px;
+    background: var(--accent); color: #fff;
+    min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+  .q-card .tiles {
+    display: flex; flex-wrap: wrap; gap: 4px 6px; justify-content: center; align-items: center;
+  }
+  .word-tile {
+    background: var(--panel-light);
+    border: 1.5px solid var(--accent-soft);
+    border-radius: 8px;
+    padding: 3px 8px;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(11px, min(2.9vw, 2.1vh), 17px);
+    color: var(--text-primary);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    letter-spacing: 0.3px;
+  }
+
+  /* Kartu yang sudah kejawab: kata-kata acak diganti kalimat aslinya */
+  .q-card.solved { background: #1c3a24; }
+  .q-card.solved .tiles { display: none; }
+  .q-card .solved-sentence {
+    display: none;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800; text-align: center;
+    font-size: clamp(13px, 3.4vw, 20px); color: var(--green); line-height: 1.25;
+  }
+  .q-card.solved .solved-sentence { display: block; animation: popIn .3s ease; }
+  .q-card .solved-by {
+    display: none;
+    font-size: clamp(9px, 2vw, 11px); color: var(--text-muted); font-weight: 600;
+  }
+  .q-card.solved .solved-by { display: block; }
+  @keyframes popIn { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  @keyframes flashGreen {
+    0% { background: var(--panel); }
+    40% { background: #234a2c; }
+    100% { background: #1c3a24; }
+  }
+  @keyframes cardBounce {
+    0%   { transform: scale(1); }
+    35%  { transform: scale(1.05); }
+    65%  { transform: scale(0.985); }
+    100% { transform: scale(1); }
+  }
+  .q-card.just-solved { animation: flashGreen .5s ease, cardBounce .5s ease; }
+
+  /* Toast + confetti pas ada yang jawab benar (pola sama kayak family100) */
+  #toast {
+    position: fixed; top: 9vh; left: 50%;
+    background: var(--accent); color: #14101f;
+    padding: 12px 22px; border-radius: 999px; font-weight: 800;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(14px, 3.6vw, 19px); white-space: nowrap;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    opacity: 0; pointer-events: none; z-index: 50;
+    transform: translate(-50%, -60%) scale(0.5);
+  }
+  #toast.show {
+    animation: toastPop 0.55s cubic-bezier(.34,1.56,.64,1) forwards,
+               toastGlow 0.55s ease-out forwards;
+  }
+  @keyframes toastPop {
+    0%   { transform: translate(-50%, -60%) scale(0.4) rotate(-4deg); opacity: 0; }
+    55%  { transform: translate(-50%, 12%) scale(1.22) rotate(2deg); opacity: 1; }
+    75%  { transform: translate(-50%, -6%) scale(0.94) rotate(-1deg); }
+    100% { transform: translate(-50%, 0%) scale(1) rotate(0deg); opacity: 1; }
+  }
+  @keyframes toastGlow {
+    0% { box-shadow: 0 0 0 rgba(0,0,0,0); }
+    50% { box-shadow: 0 0 32px 6px var(--toast-glow, rgba(139,110,245,0.7)); }
+    100% { box-shadow: 0 0 14px 2px var(--toast-glow, rgba(139,110,245,0.4)); }
+  }
+  .confetti-piece {
+    position: absolute; top: 50%; left: 50%;
+    width: 7px; height: 7px; border-radius: 2px;
+    pointer-events: none; z-index: 7;
+    animation: confettiBurst 0.85s cubic-bezier(.25,.8,.35,1) forwards;
+  }
+  @keyframes confettiBurst {
+    0%   { transform: translate(-50%, -50%) translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.4); opacity: 0; }
+  }
+
+  /* Hint format jawaban */
+  #hint {
+    flex: 0 0 auto; text-align: center;
+    font-size: clamp(11px, 2.6vw, 14px); color: var(--text-muted); font-weight: 600;
+  }
+  #hint b { color: var(--gold); font-weight: 800; }
+
+  /* Leaderboard */
+  #leaderboard {
+    position: absolute; top: 8px; right: 8px; z-index: 4;
+    background: rgba(31, 26, 51, 0.82); border-radius: 12px;
+    padding: 8px 10px; display: flex; flex-direction: column;
+    min-width: 120px; max-width: 44vw;
+  }
+  #leaderboard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: 10px; color: var(--gold);
+    margin-bottom: 5px; display: flex; align-items: center; gap: 4px;
+  }
+  #lbList { display: flex; flex-direction: column; gap: 3px; }
+  .lb-row { display: flex; align-items: center; gap: 6px; }
+  .lb-rank {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: 10px; width: 12px; text-align: center; color: var(--text-muted);
+  }
+  .lb-row:nth-child(1) .lb-rank { color: var(--gold); }
+  .lb-row:nth-child(2) .lb-rank { color: var(--silver); }
+  .lb-row:nth-child(3) .lb-rank { color: var(--bronze); }
+  .lb-name { font-size: 10px; font-weight: 600; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 90px; }
+  .lb-score { font-size: 10px; font-weight: 800; color: var(--text-primary); }
+  .empty-hint { font-size: 10px; color: var(--text-muted); }
+
+  /* Banner bawah */
+  #banner {
+    position: fixed; bottom: 2vh; left: 50%; transform: translateX(-50%);
+    background: var(--panel-light); border: 1px solid var(--accent);
+    color: var(--text-primary); padding: 10px 22px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; display: none; z-index: 10;
+    text-align: center; max-width: 90vw;
+  }
+  #banner.show { display: block; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="headerBar"><div class="title">🔀 Susun Kalimat</div></div>
+
+  <div id="voteHintInline"><div class="marquee-track">💬 Ketik kalimat yang benar di komentar &nbsp;•&nbsp; Komen <b>SKIP 10x</b> buat kalimat baru &nbsp;•&nbsp; Ketik <b>GANTI 10x</b> buat ganti game &nbsp;•&nbsp; Ketik <b>NYERAH 10x</b> buat lihat jawabannya</div></div>
+
+  <div id="avatarZone"></div>
+
+  <div id="wordArea">
+    <div id="wordAreaLabel">Susun kata-kata jadi kalimat <span id="progress"></span></div>
+    <div id="itemList"></div>
+  </div>
+
+  <div id="hint">Ketik <b>nomor + kalimatnya</b> (contoh: <b>3 ibu memasak nasi goreng</b>) atau langsung kalimatnya</div>
+</div>
+
+<div id="leaderboard">
+  <div class="label">🏆 Top Skor</div>
+  <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
+</div>
+
+<div id="toast"></div>
+<div id="banner"></div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io();
+  </script>
+  <script src="/shared/game-switch-watcher.js"></script>
+  <script src="/shared/vote-overlay.js"></script>
+  <script>
+
+  const itemListEl = document.getElementById('itemList');
+  const progressEl = document.getElementById('progress');
+  const lbList = document.getElementById('lbList');
+  const toastEl = document.getElementById('toast');
+  const bannerEl = document.getElementById('banner');
+
+  let cardEls = {}; // number -> element, dibikin sekali biar nggak re-render dari nol tiap update
+
+  function ensureCard(number) {
+    if (cardEls[number]) return cardEls[number];
+    const el = document.createElement('div');
+    el.className = 'q-card';
+    el.innerHTML = `
+      <div class="num-badge">${number}</div>
+      <div class="tiles"></div>
+      <div class="solved-sentence"></div>
+      <div class="solved-by"></div>
+    `;
+    itemListEl.appendChild(el);
+    cardEls[number] = el;
+    return el;
+  }
+
+  // Server ngirim { items: [...], totalSoal, solvedSoal } -- 1 ronde isinya
+  // beberapa kalimat (dulu frontend ini masih nyangka cuma 1 kalimat per
+  // ronde, jadi layarnya kosong).
+  function renderState(data) {
+    if (!data || !Array.isArray(data.items)) return;
+
+    // Buang kartu yang nomornya nggak ada lagi (ronde baru lebih sedikit soalnya)
+    const liveNumbers = new Set(data.items.map(it => String(it.number)));
+    Object.keys(cardEls).forEach(n => {
+      if (!liveNumbers.has(n)) { cardEls[n].remove(); delete cardEls[n]; }
+    });
+
+    data.items.forEach(item => {
+      const el = ensureCard(item.number);
+      const wasActive = !el.classList.contains('solved');
+
+      if (item.solved) {
+        el.classList.add('solved');
+        if (wasActive) el.classList.add('just-solved'); // baru kejawab -> flash + mantul sekali
+        el.querySelector('.solved-sentence').textContent = item.sentence || '';
+        el.querySelector('.solved-by').textContent = item.solvedBy ? `oleh ${item.solvedBy}` : '';
+      } else {
+        el.classList.remove('solved', 'just-solved');
+        const tilesEl = el.querySelector('.tiles');
+        const key = (item.shuffled || []).join('|');
+        // Cuma re-render kata kalau beneran beda, biar nggak flicker
+        if (tilesEl.dataset.words !== key) {
+          tilesEl.dataset.words = key;
+          tilesEl.innerHTML = '';
+          (item.shuffled || []).forEach(word => {
+            const tile = document.createElement('div');
+            tile.className = 'word-tile';
+            tile.textContent = word;
+            tilesEl.appendChild(tile);
+          });
+        }
+      }
+    });
+
+    // Urutkan ulang sesuai nomor (jaga-jaga kalau urutan elemen beda)
+    data.items.forEach(item => itemListEl.appendChild(cardEls[item.number]));
+
+    progressEl.innerHTML = data.totalSoal ? `· terjawab <b>${data.solvedSoal || 0}/${data.totalSoal}</b>` : '';
+  }
+
+  // Confetti muncul dari kartu yang barusan kejawab (kalau nomornya ada).
+  function spawnConfetti(originEl, count = 16) {
+    const wrap = originEl || document.getElementById('app');
+    const colors = ['#f5b942', '#f472b6', '#5eead4', '#8b6ef5', '#4ade80'];
+    for (let i = 0; i < count; i++) {
+      const piece = document.createElement('div');
+      piece.className = 'confetti-piece';
+      const angle = Math.random() * Math.PI * 2;
+      const dist = 50 + Math.random() * 80;
+      piece.style.setProperty('--tx', `${Math.cos(angle) * dist}px`);
+      piece.style.setProperty('--ty', `${Math.sin(angle) * dist}px`);
+      piece.style.setProperty('--rot', `${(Math.random() - 0.5) * 540}deg`);
+      piece.style.background = colors[i % colors.length];
+      piece.style.animationDelay = `${Math.random() * 0.08}s`;
+      wrap.appendChild(piece);
+      setTimeout(() => piece.remove(), 1000);
+    }
+  }
+
+  function showToast(data) {
+    toastEl.textContent = `🎉 ${data.player} BENAR! No.${data.number} +${data.points}`;
+    toastEl.classList.remove('show');
+    void toastEl.offsetWidth; // paksa reflow biar animasi bisa diputar ulang
+    toastEl.classList.add('show');
+    spawnConfetti(cardEls[data.number]);
+    clearTimeout(showToast._hideT);
+    showToast._hideT = setTimeout(() => toastEl.classList.remove('show'), 2400);
+  }
+
+  function renderLeaderboard(list) {
+    if (!list || list.length === 0) {
+      lbList.innerHTML = '<div class="empty-hint">Belum ada yang jawab</div>';
+      return;
+    }
+    lbList.innerHTML = list.map((row, i) => `
+      <div class="lb-row">
+        <span class="lb-rank">${i + 1}</span>
+        <span class="lb-name">${escapeHtml(row.player)}</span>
+        <span class="lb-score">${row.score}</span>
+      </div>`).join('');
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function showBanner(msg) { bannerEl.textContent = msg; bannerEl.classList.add('show'); }
+  function hideBanner() { bannerEl.classList.remove('show'); }
+
+  socket.on('game:switched', () => window.location.reload());
+  socket.on('update', (data) => renderState(data));
+  socket.on('answer:correct', (data) => showToast(data));
+  socket.on('leaderboard:update', (list) => renderLeaderboard(list));
+  socket.on('puzzle:completed', () => showBanner('🎉 Kalimat terjawab! Menyiapkan kalimat baru...'));
+  socket.on('puzzle:new', () => hideBanner());
+  socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
+
+  // ===== Avatar viewer =====
+  const avatarZone = document.getElementById('avatarZone');
+  const activeAvatars = {};
+
+  function spawnAvatar(player, emoji) {
+    if (activeAvatars[player]) return;
+    const el = document.createElement('div');
+    el.className = 'mini-avatar';
+    el.innerHTML = `<span class="emoji">${emoji}</span><span class="name-tag">${escapeHtml(player)}</span>`;
+    avatarZone.appendChild(el);
+    el.style.left = (Math.random() * Math.max(0, avatarZone.clientWidth - 40)) + 'px';
+    activeAvatars[player] = { el, timer: null };
+    walkRandomly(player);
+  }
+
+  function walkRandomly(player) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    const zoneWidth = avatarZone.clientWidth || 300;
+    const avatarWidth = entry.el.offsetWidth || 40;
+    const maxLeft = Math.max(0, zoneWidth - avatarWidth);
+    const currentLeft = parseFloat(entry.el.style.left) || 0;
+    const targetLeft = Math.random() * maxLeft;
+    const duration = 2.5 + Math.random() * 3;
+    entry.el.classList.toggle('facing-left', targetLeft < currentLeft);
+    entry.el.style.transition = `left ${duration}s linear`;
+    entry.el.style.left = targetLeft + 'px';
+    entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
+  }
+
+  function showComment(player, text) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    let bubble = entry.el.querySelector('.comment-bubble');
+    if (!bubble) {
+      bubble = document.createElement('span');
+      bubble.className = 'comment-bubble';
+      entry.el.appendChild(bubble);
+    }
+    bubble.textContent = text;
+    clearTimeout(entry.commentTimer);
+    entry.commentTimer = setTimeout(() => bubble.remove(), 4000);
+  }
+
+  function clearAllAvatars() {
+    Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => {
+      clearTimeout(timer); clearTimeout(commentTimer); el.remove();
+    });
+    for (const key in activeAvatars) delete activeAvatars[key];
+  }
+
+  function removeAvatar(player) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    clearTimeout(entry.timer); clearTimeout(entry.commentTimer);
+    entry.el.remove(); delete activeAvatars[player];
+  }
+
+  socket.on('avatar:spawn', ({ player, emoji }) => spawnAvatar(player, emoji));
+  socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach(({ player, emoji }) => spawnAvatar(player, emoji)); });
+  socket.on('avatar:reset', clearAllAvatars);
+  socket.on('avatar:remove', ({ player }) => removeAvatar(player));
+  socket.on('chat:comment', ({ player, text }) => showComment(player, text));
+
+  // ===== Visual viewport fix (Android WebView) =====
+  const appEl = document.getElementById('app');
+  function syncVisibleArea() {
+    if (window.visualViewport) {
+      appEl.style.height = window.visualViewport.height + 'px';
+      appEl.style.top = window.visualViewport.offsetTop + 'px';
+    } else {
+      appEl.style.height = window.innerHeight + 'px';
+    }
+  }
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', syncVisibleArea);
+    window.visualViewport.addEventListener('scroll', syncVisibleArea);
+  }
+  window.addEventListener('resize', syncVisibleArea);
+  syncVisibleArea();
+
+  // ===== Wake lock =====
+  let wakeLock = null;
+  let noSleepStarted = false;
+
+  function startNoSleepFallback() {
+    if (noSleepStarted) return;
+    noSleepStarted = true;
+    try {
+      const canvas = document.createElement('canvas');
+      canvas.width = 2; canvas.height = 2;
+      canvas.getContext('2d').fillRect(0, 0, 2, 2);
+      const stream = canvas.captureStream(1);
+      const video = document.createElement('video');
+      video.muted = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('autoplay', '');
+      video.style.cssText = 'position:fixed;bottom:0;right:0;width:1px;height:1px;opacity:0.01;pointer-events:none;';
+      video.srcObject = stream;
+      document.body.appendChild(video);
+      video.play().catch(() => {});
+    } catch (e) {}
+  }
+
+  async function requestWakeLock() {
+    if ('wakeLock' in navigator) {
+      try {
+        wakeLock = await navigator.wakeLock.request('screen');
+        wakeLock.addEventListener('release', () => { wakeLock = null; });
+        return;
+      } catch (e) {}
+    }
+    startNoSleepFallback();
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
+  });
+  requestWakeLock();
+
+  document.body.addEventListener('click', function goFullscreen() {
+    document.documentElement.requestFullscreen().catch(() => {});
+    requestWakeLock();
+    document.body.removeEventListener('click', goFullscreen);
+  }, { once: true });
+</script>
+</body>
+</html>

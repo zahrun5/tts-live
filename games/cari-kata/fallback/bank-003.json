@@ -1,0 +1,495 @@
+[
+  {
+    "theme": "Benda sehari-hari berbahan plastik",
+    "words": [
+      "EMBER",
+      "GAYUNG",
+      "SEDOTAN",
+      "BOTOL",
+      "BASKOM",
+      "TOPLES",
+      "SISIR",
+      "CENTONG",
+      "KRESEK",
+      "JERIKEN",
+      "CORONG",
+      "PIPA",
+      "NAMPAN",
+      "SIKAT",
+      "WADAH",
+      "SENDOK",
+      "PIRING",
+      "GELAS"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bumbu dapur penambah rasa",
+    "words": [
+      "GARAM",
+      "GULA",
+      "MERICA",
+      "KECAP",
+      "SAUS",
+      "CUKA",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "SERAI",
+      "PALA",
+      "LADA",
+      "KETUMBAR",
+      "BAWANG",
+      "TERASI",
+      "CABAI",
+      "ASAM"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Peralatan dapur berbahan logam",
+    "words": [
+      "SENDOK",
+      "GARPU",
+      "PISAU",
+      "WAJAN",
+      "PANCI",
+      "SUTIL",
+      "PARUTAN",
+      "TEKO",
+      "OVEN",
+      "LOYANG",
+      "BASKOM",
+      "CERET",
+      "KUKUSAN",
+      "SARINGAN",
+      "SODET",
+      "CENTONG",
+      "PRESTO",
+      "KUALI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda di dalam kamar mandi",
+    "words": [
+      "SABUN",
+      "SIKAT",
+      "EMBER",
+      "KERAN",
+      "KESET",
+      "TIMBA",
+      "ODOL",
+      "KACA",
+      "TISU",
+      "BAK"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Aksesoris dan penutup yang dipakai di kepala",
+    "words": [
+      "TOPI",
+      "PECI",
+      "HELM",
+      "BANDO",
+      "BANDANA",
+      "KUPLUK",
+      "TIARA",
+      "MAHKOTA",
+      "CADAR",
+      "HIJAB",
+      "JILBAB",
+      "KERUDUNG",
+      "CAPING",
+      "SERBAN",
+      "BARET",
+      "BLANGKON"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan darat yang memiliki empat kaki",
+    "words": [
+      "KUDA",
+      "SAPI",
+      "RUSA",
+      "SINGA",
+      "GAJAH",
+      "DOMBA",
+      "TIKUS",
+      "MACAN",
+      "BADAK",
+      "UNTA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Wadah dan alat untuk membawa barang",
+    "words": [
+      "TAS",
+      "KOPER",
+      "RANSEL",
+      "DOMPET",
+      "KANTONG",
+      "KRESEK",
+      "KARUNG",
+      "BAKUL",
+      "KOTAK",
+      "PETI",
+      "BESEK",
+      "EMBER",
+      "NAMPAN",
+      "BAKI",
+      "GEROBAK",
+      "PLASTIK",
+      "KARDUS"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Peralatan dan benda di rumah sakit",
+    "words": [
+      "JARUM",
+      "KAPAS",
+      "PERBAN",
+      "INFUS",
+      "MASKER",
+      "OBAT",
+      "TANDU",
+      "KASA",
+      "VAKSIN",
+      "RESEP",
+      "TABUNG",
+      "SERUM",
+      "KASUR",
+      "GUNTING",
+      "ALKOHOL",
+      "OKSIGEN",
+      "PIPET"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bagian dan komponen sepeda motor",
+    "words": [
+      "SETANG",
+      "REM",
+      "BAN",
+      "JOK",
+      "RANTAI",
+      "SPION",
+      "LAMPU",
+      "KNALPOT",
+      "BUSI",
+      "AKI",
+      "PELEK",
+      "GAS",
+      "KOPLING",
+      "PEDAL",
+      "MESIN",
+      "TANGKI",
+      "RODA",
+      "KUNCI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda di atas meja belajar",
+    "words": [
+      "BUKU",
+      "PENSIL",
+      "PENA",
+      "PULPEN",
+      "KERTAS",
+      "LAMPU",
+      "MISTAR",
+      "RAUTAN",
+      "GUNTING",
+      "SPIDOL",
+      "KAMUS",
+      "KRAYON",
+      "LAPTOP",
+      "JANGKA",
+      "TINTA",
+      "LEM"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Tumbuhan yang hidup di air",
+    "words": [
+      "TERATAI",
+      "SEROJA",
+      "GONDOK",
+      "KANGKUNG",
+      "GENJER",
+      "BAKAU",
+      "NIPAH",
+      "KIAMBANG",
+      "GANGGANG",
+      "LUMUT",
+      "ALGA",
+      "SEMANGGI",
+      "LOTUS",
+      "PADI",
+      "MANGROVE",
+      "RUMBIA",
+      "KELADI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Kegiatan rutin sebelum tidur malam",
+    "words": [
+      "DOA",
+      "BACA",
+      "CUCI",
+      "WUDU",
+      "MAIN",
+      "SIKAT",
+      "MINUM",
+      "REBAH",
+      "GANTI",
+      "TIDUR"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Benda yang ada di dalam tas sekolah",
+    "words": [
+      "BUKU",
+      "PENSIL",
+      "RAUTAN",
+      "MISTAR",
+      "BEKAL",
+      "BOTOL",
+      "PULPEN",
+      "SPIDOL",
+      "KRAYON",
+      "KAMUS",
+      "NOVEL",
+      "DOMPET",
+      "TISU",
+      "JANGKA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Buah yang berwarna merah",
+    "words": [
+      "APEL",
+      "STROBERI",
+      "CERI",
+      "TOMAT",
+      "DELIMA",
+      "SEMANGKA",
+      "RAMBUTAN",
+      "NAGA",
+      "CRANBERI",
+      "RASBERI",
+      "KURMA",
+      "PLUM",
+      "TAMARILO",
+      "PERSIMON",
+      "TIN",
+      "BIT"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Buah berwarna kuning",
+    "words": [
+      "PISANG",
+      "NANAS",
+      "LEMON",
+      "MANGGA",
+      "MELON",
+      "JERUK",
+      "NANGKA",
+      "PEPAYA",
+      "DURIAN",
+      "MARKISA",
+      "DUKU",
+      "PER",
+      "LENGKENG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda yang mengeluarkan suara",
+    "words": [
+      "RADIO",
+      "TELEVISI",
+      "SERULING",
+      "GITAR",
+      "PIANO",
+      "GENDANG",
+      "BIOLA",
+      "BEL",
+      "PELUIT",
+      "GONG",
+      "TEROMPET",
+      "KLAKSON"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Alat musik yang dipetik atau dipukul",
+    "words": [
+      "GITAR",
+      "DRUM",
+      "GAMELAN",
+      "HARPA",
+      "UKULELE",
+      "KECAPI",
+      "KENDANG",
+      "REBANA",
+      "SIMBAL",
+      "GONG",
+      "BANJO",
+      "BASS",
+      "MANDOLIN",
+      "CALUNG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan berkaki empat",
+    "words": [
+      "KUCING",
+      "ANJING",
+      "KUDA",
+      "SAPI",
+      "DOMBA",
+      "KAMBING",
+      "SINGA",
+      "MACAN",
+      "RUSA",
+      "GAJAH",
+      "BADAK",
+      "TIKUS",
+      "KELINCI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Alat dan wadah di dapur",
+    "words": [
+      "PANCI",
+      "WAJAN",
+      "PISAU",
+      "SENDOK",
+      "GARPU",
+      "PIRING",
+      "GELAS",
+      "MANGKUK",
+      "TALENAN",
+      "PARUTAN",
+      "ULEKAN",
+      "SPATULA",
+      "CORONG",
+      "SERBET",
+      "CELEMEK",
+      "TOPLES",
+      "RANTANG",
+      "NAMPAN"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Jajanan tradisional yang rasanya manis",
+    "words": [
+      "DODOL",
+      "KLEPON",
+      "LUPIS",
+      "NAGASARI",
+      "CENIL",
+      "GETUK",
+      "WAKTU",
+      "PUKIS",
+      "SERABI",
+      "BINEKA",
+      "MADUMONG",
+      "WINGKO",
+      "ONDE",
+      "PUTU",
+      "APEM",
+      "AWUG",
+      "GEMPOK"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bumbu dapur penyedap masakan",
+    "words": [
+      "GARAM",
+      "GULA",
+      "KECAP",
+      "PALA",
+      "LADA",
+      "KUNYIT",
+      "JAHE",
+      "SERAI",
+      "WIJEN",
+      "TERASI",
+      "BAWANG",
+      "KENCUR",
+      "CENGKEH"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda besar di sekitar rumah",
+    "words": [
+      "RAK",
+      "BAK",
+      "MEJA",
+      "SOFA",
+      "DRUM",
+      "KASUR",
+      "KURSI",
+      "PINTU"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Benda kecil di dalam tas",
+    "words": [
+      "PENA",
+      "KUNCI",
+      "SISIR",
+      "BEDAK",
+      "KOIN",
+      "TISU",
+      "KACA",
+      "OBAT",
+      "KARTU",
+      "LEM"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Hewan berkaki dua",
+    "words": [
+      "AYAM",
+      "BEBEK",
+      "ANGSA",
+      "ELANG",
+      "KALKUN",
+      "MERPATI",
+      "PINGUIN",
+      "KAKATUA",
+      "KASUARI",
+      "BANGAU",
+      "BEO",
+      "MERAK",
+      "KUTILANG",
+      "NURI",
+      "DARA",
+      "PIPIT",
+      "GAGAK"
+    ],
+    "level": 3
+  }
+]

@@ -1,0 +1,612 @@
+[
+  {
+    "theme": "Makanan dan buah yang rasanya asam",
+    "words": [
+      "JERUK",
+      "CUKA",
+      "ASAM",
+      "LEMON",
+      "MANGGA",
+      "RUJAK",
+      "NANAS",
+      "TOMAT",
+      "BELIMBING"
+    ]
+  },
+  {
+    "theme": "Benda yang terbuat dari kayu",
+    "words": [
+      "MEJA",
+      "KURSI",
+      "PINTU",
+      "KUSEN",
+      "BALOK",
+      "PAGAR",
+      "PAPAN",
+      "LEMARI",
+      "GITAR",
+      "RAK"
+    ]
+  },
+  {
+    "theme": "Makanan yang rasanya manis",
+    "words": [
+      "GULA",
+      "MADU",
+      "BOLU",
+      "ROTI",
+      "DODOL",
+      "SELAI",
+      "SIRUP",
+      "KURMA",
+      "JELI",
+      "MESES"
+    ]
+  },
+  {
+    "theme": "Benda kecil yang ada di dalam tas",
+    "words": [
+      "KUNCI",
+      "SISIR",
+      "KARTU",
+      "PENA",
+      "UANG",
+      "BOTOL",
+      "TISU",
+      "DOMPET",
+      "LIPSTIK"
+    ]
+  },
+  {
+    "theme": "Benda kamar mandi yang sering basah",
+    "words": [
+      "EMBER",
+      "SPON",
+      "KESET",
+      "SIKAT",
+      "SABUN",
+      "KERAN",
+      "GAYUNG",
+      "HANDUK",
+      "BUSA"
+    ]
+  },
+  {
+    "theme": "Profesi yang bekerja di kantor",
+    "words": [
+      "BOS",
+      "STAF",
+      "KASIR",
+      "ADMIN",
+      "KURIR",
+      "SALES",
+      "AKUNTAN",
+      "MANAJER",
+      "SATPAM"
+    ]
+  },
+  {
+    "theme": "Tanaman sayur untuk lalapan",
+    "words": [
+      "TIMUN",
+      "KUBIS",
+      "DAUN",
+      "LABU",
+      "BAYAM",
+      "KANGKUNG",
+      "SELADA",
+      "TERONG",
+      "KACANG"
+    ]
+  },
+  {
+    "theme": "Buah yang kulitnya berwarna hijau",
+    "words": [
+      "MELON",
+      "JAMBU",
+      "LEMON",
+      "ALPUKAT",
+      "KIWI",
+      "NANGKA",
+      "PIR",
+      "SEMANGKA",
+      "PEPAYA"
+    ]
+  },
+  {
+    "theme": "Benda yang terbuat dari plastik",
+    "words": [
+      "EMBER",
+      "GELAS",
+      "BOTOL",
+      "SEDOTAN",
+      "TIMBA",
+      "SIKAT",
+      "GAYUNG",
+      "KOTAK",
+      "MANGKUK"
+    ]
+  },
+  {
+    "theme": "Bagian tubuh luar hewan berkaki empat",
+    "words": [
+      "EKOR",
+      "KUKU",
+      "BULU",
+      "KULIT",
+      "MATA",
+      "LEHER",
+      "PERUT",
+      "CAKAR",
+      "TANDUK"
+    ]
+  },
+  {
+    "theme": "Hewan berkaki empat yang memakan rumput",
+    "words": [
+      "SAPI",
+      "KUDA",
+      "RUSA",
+      "DOMBA",
+      "ZEBRA",
+      "UNTA",
+      "GAJAH",
+      "BADAK",
+      "BISON"
+    ]
+  },
+  {
+    "theme": "Buah yang sering dijadikan jus",
+    "words": [
+      "APEL",
+      "JERUK",
+      "JAMBU",
+      "TOMAT",
+      "MELON",
+      "NANAS",
+      "LEMON",
+      "KURMA",
+      "KIWI",
+      "MANGGA"
+    ]
+  },
+  {
+    "theme": "Perlengkapan dan pakaian untuk olahraga",
+    "words": [
+      "KAOS",
+      "BOLA",
+      "RAKET",
+      "SEPATU",
+      "TOPI",
+      "HANDUK",
+      "CELANA",
+      "PELUIT",
+      "ROMPI"
+    ]
+  },
+  {
+    "theme": "Hewan tidak berkaki yang melata atau berenang",
+    "words": [
+      "ULAR",
+      "BELUT",
+      "SIDAT",
+      "SIPUT",
+      "IKAN",
+      "PAUS",
+      "HIU",
+      "PARI",
+      "CACING"
+    ]
+  },
+  {
+    "theme": "Benda yang punya roda",
+    "words": [
+      "BUS",
+      "TRUK",
+      "BECAK",
+      "MOBIL",
+      "MOTOR",
+      "KOPER",
+      "BAJAJ",
+      "BEMO",
+      "TAKSI",
+      "DELMAN"
+    ]
+  },
+  {
+    "theme": "Hewan liar yang hidup di hutan",
+    "words": [
+      "RUSA",
+      "KERA",
+      "SINGA",
+      "MACAN",
+      "BADAK",
+      "GAJAH",
+      "RUBAH",
+      "SERIGALA",
+      "HARIMAU"
+    ]
+  },
+  {
+    "theme": "Olahraga menggunakan bola",
+    "words": [
+      "GOLF",
+      "VOLI",
+      "KASTI",
+      "RUGBI",
+      "TENIS",
+      "POLO",
+      "SEPAKBOLA",
+      "BASKET",
+      "BISBOL"
+    ]
+  },
+  {
+    "theme": "Alas dan pelindung kaki",
+    "words": [
+      "SANDAL",
+      "SEPATU",
+      "BOOT",
+      "KASUT",
+      "KAOS",
+      "SOL",
+      "SELOP",
+      "BAKIAK"
+    ]
+  },
+  {
+    "theme": "Hewan peliharaan",
+    "words": [
+      "KUCING",
+      "ANJING",
+      "KELINCI",
+      "HAMSTER",
+      "BURUNG",
+      "IKAN",
+      "KURA",
+      "MARMUT",
+      "DOMBA"
+    ]
+  },
+  {
+    "theme": "Bagian tubuh di area wajah",
+    "words": [
+      "MATA",
+      "PIPI",
+      "DAGU",
+      "DAHI",
+      "ALIS",
+      "BIBIR",
+      "LIDAH",
+      "GIGI",
+      "KUMIS",
+      "HIDUNG"
+    ]
+  },
+  {
+    "theme": "Wadah atau tempat penyimpan air",
+    "words": [
+      "PANCI",
+      "GELAS",
+      "BOTOL",
+      "EMBER",
+      "TEKO",
+      "KENDI",
+      "TIMBA",
+      "GALON",
+      "BAK"
+    ]
+  },
+  {
+    "theme": "Benda yang ditemukan di kamar mandi",
+    "words": [
+      "SABUN",
+      "SIKAT",
+      "ODOL",
+      "SPON",
+      "EMBER",
+      "KERAN",
+      "BUSA",
+      "BAK",
+      "RAK",
+      "GAYUNG"
+    ]
+  },
+  {
+    "theme": "Kegiatan yang dilakukan siang hari",
+    "words": [
+      "MAKAN",
+      "TIDUR",
+      "KERJA",
+      "MASAK",
+      "CUCI",
+      "SAPU",
+      "BACA",
+      "MAIN",
+      "JALAN",
+      "BELANJA"
+    ]
+  },
+  {
+    "theme": "Alat dapur untuk memotong dan mengolah bahan masakan",
+    "words": [
+      "PISAU",
+      "PARUT",
+      "ULEKAN",
+      "TALENAN",
+      "GUNTING",
+      "SENDOK",
+      "GARPU",
+      "WAJAN",
+      "SILET"
+    ]
+  },
+  {
+    "theme": "Buah tropis yang rasanya manis",
+    "words": [
+      "DUKU",
+      "JAMBU",
+      "KURMA",
+      "MELON",
+      "NANAS",
+      "SAWO",
+      "SALAK",
+      "PEPAYA",
+      "RAMBUTAN"
+    ]
+  },
+  {
+    "theme": "Hewan yang hidup di sungai",
+    "words": [
+      "LELE",
+      "BELUT",
+      "PATIN",
+      "NILA",
+      "GABUS",
+      "BAWAL",
+      "BETOK",
+      "UDANG",
+      "KODOK",
+      "BUAYA"
+    ]
+  },
+  {
+    "theme": "Benda yang ada di ruang tamu",
+    "words": [
+      "MEJA",
+      "KURSI",
+      "SOFA",
+      "LAMPU",
+      "VAS",
+      "FOTO",
+      "JAM",
+      "KIPAS",
+      "KARPET"
+    ]
+  },
+  {
+    "theme": "Profesi yang bekerja di sekolah",
+    "words": [
+      "GURU",
+      "DOSEN",
+      "SATPAM",
+      "SOPIR",
+      "TUTOR",
+      "DEKAN",
+      "STAF",
+      "KOKI",
+      "PENJAGA"
+    ]
+  },
+  {
+    "theme": "Bahan untuk membuat kue",
+    "words": [
+      "GULA",
+      "TELUR",
+      "SUSU",
+      "KEJU",
+      "MADU",
+      "RAGI",
+      "SELAI",
+      "TEPUNG",
+      "MENTEGA"
+    ]
+  },
+  {
+    "theme": "Rasa makanan dan minuman",
+    "words": [
+      "MANIS",
+      "ASIN",
+      "PAHIT",
+      "ASAM",
+      "PEDAS",
+      "GURIH",
+      "TAWAR",
+      "SEPAT",
+      "KECUT",
+      "LEZAT"
+    ]
+  },
+  {
+    "theme": "Bumbu dapur berasa pedas atau gurih",
+    "words": [
+      "CABAI",
+      "LADA",
+      "GARAM",
+      "KECAP",
+      "JAHE",
+      "SERAI",
+      "PALA",
+      "KUNYIT",
+      "KEMIRI"
+    ]
+  },
+  {
+    "theme": "Wadah atau alat untuk membawa barang",
+    "words": [
+      "TAS",
+      "PETI",
+      "KARDUS",
+      "EMBER",
+      "BAK",
+      "SAKU",
+      "KOTAK",
+      "KERANJANG",
+      "KOPER"
+    ]
+  },
+  {
+    "theme": "Buah yang ukurannya kecil",
+    "words": [
+      "CERI",
+      "KURMA",
+      "DUKU",
+      "MURBEI",
+      "SALAK",
+      "SAWO",
+      "LECI",
+      "ANGGUR",
+      "MARKISA"
+    ]
+  },
+  {
+    "theme": "Bumbu dapur yang beraroma kuat",
+    "words": [
+      "JAHE",
+      "PALA",
+      "KAYU",
+      "SERAI",
+      "LADA",
+      "CABAI",
+      "KUNYIT",
+      "WIJEN",
+      "KEMIRI"
+    ]
+  },
+  {
+    "theme": "Benda yang menghasilkan cahaya di malam hari",
+    "words": [
+      "LAMPU",
+      "LILIN",
+      "OBOR",
+      "SULUH",
+      "BULAN",
+      "API",
+      "SUAR",
+      "NEON",
+      "SENTER"
+    ]
+  },
+  {
+    "theme": "Hewan yang hidup di sawah",
+    "words": [
+      "KATAK",
+      "BELUT",
+      "TIKUS",
+      "ULAR",
+      "SIPUT",
+      "BEBEK",
+      "YUYU",
+      "CAPUNG",
+      "BURUNG"
+    ]
+  },
+  {
+    "theme": "Hewan yang punya sayap dan bisa terbang",
+    "words": [
+      "BEBEK",
+      "ANGSA",
+      "LEBAH",
+      "LALAT",
+      "GAGAK",
+      "ELANG",
+      "CAMAR",
+      "MERAK",
+      "MERPATI"
+    ]
+  },
+  {
+    "theme": "Minuman yang disajikan hangat",
+    "words": [
+      "KOPI",
+      "TEH",
+      "SUSU",
+      "JAHE",
+      "MADU",
+      "WEDANG",
+      "RONDE",
+      "BAJIGUR",
+      "BANDREK"
+    ]
+  },
+  {
+    "theme": "Alat tulis untuk menggambar dan menulis",
+    "words": [
+      "BUKU",
+      "PENA",
+      "TINTA",
+      "KUAS",
+      "LEM",
+      "PENGGARIS",
+      "PENSIL",
+      "SPIDOL",
+      "PENGHAPUS"
+    ]
+  },
+  {
+    "theme": "Minuman manis atau hangat saat santai",
+    "words": [
+      "KOPI",
+      "TEH",
+      "SUSU",
+      "BOBA",
+      "SIRUP",
+      "MADU",
+      "SODA",
+      "JUS",
+      "JAHE"
+    ]
+  },
+  {
+    "theme": "Benda rumah tangga berbahan kayu",
+    "words": [
+      "MEJA",
+      "KURSI",
+      "PINTU",
+      "KUSEN",
+      "LEMARI",
+      "PAPAN",
+      "BALOK",
+      "PAGAR",
+      "RAK"
+    ]
+  },
+  {
+    "theme": "Kegiatan yang biasa dilakukan di malam hari",
+    "words": [
+      "TIDUR",
+      "MIMPI",
+      "RONDA",
+      "BACA",
+      "MAIN",
+      "DOA",
+      "MANDI",
+      "NGAJI",
+      "NONTON"
+    ]
+  },
+  {
+    "theme": "Bahan makanan pokok sumber karbohidrat",
+    "words": [
+      "BERAS",
+      "NASI",
+      "ROTI",
+      "SAGU",
+      "UBI",
+      "KETAN",
+      "TALAS",
+      "PADI",
+      "JAGUNG"
+    ]
+  }
+]

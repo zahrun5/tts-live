@@ -1,0 +1,9 @@
+node_modules/
+db-data/
+*.log
+*.zip
+.env
+.DS_Store
+.pm2/
+*.bak
+*.backup

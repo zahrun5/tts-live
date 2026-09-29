@@ -1,0 +1,171 @@
+{
+  "theme": "Hewan yang punya sayap dan bisa terbang",
+  "level": 1,
+  "rows": 8,
+  "cols": 8,
+  "grid": [
+    [
+      "J",
+      "L",
+      "E",
+      "B",
+      "A",
+      "H",
+      "M",
+      "C"
+    ],
+    [
+      "A",
+      "A",
+      "D",
+      "B",
+      "E",
+      "B",
+      "E",
+      "K"
+    ],
+    [
+      "N",
+      "L",
+      "I",
+      "C",
+      "S",
+      "Q",
+      "R",
+      "C"
+    ],
+    [
+      "G",
+      "A",
+      "G",
+      "A",
+      "K",
+      "S",
+      "P",
+      "L"
+    ],
+    [
+      "S",
+      "T",
+      "Y",
+      "M",
+      "E",
+      "R",
+      "A",
+      "K"
+    ],
+    [
+      "A",
+      "E",
+      "L",
+      "A",
+      "N",
+      "G",
+      "T",
+      "D"
+    ],
+    [
+      "M",
+      "G",
+      "B",
+      "R",
+      "N",
+      "X",
+      "I",
+      "P"
+    ],
+    [
+      "G",
+      "G",
+      "J",
+      "H",
+      "H",
+      "S",
+      "P",
+      "W"
+    ]
+  ],
+  "words": [
+    {
+      "id": 0,
+      "word": "MERPATI",
+      "row": 0,
+      "col": 6,
+      "direction": "vertical",
+      "color": "#60a5fa",
+      "found": false
+    },
+    {
+      "id": 1,
+      "word": "MERAK",
+      "row": 4,
+      "col": 3,
+      "direction": "horizontal",
+      "color": "#8b6ef5",
+      "found": false
+    },
+    {
+      "id": 2,
+      "word": "CAMAR",
+      "row": 2,
+      "col": 3,
+      "direction": "vertical",
+      "color": "#fb923c",
+      "found": false
+    },
+    {
+      "id": 3,
+      "word": "ELANG",
+      "row": 5,
+      "col": 1,
+      "direction": "horizontal",
+      "color": "#38bdf8",
+      "found": false
+    },
+    {
+      "id": 4,
+      "word": "GAGAK",
+      "row": 3,
+      "col": 0,
+      "direction": "horizontal",
+      "color": "#e879f9",
+      "found": false
+    },
+    {
+      "id": 5,
+      "word": "LALAT",
+      "row": 0,
+      "col": 1,
+      "direction": "vertical",
+      "color": "#5eead4",
+      "found": false
+    },
+    {
+      "id": 6,
+      "word": "LEBAH",
+      "row": 0,
+      "col": 1,
+      "direction": "horizontal",
+      "color": "#f5b942",
+      "found": false
+    },
+    {
+      "id": 7,
+      "word": "ANGSA",
+      "row": 1,
+      "col": 0,
+      "direction": "vertical",
+      "color": "#f472b6",
+      "found": false
+    },
+    {
+      "id": 8,
+      "word": "BEBEK",
+      "row": 1,
+      "col": 3,
+      "direction": "horizontal",
+      "color": "#4ade80",
+      "found": false
+    }
+  ]
+}

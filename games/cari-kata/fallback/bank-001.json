@@ -1,0 +1,1000 @@
+[
+  {
+    "theme": "Alat dapur dari logam",
+    "words": [
+      "PANCI",
+      "WOK",
+      "SODA",
+      "PISAU",
+      "GARPU",
+      "SENDOK",
+      "PARUT",
+      "PENGUKUS",
+      "TALENAN",
+      "KETEL",
+      "LILIN",
+      "SERUT",
+      "SPATU",
+      "KOMPOR",
+      "TUSUK",
+      "SAPI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Alat melindungi diri dari hujan",
+    "words": [
+      "PAYUNG",
+      "JAS",
+      "HUJAN",
+      "MANTOL",
+      "CAPING",
+      "BOOTS",
+      "SELIMUT",
+      "TERPAL",
+      "TOPR",
+      "JAKET",
+      "PONCO",
+      "TUDUNG",
+      "HELM"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Jenis kain untuk membuat baju",
+    "words": [
+      "KATUN",
+      "DENIM",
+      "SUTRA",
+      "LENAN",
+      "SATIN",
+      "SPANDEK",
+      "KAIN",
+      "SERAT",
+      "LYCRA",
+      "NILON",
+      "RAYON",
+      "VISCOSE",
+      "AKRILIK"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan darat berkaki empat",
+    "words": [
+      "GAJAH",
+      "SINGA",
+      "HARIMAU",
+      "KUCING",
+      "ANJING",
+      "KUDA",
+      "SAPI",
+      "KAMBING",
+      "RUSA",
+      "ZEBRA",
+      "BADAK",
+      "KANCIL",
+      "KERBAU"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Kendaraan darat umum dan pribadi",
+    "words": [
+      "MOBIL",
+      "MOTOR",
+      "KERETA",
+      "BECAK",
+      "SEPEDA",
+      "BAJAJ",
+      "DELMAN",
+      "ANDONG",
+      "BEMO",
+      "SKUTER",
+      "TREM",
+      "TRUK",
+      "DOKAR",
+      "TAYO",
+      "METRO",
+      "ANGKOT"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bagian tubuh manusia di area wajah",
+    "words": [
+      "MATA",
+      "PIPI",
+      "DAGU",
+      "DAHI",
+      "GIGI",
+      "LIDAH",
+      "BIBIR",
+      "ALIS"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Buah berukuran sedang",
+    "words": [
+      "APEL",
+      "JERUK",
+      "MANGGA",
+      "ALPUKAT",
+      "PIR",
+      "JAMBU",
+      "PISANG",
+      "LEMON",
+      "PERSIK",
+      "DELIMA",
+      "SAWO",
+      "KIWI",
+      "SALAK",
+      "MANGGIS",
+      "TOMAT",
+      "SIRSAK"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda sehari-hari dari plastik",
+    "words": [
+      "EMBER",
+      "GAYUNG",
+      "SEDOTAN",
+      "BOTOL",
+      "SISIR",
+      "BASKOM",
+      "KRESEK",
+      "TOPLES",
+      "SIKAT",
+      "CENTONG",
+      "CORONG",
+      "PIPET",
+      "MIKA",
+      "KANCING"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan berkaki banyak",
+    "words": [
+      "KEPITING",
+      "UDANG",
+      "LOBSTER",
+      "RAJUNGAN",
+      "LIPAN",
+      "KELABANG",
+      "LABALABA",
+      "KUTU",
+      "KECOA",
+      "SEMUT",
+      "LEBAH",
+      "TAWON",
+      "CAPUNG",
+      "LALAT",
+      "NYAMUK",
+      "BELALANG",
+      "JANGKRIK",
+      "KUMBANG"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan yang memiliki sayap",
+    "words": [
+      "BURUNG",
+      "ELANG",
+      "MERPATI",
+      "BEBEK",
+      "AYAM",
+      "ANGSA",
+      "CAPUNG",
+      "LALAT",
+      "NYAMUK",
+      "LEBAH",
+      "TAWON",
+      "KUMBANG",
+      "PIPIT",
+      "GAGAK",
+      "ITIK",
+      "KALONG",
+      "NURI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bagian dan komponen pada mobil",
+    "words": [
+      "RODA",
+      "PINTU",
+      "KACA",
+      "JOK",
+      "STIR",
+      "MESIN",
+      "REM",
+      "GAS",
+      "LAMPU",
+      "SPION",
+      "BAGASI",
+      "SABUK",
+      "KLAKSON",
+      "BAN",
+      "AKI",
+      "TANGKI",
+      "KNALPOT",
+      "BEMPER"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda yang bisa dilipat",
+    "words": [
+      "BAJU",
+      "CELANA",
+      "HANDUK",
+      "SELIMUT",
+      "TIKAR",
+      "PAYUNG",
+      "TENDA",
+      "KERTAS",
+      "KAIN",
+      "DOMPET",
+      "KIPAS",
+      "TERPAL",
+      "SARUNG",
+      "SPREI",
+      "KARDUS",
+      "JAKET",
+      "AMPLOP",
+      "MUKENA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Makanan dan bumbu yang bercita rasa pedas",
+    "words": [
+      "CABAI",
+      "SAMBAL",
+      "RENDANG",
+      "BALADO",
+      "SEBLAK",
+      "GEPREK",
+      "PENYET",
+      "MERCON",
+      "RUJAK",
+      "KRECEK",
+      "RICA",
+      "LADA",
+      "RAWIT"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Sensasi rasa dan tekstur makanan",
+    "words": [
+      "MANIS",
+      "ASIN",
+      "ASAM",
+      "PAHIT",
+      "PEDAS",
+      "GURIH",
+      "KECUT",
+      "SEPAT",
+      "HAMBAR",
+      "TAWAR",
+      "LEZAT",
+      "NIKMAT",
+      "RENYAH",
+      "KENYAL",
+      "LEMBUT",
+      "EMPUK",
+      "ALOT"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda untuk membersihkan rumah",
+    "words": [
+      "SAPU",
+      "PEL",
+      "KEMOCENG",
+      "SIKAT",
+      "EMBER",
+      "LAP",
+      "KAIN",
+      "SPONS",
+      "PENGKI",
+      "SELANG",
+      "SABUN",
+      "VAKUM",
+      "GAYUNG",
+      "SEROK"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda dan perlengkapan di kamar mandi",
+    "words": [
+      "HANDUK",
+      "SABUN",
+      "SIKAT",
+      "ODOL",
+      "GAYUNG",
+      "EMBER",
+      "KERAN",
+      "CERMIN",
+      "SAMPO",
+      "BAK",
+      "KLOSET",
+      "KESET",
+      "SISIR",
+      "TISU",
+      "BUSA",
+      "LULUR",
+      "PANCURAN",
+      "SPONS"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Buah yang berwarna kuning atau jingga",
+    "words": [
+      "PISANG",
+      "JERUK",
+      "MANGGA",
+      "LEMON",
+      "NANAS",
+      "PEPAYA",
+      "LABU",
+      "MELON",
+      "NANGKA",
+      "DUKU",
+      "BLEWAH",
+      "SAWO",
+      "APRIKOT",
+      "PERSIMON",
+      "KINI",
+      "GANDARIA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan bertubuh besar pemakan tumbuhan",
+    "words": [
+      "SAPI",
+      "GAJAH",
+      "KUDA",
+      "KERBAU",
+      "ZEBRA",
+      "UNTA",
+      "BADAK",
+      "JERAPAH",
+      "KAMBING",
+      "BANTENG",
+      "DOMBA",
+      "TAPIR",
+      "PANDA",
+      "KANGGURU",
+      "KASUARI",
+      "GORILA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Alat dan perkakas di garasi",
+    "words": [
+      "OBENG",
+      "TANG",
+      "PALU",
+      "KUNCI",
+      "BOR",
+      "BAUT",
+      "PAKU",
+      "MUR",
+      "OLI",
+      "POMPA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bahan isian sayur sop",
+    "words": [
+      "WORTEL",
+      "KENTANG",
+      "KUBIS",
+      "BUNCIS",
+      "SELEDRI",
+      "BAWANG",
+      "TOMAT",
+      "JAMUR",
+      "SOSIS",
+      "BAKSO",
+      "AYAM",
+      "MAKARONI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Tanaman pangan di dataran rendah",
+    "words": [
+      "PADI",
+      "JAGUNG",
+      "KEDELAI",
+      "TEBU",
+      "SINGKONG",
+      "PISANG",
+      "KELAPA",
+      "KACANG",
+      "KANGKUNG",
+      "BAYAM",
+      "TERONG",
+      "CABAI",
+      "TOMAT",
+      "UBI",
+      "TIMUN",
+      "SEMANGKA",
+      "MELON",
+      "PEPAYA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Lauk pauk untuk makan siang",
+    "words": [
+      "AYAM",
+      "RENDANG",
+      "GULAI",
+      "IKAN",
+      "TEMPE",
+      "TAHU",
+      "TELUR",
+      "UDANG",
+      "CUMI",
+      "PERKEDEL",
+      "SEMUR",
+      "EMPAL",
+      "DAGING",
+      "KIKIL",
+      "TONGKOL",
+      "ATI",
+      "BEBEK"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan kecil yang jinak",
+    "words": [
+      "KELINCI",
+      "KUCING",
+      "HAMSTER",
+      "MARMUT",
+      "MERPATI",
+      "KANARI",
+      "PARKIT",
+      "CUPANG",
+      "PIPIT",
+      "BEBEK",
+      "AYAM",
+      "LANDAK"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda yang ada di atas meja makan",
+    "words": [
+      "GARPU",
+      "GELAS",
+      "PISAU",
+      "TISU",
+      "TEKO",
+      "BOTOL",
+      "KECAP",
+      "SAUS",
+      "GARAM"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bahan pembuat kue dan roti",
+    "words": [
+      "GULA",
+      "SUSU",
+      "TELUR",
+      "RAGI",
+      "KEJU",
+      "MADU",
+      "SELAI",
+      "GARAM",
+      "AIR"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Makanan dan minuman untuk sarapan",
+    "words": [
+      "ROTI",
+      "TELUR",
+      "BUBUR",
+      "SUSU",
+      "KOPI",
+      "TEH",
+      "SELAI",
+      "MADU"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bagian tubuh di wajah",
+    "words": [
+      "MATA",
+      "PIPI",
+      "DAGU",
+      "ALIS",
+      "BIBIR",
+      "LIDAH",
+      "GIGI",
+      "DAHI",
+      "KUMIS"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Perlengkapan dan pakaian tidur",
+    "words": [
+      "BANTAL",
+      "GULING",
+      "KASUR",
+      "SELIMUT",
+      "PIYAMA",
+      "DASTER",
+      "KELAMBU",
+      "SPREI",
+      "SARUNG",
+      "DIPAN",
+      "MATRAS",
+      "TIKAR",
+      "BONEKA",
+      "KOLOR"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan yang tidak memiliki kaki",
+    "words": [
+      "ULAR",
+      "CACING",
+      "BELUT",
+      "LINTAH",
+      "SIPUT",
+      "BEKICOT",
+      "IKAN",
+      "HIU",
+      "PAUS",
+      "PARI",
+      "LELE",
+      "TONGKOL",
+      "TERIPANG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda yang biasa ada di kamar mandi",
+    "words": [
+      "SABUN",
+      "SIKAT",
+      "ODOL",
+      "EMBER",
+      "KERAN",
+      "KESET",
+      "KACA",
+      "BUSA",
+      "TISU",
+      "BAK"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Benda untuk menulis dan mencatat",
+    "words": [
+      "PENSIL",
+      "PULPEN",
+      "PENA",
+      "SPIDOL",
+      "STABILO",
+      "KAPUR",
+      "TINTA",
+      "KERTAS",
+      "BUKU",
+      "MEMO",
+      "NOTA",
+      "AGENDA",
+      "DIARI",
+      "SURAT",
+      "PAPAN",
+      "KARTU"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda untuk menyimpan barang berharga",
+    "words": [
+      "DOMPET",
+      "CELENGAN",
+      "BRANKAS",
+      "SAKU",
+      "LACI",
+      "KOTAK",
+      "AMPLOP",
+      "KOPER",
+      "TAS",
+      "KANTONG",
+      "PETI",
+      "LEMARI"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Camilan dan jajanan bercita rasa manis",
+    "words": [
+      "COKELAT",
+      "PERMEN",
+      "DONAT",
+      "BOLU",
+      "GULALI",
+      "MADU",
+      "PUDING",
+      "KLEPON",
+      "GETUK",
+      "WAJIK",
+      "BAKPIA",
+      "MARTABAK",
+      "SELAI",
+      "DODOL"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan yang bisa terbang",
+    "words": [
+      "ELANG",
+      "MERPATI",
+      "CAMAR",
+      "GAGAK",
+      "PIPIT",
+      "KUTILANG",
+      "NURI",
+      "BEO",
+      "LEBAH",
+      "LALAT",
+      "NYAMUK",
+      "CAPUNG",
+      "TAWON",
+      "KUMBANG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda yang Memiliki Roda",
+    "words": [
+      "MOBIL",
+      "MOTOR",
+      "SEPEDA",
+      "BUS",
+      "TRUK",
+      "KERETA",
+      "BECAK",
+      "DELMAN",
+      "BAJAJ",
+      "TAKSI",
+      "ANGKOT",
+      "GEROBAK",
+      "TROLI",
+      "KOPER",
+      "SKUTER",
+      "TRAKTOR",
+      "VESPA",
+      "ANDONG"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Pakaian dan aksesoris untuk olahraga",
+    "words": [
+      "KAOS",
+      "CELANA",
+      "JAKET",
+      "SEPATU",
+      "TOPI",
+      "ROMPI",
+      "SWETER",
+      "SINGLET",
+      "MANSET",
+      "DEKER",
+      "JERSEY",
+      "HANDUK",
+      "BANDO",
+      "TRAINING"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Sayuran yang biasa dimasak tumis",
+    "words": [
+      "KANGKUNG",
+      "BUNCIS",
+      "TAUGE",
+      "SAWI",
+      "BROKOLI",
+      "JAMUR",
+      "JAGUNG",
+      "WORTEL",
+      "TERONG",
+      "PARE",
+      "LABU",
+      "KUBIS"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan mamalia pemakan tumbuhan",
+    "words": [
+      "GAJAH",
+      "JERAPAH",
+      "BADAK",
+      "SAPI",
+      "KERBAU",
+      "KUDA",
+      "UNTA",
+      "ZEBRA",
+      "PANDA",
+      "KELEDAI",
+      "RUSA",
+      "KIJANG",
+      "KANCIL",
+      "TAPIR",
+      "KANGURU",
+      "BISON",
+      "BANTENG",
+      "KELINCI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan yang namanya diawali huruf K",
+    "words": [
+      "KUCING",
+      "KUDA",
+      "KAMBING",
+      "KERA",
+      "KELINCI",
+      "KERBAU",
+      "KATAK",
+      "KIJANG",
+      "KANCIL",
+      "KEPITING",
+      "KAKATUA",
+      "KALONG",
+      "KECOA",
+      "KELABANG",
+      "KOALA",
+      "KELEDAI",
+      "KASUARI",
+      "KUTU"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan dan serangga yang punya sayap",
+    "words": [
+      "AYAM",
+      "BEBEK",
+      "ELANG",
+      "GAGAK",
+      "LALAT",
+      "LEBAH",
+      "MERAK",
+      "NURI",
+      "DARA",
+      "ANGSA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Hewan mamalia berkaki empat",
+    "words": [
+      "KUCING",
+      "ANJING",
+      "KUDA",
+      "SAPI",
+      "KAMBING",
+      "DOMBA",
+      "KELINCI",
+      "KERBAU",
+      "GAJAH",
+      "SINGA",
+      "HARIMAU",
+      "ZEBRA",
+      "JERAPAH",
+      "RUSA",
+      "UNTA",
+      "BADAK",
+      "PANDA",
+      "KANCIL"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Makanan yang sering disantap saat makan malam",
+    "words": [
+      "SATE",
+      "BAKSO",
+      "SOTO",
+      "RAWON",
+      "KWETIAU",
+      "BIHUN",
+      "CAPCAY",
+      "BEBEK",
+      "AYAM",
+      "IKAN",
+      "MARTABAK",
+      "GULAI",
+      "SUP",
+      "BUBUR"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Rasa pada makanan dan minuman",
+    "words": [
+      "MANIS",
+      "ASIN",
+      "PAHIT",
+      "ASAM",
+      "PEDAS",
+      "GURIH",
+      "SEPAT",
+      "TAWAR"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bagian tubuh yang ada di kepala",
+    "words": [
+      "MATA",
+      "PIPI",
+      "DAGU",
+      "GIGI",
+      "LIDAH",
+      "ALIS",
+      "BIBIR",
+      "DAHI",
+      "OTAK",
+      "MUKA"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Wadah untuk menyimpan benda sehari-hari",
+    "words": [
+      "TAS",
+      "RAK",
+      "LACI",
+      "PETI",
+      "KOPER",
+      "KOTAK",
+      "BOTOL",
+      "EMBER",
+      "LEMARI",
+      "DOMPET",
+      "RANSEL",
+      "TOPLES",
+      "KALENG",
+      "KANTUNG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Bagian tubuh manusia yang berjumlah sepasang",
+    "words": [
+      "MATA",
+      "TELINGA",
+      "TANGAN",
+      "KAKI",
+      "GINJAL",
+      "ALIS",
+      "PIPI",
+      "BIBIR",
+      "LENGAN",
+      "LUTUT",
+      "SIKU",
+      "PAHA",
+      "TUMIT",
+      "BETIS",
+      "BAHU",
+      "PINGGUL"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Kendaraan dan perahu di perairan",
+    "words": [
+      "KAPAL",
+      "PERAHU",
+      "SAMPAN",
+      "RAKIT",
+      "FERI",
+      "KANO",
+      "KAYAK",
+      "SEKOCI",
+      "TANKER",
+      "PINISI",
+      "GETEK",
+      "TONGKANG",
+      "BAHTERA",
+      "GONDOLA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda pertukangan dari logam",
+    "words": [
+      "PAKU",
+      "BAUT",
+      "MUR",
+      "PALU",
+      "OBENG",
+      "TANG",
+      "GERGAJI",
+      "KUNCI",
+      "SEKRUP",
+      "KAWAT",
+      "LINGGIS",
+      "KIKIR",
+      "ENGSEL",
+      "GEMBOK",
+      "RANTAI",
+      "PAHAT",
+      "BOR"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda di dapur yang terbuat dari logam",
+    "words": [
+      "SENDOK",
+      "GARPU",
+      "PISAU",
+      "PANCI",
+      "WAJAN",
+      "KUALI",
+      "SODET",
+      "TEKO",
+      "LOYANG",
+      "PARUTAN",
+      "RANTANG",
+      "SUTIL"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan berkaki empat pemakan tumbuhan",
+    "words": [
+      "SAPI",
+      "KUDA",
+      "KAMBING",
+      "DOMBA",
+      "KERBAU",
+      "KELINCI",
+      "RUSA",
+      "GAJAH",
+      "BADAK",
+      "UNTA",
+      "ZEBRA",
+      "KANCIL",
+      "JERAPAH",
+      "KELEDAI"
+    ],
+    "level": 2
+  }
+]

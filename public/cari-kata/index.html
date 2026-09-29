@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cari Kata Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#14101f">
+<style>
+  :root {
+    --bg-deep: #14101f;
+    --panel: #1f1a33;
+    --panel-light: #2a2340;
+    --accent: #8b6ef5;
+    --accent-soft: rgba(139, 110, 245, 0.25);
+    --gold: #f5b942;
+    --silver: #c9c9d4;
+    --bronze: #d08a5b;
+    --text-primary: #f5f3fb;
+    --text-muted: #9b93b8;
+    --cell-bg: #f5f3fb;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 100vw; height: 100vh;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+  #app {
+    display: flex; flex-direction: column;
+    width: 100vw; height: 100vh;
+    padding: 3vh 3vw 2vh;
+    gap: 1.6vh;
+  }
+
+  #themeBar {
+    flex: 0 0 auto;
+    background: var(--gold);
+    border-radius: 12px;
+    padding: 6px 14px;
+    display: flex; align-items: center; justify-content: space-between;
+    box-shadow: 0 3px 12px rgba(245, 185, 66, 0.3);
+  }
+  #themeBar .themeBar-label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(8px, 2vw, 10px); color: #5c3d00;
+    background: rgba(0,0,0,0.12); padding: 3px 7px; border-radius: 999px;
+    letter-spacing: 0.3px; white-space: nowrap;
+  }
+  #themeBar .themeBar-text {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700;
+    font-size: clamp(13px, 3.2vw, 17px); color: #241c3a; flex: 1;
+    text-align: center; padding: 0 8px;
+  }
+  #themeBar .themeBar-progress {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(12px, 2.8vw, 15px); color: #241c3a; white-space: nowrap;
+  }
+
+  #gridWrap {
+    flex: 2; display: flex; align-items: center; justify-content: center;
+    min-height: 0; position: relative;
+  }
+  #gridBox { position: relative; }
+  #grid { display: grid; gap: 2px; background: var(--panel-light); padding: 6px; border-radius: 8px; }
+  .cell {
+    background: var(--cell-bg); border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Baloo 2', sans-serif; font-weight: 700;
+    color: #241c3a; font-size: 0.78em; position: relative;
+  }
+  #lineLayer { position: absolute; top: 6px; left: 6px; pointer-events: none; }
+  #toast {
+    position: absolute; top: -6px; left: 50%;
+    background: var(--accent); color: #14101f;
+    padding: 12px 22px; border-radius: 999px; font-weight: 800;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(14px, 3.6vw, 19px); white-space: nowrap;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    opacity: 0; pointer-events: none; z-index: 6;
+    transform: translate(-50%, -60%) scale(0.5);
+  }
+  #toast.show {
+    animation: toastPop 0.55s cubic-bezier(.34,1.56,.64,1) forwards,
+               toastGlow 0.55s ease-out forwards;
+  }
+  @keyframes toastPop {
+    0%   { transform: translate(-50%, -60%) scale(0.4) rotate(-4deg); opacity: 0; }
+    55%  { transform: translate(-50%, 12%) scale(1.22) rotate(2deg); opacity: 1; }
+    75%  { transform: translate(-50%, -6%) scale(0.94) rotate(-1deg); }
+    100% { transform: translate(-50%, 0%) scale(1) rotate(0deg); opacity: 1; }
+  }
+  @keyframes toastGlow {
+    0% { box-shadow: 0 0 0 rgba(0,0,0,0); }
+    50% { box-shadow: 0 0 32px 6px var(--toast-glow, rgba(139,110,245,0.7)); }
+    100% { box-shadow: 0 0 14px 2px var(--toast-glow, rgba(139,110,245,0.4)); }
+  }
+  .confetti-piece {
+    position: absolute; top: 50%; left: 50%;
+    width: 7px; height: 7px; border-radius: 2px;
+    pointer-events: none; z-index: 7;
+    animation: confettiBurst 0.85s cubic-bezier(.25,.8,.35,1) forwards;
+  }
+  @keyframes confettiBurst {
+    0%   { transform: translate(-50%, -50%) translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.4); opacity: 0; }
+  }
+
+  #wordCard {
+    flex: 1.2; background: var(--panel); border-radius: 16px;
+    padding: 14px 16px; display: flex; flex-direction: column;
+    min-height: 0; overflow: hidden;
+  }
+  #wordCard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: clamp(11px, 2.6vw, 14px); color: var(--accent);
+    margin-bottom: 8px; display: flex; align-items: center; gap: 6px;
+  }
+  #wordList {
+    flex: 1; display: flex; flex-wrap: wrap; align-content: flex-start;
+    gap: 8px; overflow: hidden;
+  }
+  .word-chip {
+    border-radius: 8px; padding: 6px 10px;
+    font-family: 'Baloo 2', sans-serif; font-weight: 700;
+    font-size: clamp(11px, 2.6vw, 13.5px); letter-spacing: 1px;
+  }
+  .word-chip.pending { background: var(--panel-light); color: var(--text-muted); }
+  .word-chip.found { color: #14101f; }
+
+  #avatarZone {
+    flex: 0 0 80px;
+    position: relative;
+    background: transparent;
+    border-radius: 12px;
+    overflow: visible;
+    min-height: 80px;
+  }
+  .mini-avatar {
+    position: absolute;
+    bottom: 4px;
+    display: flex; flex-direction: column; align-items: center;
+    pointer-events: none;
+    will-change: left;
+  }
+  .mini-avatar .emoji {
+    display: block; font-size: 26px; line-height: 1;
+    animation: avatarBob 0.5s ease-in-out infinite alternate;
+  }
+  .mini-avatar.facing-left .emoji { transform: scaleX(-1); }
+  .mini-avatar .name-tag {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 8px;
+    color: var(--text-primary); background: rgba(0,0,0,0.45);
+    padding: 1px 6px; border-radius: 999px; margin-bottom: 2px;
+    white-space: nowrap; max-width: 84px; overflow: hidden; text-overflow: ellipsis;
+    order: -1;
+  }
+  .mini-avatar .comment-bubble {
+    font-family: 'Inter', sans-serif; font-weight: 600; font-size: 9.5px;
+    color: #14101f; background: var(--text-primary);
+    padding: 3px 9px; border-radius: 10px; margin-bottom: 4px;
+    white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    position: relative; order: -2;
+  }
+  .mini-avatar .comment-bubble::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+    border-width: 4px 4px 0 4px; border-style: solid;
+    border-color: var(--text-primary) transparent transparent transparent;
+  }
+  @keyframes avatarBob {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-4px); }
+  }
+
+  #leaderboard {
+    position: absolute; top: 8px; right: 8px; z-index: 4;
+    background: rgba(31, 26, 51, 0.82); border-radius: 12px;
+    padding: 8px 10px; display: flex; flex-direction: column;
+    min-width: 120px; max-width: 44vw;
+  }
+  #leaderboard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: 10px; color: var(--gold);
+    margin-bottom: 5px; display: flex; align-items: center; gap: 4px;
+  }
+  #lbList { display: flex; flex-direction: column; gap: 3px; }
+  .lb-row { display: flex; align-items: center; gap: 6px; }
+  .lb-rank {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: 10px; width: 12px; text-align: center; color: var(--text-muted);
+  }
+  .lb-row:nth-child(1) .lb-rank { color: var(--gold); }
+  .lb-row:nth-child(2) .lb-rank { color: var(--silver); }
+  .lb-row:nth-child(3) .lb-rank { color: var(--bronze); }
+  .lb-name { flex: 1; font-weight: 600; font-size: 10.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 20vw; }
+  .lb-score { font-family: 'Baloo 2', sans-serif; font-weight: 700; color: var(--accent); font-size: 10.5px; }
+  .empty-hint { color: var(--text-muted); font-size: 13px; text-align: center; padding-top: 10px; }
+
+  #banner {
+    position: fixed; bottom: 2vh; left: 50%; transform: translateX(-50%);
+    background: var(--panel-light); border: 1px solid var(--accent);
+    color: var(--text-primary); padding: 10px 20px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; display: none; z-index: 10;
+  }
+  #banner.show { display: block; }
+
+  @media (orientation: landscape) {
+    #app {
+      display: grid;
+      grid-template-columns: 1fr minmax(240px, 32%);
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "theme theme"
+        "grid  words"
+        "avatars avatars";
+      gap: 1.4vh 1.6vw;
+      padding: 2vh 2.4vw;
+    }
+    #themeBar { grid-area: theme; }
+    #gridWrap { grid-area: grid; min-width: 0; }
+    #wordCard { grid-area: words; flex: unset; min-height: 0; }
+    #avatarZone { grid-area: avatars; }
+  }
+</style>
+</head>
+<body>
+  <div id="app">
+    <div id="themeBar">
+      <span class="themeBar-label">TEMA</span>
+      <span class="themeBar-text">Menunggu soal...</span>
+      <span class="themeBar-progress">0/0</span>
+    </div>
+
+    <div id="gridWrap">
+      <div id="toast"></div>
+      <div id="gridBox">
+        <div id="grid"></div>
+        <svg id="lineLayer"></svg>
+      </div>
+    </div>
+
+    <div id="avatarZone"></div>
+
+    <div id="wordCard">
+      <div class="label">📝 Daftar Kata</div>
+      <div id="wordList"></div>
+    </div>
+  </div>
+
+  <div id="leaderboard">
+    <div class="label">🏆 Papan Skor</div>
+    <div id="lbList"><div class="empty-hint">Belum ada</div></div>
+  </div>
+
+  <div id="banner"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+  </script>
+  <script src="/shared/game-switch-watcher.js"></script>
+  <script src="/shared/vote-overlay.js"></script>
+  <script>
+    const gridEl = document.getElementById('grid');
+    const gridBox = document.getElementById('gridBox');
+    const lineLayer = document.getElementById('lineLayer');
+    const themeText = document.querySelector('.themeBar-text');
+    const themeProgress = document.querySelector('.themeBar-progress');
+    const wordListEl = document.getElementById('wordList');
+
+    let lastState = null;
+
+    function renderGrid(data) {
+      lastState = data;
+      const { rows, cols, grid } = data;
+      const wrap = document.getElementById('gridWrap');
+      const cellSize = Math.floor(Math.min(wrap.clientWidth / cols, wrap.clientHeight / rows)) - 2;
+
+      gridEl.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
+      gridEl.style.gridTemplateRows = `repeat(${rows}, ${cellSize}px)`;
+      gridEl.style.fontSize = `${cellSize}px`;
+      gridEl.innerHTML = '';
+
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+          const div = document.createElement('div');
+          div.className = 'cell';
+          div.textContent = grid[r][c];
+          gridEl.appendChild(div);
+        }
+      }
+
+      const gap = 2;
+      const boxW = cols * cellSize + (cols - 1) * gap;
+      const boxH = rows * cellSize + (rows - 1) * gap;
+      lineLayer.setAttribute('width', boxW);
+      lineLayer.setAttribute('height', boxH);
+      lineLayer.setAttribute('viewBox', `0 0 ${boxW} ${boxH}`);
+
+      drawFoundLines(data, cellSize, gap);
+      renderThemeBar(data);
+      renderWordList(data);
+    }
+
+    function cellCenter(row, col, cellSize, gap) {
+      return {
+        x: col * (cellSize + gap) + cellSize / 2,
+        y: row * (cellSize + gap) + cellSize / 2
+      };
+    }
+
+    function drawFoundLines(data, cellSize, gap) {
+      lineLayer.innerHTML = '';
+      data.words.filter(w => w.found).forEach(w => {
+        const start = cellCenter(w.row, w.col, cellSize, gap);
+        let endRow = w.row;
+        let endCol = w.col;
+
+        if (w.direction === 'horizontal') {
+          endCol = w.col + w.length - 1;
+        } else if (w.direction === 'vertical') {
+          endRow = w.row + w.length - 1;
+        } else if (w.direction === 'diagonal-down') {
+          endRow = w.row + w.length - 1;
+          endCol = w.col + w.length - 1;
+        } else if (w.direction === 'diagonal-up') {
+          endRow = w.row - (w.length - 1);
+          endCol = w.col + w.length - 1;
+        }
+
+        const end = cellCenter(endRow, endCol, cellSize, gap);
+
+        const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        line.setAttribute('x1', start.x);
+        line.setAttribute('y1', start.y);
+        line.setAttribute('x2', end.x);
+        line.setAttribute('y2', end.y);
+        line.setAttribute('stroke', w.color);
+        line.setAttribute('stroke-width', Math.max(2, cellSize * 0.1));
+        line.setAttribute('stroke-linecap', 'round');
+        line.setAttribute('opacity', '0.78');
+        lineLayer.appendChild(line);
+      });
+    }
+
+    function renderThemeBar(data) {
+      themeText.textContent = data.theme || 'Menunggu soal...';
+      themeProgress.textContent = `${data.foundCount}/${data.totalCount}`;
+    }
+
+    function renderWordList(data) {
+      wordListEl.innerHTML = '';
+      data.words.forEach(w => {
+        const chip = document.createElement('div');
+        if (w.found) {
+          chip.className = 'word-chip found';
+          chip.style.background = w.color;
+          chip.textContent = w.word || '???';
+        } else {
+          chip.className = 'word-chip pending';
+          chip.textContent = '*'.repeat(w.length);
+        }
+        wordListEl.appendChild(chip);
+      });
+    }
+
+    function spawnConfetti(color, count = 18) {
+      const wrap = document.getElementById('gridWrap');
+      const colors = [color, '#f5b942', '#f472b6', '#5eead4', '#8b6ef5'];
+      for (let i = 0; i < count; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        const angle = Math.random() * Math.PI * 2;
+        const dist = 60 + Math.random() * 90;
+        piece.style.setProperty('--tx', `${Math.cos(angle) * dist}px`);
+        piece.style.setProperty('--ty', `${Math.sin(angle) * dist}px`);
+        piece.style.setProperty('--rot', `${(Math.random() - 0.5) * 540}deg`);
+        piece.style.background = colors[i % colors.length];
+        piece.style.animationDelay = `${Math.random() * 0.08}s`;
+        wrap.appendChild(piece);
+        setTimeout(() => piece.remove(), 1000);
+      }
+    }
+
+    function showToast(data) {
+      const toast = document.getElementById('toast');
+      const color = data.color || 'var(--accent)';
+      toast.textContent = `🎉 ${data.player} BENAR! "${data.word}" +${data.points}`;
+      toast.style.background = color;
+      toast.style.setProperty('--toast-glow', color);
+      toast.classList.remove('show');
+      void toast.offsetWidth; // reset animasi biar bisa re-trigger walau jawaban benar beruntun
+      toast.classList.add('show');
+      spawnConfetti(color);
+      clearTimeout(showToast._hideT);
+      showToast._hideT = setTimeout(() => toast.classList.remove('show'), 2400);
+    }
+
+    function renderLeaderboard(list) {
+      const lb = document.getElementById('lbList');
+      if (!list.length) { lb.innerHTML = '<div class="empty-hint">Belum ada</div>'; return; }
+      lb.innerHTML = list.map((row, i) => `
+        <div class="lb-row">
+          <span class="lb-rank">${i + 1}</span>
+          <span class="lb-name">${row.player}</span>
+          <span class="lb-score">${row.score}</span>
+        </div>
+      `).join('');
+    }
+
+    function showBanner(msg) {
+      const banner = document.getElementById('banner');
+      banner.textContent = msg;
+      banner.classList.add('show');
+    }
+    function hideBanner() {
+      document.getElementById('banner').classList.remove('show');
+    }
+
+    const avatarZone = document.getElementById('avatarZone');
+    const activeAvatars = {}; // player -> { el, timer }
+
+    function spawnAvatar(player, emoji) {
+      if (activeAvatars[player]) return; // udah ada di layar
+      const el = document.createElement('div');
+      el.className = 'mini-avatar';
+      el.innerHTML = `<span class="emoji">${emoji}</span><span class="name-tag">${player}</span>`;
+      avatarZone.appendChild(el);
+      const startLeft = Math.random() * Math.max(0, avatarZone.clientWidth - 40);
+      el.style.left = startLeft + 'px';
+      activeAvatars[player] = { el, timer: null };
+      walkRandomly(player);
+    }
+
+    function walkRandomly(player) {
+      const entry = activeAvatars[player];
+      if (!entry) return;
+      const zoneWidth = avatarZone.clientWidth || 300;
+      const avatarWidth = entry.el.offsetWidth || 40;
+      const maxLeft = Math.max(0, zoneWidth - avatarWidth);
+      const currentLeft = parseFloat(entry.el.style.left) || 0;
+      const targetLeft = Math.random() * maxLeft;
+      const duration = 2.5 + Math.random() * 3; // 2.5-5.5 detik per langkah
+      entry.el.classList.toggle('facing-left', targetLeft < currentLeft);
+      entry.el.style.transition = `left ${duration}s linear`;
+      entry.el.style.left = targetLeft + 'px';
+      entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
+    }
+
+    function showComment(player, text) {
+      const entry = activeAvatars[player];
+      if (!entry) return; // avatar belum sempat muncul di layar (jarang -- avatar:spawn dikirim bareng)
+      let bubble = entry.el.querySelector('.comment-bubble');
+      if (!bubble) {
+        bubble = document.createElement('span');
+        bubble.className = 'comment-bubble';
+        entry.el.appendChild(bubble); // posisi visualnya diatur CSS `order`, jadi urutan append gak masalah
+      }
+      bubble.textContent = text;
+      clearTimeout(entry.commentTimer);
+      entry.commentTimer = setTimeout(() => bubble.remove(), 4000); // gelembung ilang sendiri abis 4 detik
+    }
+
+    function clearAllAvatars() {
+      Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => {
+        clearTimeout(timer);
+        clearTimeout(commentTimer);
+        el.remove();
+      });
+      for (const key in activeAvatars) delete activeAvatars[key];
+    }
+    
+    function removeAvatar(player) {
+      const entry = activeAvatars[player];
+      if (!entry) return;
+      clearTimeout(entry.timer);
+      clearTimeout(entry.commentTimer);
+      entry.el.remove();
+      delete activeAvatars[player];
+    }
+
+    socket.on('avatar:spawn', ({ player, emoji }) => spawnAvatar(player, emoji));
+    socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach(({ player, emoji }) => spawnAvatar(player, emoji)); });
+    socket.on('avatar:reset', clearAllAvatars);
+    socket.on('avatar:remove', ({ player }) => removeAvatar(player));
+    socket.on('chat:comment', ({ player, text }) => showComment(player, text));
+
+    socket.on('update', (data) => renderGrid(data));
+    socket.on('answer:correct', (data) => showToast(data));
+    socket.on('leaderboard:update', (list) => renderLeaderboard(list));
+    socket.on('puzzle:completed', () => showBanner('🎉 Semua kata ketemu! Sedang bikin tema baru...'));
+    socket.on('puzzle:new', () => hideBanner());
+    socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
+
+    window.addEventListener('resize', () => { if (lastState) renderGrid(lastState); });
+
+    // ===== Nahan layar HP biar gak mati sendiri, kayak pas nonton video =====
+    let wakeLock = null;
+    let noSleepStarted = false;
+
+    function startNoSleepFallback() {
+      if (noSleepStarted) return;
+      noSleepStarted = true;
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = 2; canvas.height = 2;
+        canvas.getContext('2d').fillRect(0, 0, 2, 2);
+        const stream = canvas.captureStream(1);
+        const video = document.createElement('video');
+        video.muted = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+        video.setAttribute('autoplay', '');
+        video.style.cssText = 'position:fixed;bottom:0;right:0;width:1px;height:1px;opacity:0.01;pointer-events:none;';
+        video.srcObject = stream;
+        document.body.appendChild(video);
+        video.play().catch(() => {});
+      } catch (e) {
+        console.error('⚠️ Fallback nahan layar gagal:', e.message);
+      }
+    }
+
+    async function requestWakeLock() {
+      if ('wakeLock' in navigator) {
+        try {
+          wakeLock = await navigator.wakeLock.request('screen');
+          wakeLock.addEventListener('release', () => { wakeLock = null; });
+          return;
+        } catch (e) {
+          console.error('⚠️ Wake Lock API gagal, pakai fallback:', e.message);
+        }
+      }
+      startNoSleepFallback();
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
+    });
+
+    requestWakeLock();
+
+    // Browser nge-block requestFullscreen() tanpa user gesture, jadi ditembak
+    // sekali aja pas klik pertama di halaman.
+    document.body.addEventListener('click', function goFullscreen() {
+      document.documentElement.requestFullscreen().catch(() => {});
+      requestWakeLock();
+      document.body.removeEventListener('click', goFullscreen);
+    }, { once: true });
+  </script>
+</body>
+</html>

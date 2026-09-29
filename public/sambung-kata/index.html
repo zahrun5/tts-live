@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sambung Kata Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#14101f">
+<style>
+  :root {
+    --bg-deep: #14101f;
+    --panel: #1f1a33;
+    --panel-light: #2a2340;
+    --accent: #8b6ef5;
+    --accent-soft: rgba(139, 110, 245, 0.25);
+    --gold: #f5b942;
+    --silver: #c9c9d4;
+    --bronze: #d08a5b;
+    --text-primary: #f5f3fb;
+    --text-muted: #9b93b8;
+    --cell-bg: #f5f3fb;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 100vw; height: 100vh;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+  #app {
+    display: flex; flex-direction: column;
+    width: 100vw; height: 100vh;
+    padding: 3vh 3vw 2vh;
+    gap: 1.6vh;
+  }
+
+  /* ===== Panel huruf dasar (pengganti activeClue) ===== */
+  #letterPanel {
+    flex: 0 0 auto;
+    background: var(--panel);
+    border-radius: 16px;
+    padding: 10px 14px 12px;
+    display: flex; flex-direction: column; align-items: center;
+    gap: 6px;
+  }
+  #letterPanel .letterPanel-top {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+  }
+  #letterPanel .letterPanel-label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(9px, 2.2vw, 11px); color: var(--gold);
+    background: rgba(245, 185, 66, 0.14);
+    padding: 3px 9px; border-radius: 999px; letter-spacing: 0.4px;
+  }
+  #letterPanel .letterPanel-progress {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700;
+    font-size: clamp(11px, 2.8vw, 14px); color: var(--text-primary);
+  }
+  #letterPanel .letterPanel-progress .num-solved { color: #4ade80; }
+  #letterWheel {
+    position: relative;
+    width: min(30vh, 40vw); height: min(30vh, 40vw);
+    margin: 4px 0 2px;
+  }
+  #letterWheel .hub {
+    position: absolute; top: 50%; left: 50%;
+    width: 22%; height: 22%; transform: translate(-50%, -50%);
+    border-radius: 50%; background: var(--panel-light);
+  }
+  .letter-bubble {
+    position: absolute; top: 0; left: 0;
+    width: 27%; height: 27%;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--cell-bg); color: #241c3a;
+    border-radius: 50%;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(14px, 4vw, 20px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+  }
+  #letterPanel.done { background: #1c3a24; }
+
+  /* Avatar zone (viewer TikTok yang lagi komen) */
+  #avatarZone {
+    flex: 0 0 64px;
+    position: relative;
+    background: transparent;
+    border-radius: 12px;
+    overflow: visible;
+    min-height: 64px;
+  }
+  .mini-avatar {
+    position: absolute;
+    bottom: 4px;
+    display: flex; flex-direction: column; align-items: center;
+    pointer-events: none;
+    will-change: left;
+  }
+  .mini-avatar .emoji {
+    display: block; font-size: 26px; line-height: 1;
+    animation: avatarBob 0.5s ease-in-out infinite alternate;
+  }
+  /* Default emoji menghadap kiri; di-mirror pas jalan ke kanan */
+  .mini-avatar.facing-right .emoji { transform: scaleX(-1); }
+  .mini-avatar .name-tag {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 8px;
+    color: var(--text-primary); background: rgba(0,0,0,0.45);
+    padding: 1px 6px; border-radius: 999px; margin-bottom: 2px;
+    white-space: nowrap; max-width: 84px; overflow: hidden; text-overflow: ellipsis;
+    order: -1;
+  }
+  .mini-avatar .comment-bubble {
+    font-family: 'Inter', sans-serif; font-weight: 600; font-size: 9.5px;
+    color: #14101f; background: var(--text-primary);
+    padding: 3px 9px; border-radius: 10px; margin-bottom: 4px;
+    white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    position: relative; order: -2;
+  }
+  .mini-avatar .comment-bubble::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+    border-width: 4px 4px 0 4px; border-style: solid;
+    border-color: var(--text-primary) transparent transparent transparent;
+  }
+  @keyframes avatarBob {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-4px); }
+  }
+
+  /* Hint fitur vote ganti/skip, nempel di bawah lingkaran huruf.
+     Running text (1 baris, scroll ke kiri terus) biar nggak makan
+     tempat vertikal kayak sebelumnya (dulu 2 baris pake <br>). */
+  #voteHintInline {
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(12px, 3vw, 15px);
+    font-weight: 600;
+    color: var(--text-muted);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    padding: 2px 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+  }
+  #voteHintInline b { color: var(--gold); font-weight: 800; }
+  #voteHintInline .marquee-track {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marqueeScroll 20s linear infinite;
+  }
+  @keyframes marqueeScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  #gridWrap {
+    flex: 2; display: flex; align-items: center; justify-content: center;
+    min-height: 0; position: relative;
+  }
+  #grid { display: grid; gap: 2px; }
+  .cell { position: relative; background: transparent; }
+  .cell.open { background: var(--cell-bg); border-radius: 3px; }
+  .cell .letter {
+    width: 100%; height: 100%; display: flex;
+    align-items: center; justify-content: center;
+    font-family: 'Baloo 2', sans-serif; font-weight: 700;
+    color: #241c3a; font-size: 0.55em;
+  }
+  #toast {
+    position: absolute; top: -6px; left: 50%;
+    transform: translate(-50%, -130%);
+    background: var(--accent); color: #14101f;
+    padding: 10px 18px; border-radius: 999px; font-weight: 700;
+    font-size: clamp(12px, 3vw, 15px); white-space: nowrap;
+    box-shadow: 0 6px 20px var(--accent-soft);
+    opacity: 0; transition: transform .35s ease, opacity .35s ease;
+    pointer-events: none; z-index: 5;
+  }
+  #toast.show { transform: translate(-50%, 0%); opacity: 1; }
+
+  #tickerCard {
+    flex: 1.2; background: var(--panel); border-radius: 16px;
+    padding: 14px 16px; display: flex; flex-direction: column;
+    min-height: 0; overflow: hidden;
+  }
+  #tickerCard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: clamp(11px, 2.6vw, 14px); color: var(--accent);
+    margin-bottom: 8px; flex: 0 0 auto;
+  }
+  #foundList {
+    flex: 1; overflow: hidden; position: relative;
+    display: flex; flex-wrap: wrap; align-content: flex-start; gap: 7px;
+  }
+  .found-chip {
+    background: var(--gold); color: #241c3a;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: clamp(11px, 2.8vw, 14px);
+    padding: 6px 12px; border-radius: 999px;
+    animation: popIn .3s ease;
+  }
+  @keyframes popIn { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+  #leaderboard {
+    position: absolute; top: 8px; right: 8px; z-index: 4;
+    background: rgba(31, 26, 51, 0.82); border-radius: 12px;
+    padding: 8px 10px; display: flex; flex-direction: column;
+    min-width: 120px; max-width: 44vw;
+  }
+  #leaderboard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: 10px; color: var(--gold);
+    margin-bottom: 5px; display: flex; align-items: center; gap: 4px;
+  }
+  #lbList { display: flex; flex-direction: column; gap: 3px; }
+  .lb-row { display: flex; align-items: center; gap: 6px; }
+  .lb-rank {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: 10px; width: 12px; text-align: center; color: var(--text-muted);
+  }
+  .lb-row:nth-child(1) .lb-rank { color: var(--gold); }
+  .lb-row:nth-child(2) .lb-rank { color: var(--silver); }
+  .lb-row:nth-child(3) .lb-rank { color: var(--bronze); }
+  .lb-name { flex: 1; font-weight: 600; font-size: 10.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 20vw; }
+  .lb-score { font-family: 'Baloo 2', sans-serif; font-weight: 700; color: var(--accent); font-size: 10.5px; }
+  .empty-hint { color: var(--text-muted); font-size: 13px; text-align: center; padding-top: 10px; }
+
+  #banner {
+    position: fixed; bottom: 2vh; left: 50%; transform: translateX(-50%);
+    background: var(--panel-light); border: 1px solid var(--accent);
+    color: var(--text-primary); padding: 10px 20px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; display: none; z-index: 10;
+  }
+  #banner.show { display: block; }
+
+  /* Mode landscape: panel kata ketemu pindah ke kanan, grid di kiri */
+  @media (orientation: landscape) {
+    #app {
+      display: grid;
+      grid-template-columns: 1fr minmax(240px, 32%);
+      grid-template-rows: auto auto 1fr;
+      grid-template-areas:
+        "letters letters"
+        "avatars avatars"
+        "grid    ticker";
+      gap: 1.4vh 1.6vw;
+      padding: 2vh 2.4vw;
+    }
+    #letterPanel { grid-area: letters; flex-direction: row; justify-content: space-between; }
+    #letterWheel { width: min(16vh, 14vw); height: min(16vh, 14vw); margin: 0; }
+    #avatarZone { grid-area: avatars; }
+    #gridWrap { grid-area: grid; min-width: 0; }
+    #tickerCard { grid-area: ticker; flex: unset; min-height: 0; }
+  }
+</style>
+</head>
+<body>
+  <div id="app">
+    <div id="letterPanel">
+      <div class="letterPanel-top">
+        <span class="letterPanel-label">HURUF DASAR</span>
+        <span class="letterPanel-progress" id="progressText">Menunggu soal...</span>
+      </div>
+      <div id="letterWheel"><div class="hub"></div></div>
+		<div id="voteHintInline"><div class="marquee-track">💬 Komen <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; ketik <b>GANTI 10x</b> buat ganti game &nbsp;•&nbsp; kalo kalian nggak bisa nerima kenyataan dari kekalahan, komen <b>NYERAH 10x</b> 🤣🤣🤣 niscaya aku kasih jawabannya</div></div>
+    </div>
+
+    <div id="avatarZone"></div>
+
+    <div id="gridWrap">
+      <div id="toast"></div>
+      <div id="grid"></div>
+      <div id="leaderboard">
+        <div class="label">🏆 Papan Juara</div>
+        <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
+      </div>
+    </div>
+
+    <div id="tickerCard">
+      <div class="label">✅ Kata Ketemu</div>
+      <div id="foundList"><div class="empty-hint">Belum ada kata yang ketemu</div></div>
+    </div>
+  </div>
+
+  <div id="banner"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+  </script>
+  <script src="/shared/game-switch-watcher.js"></script>
+  <script>
+    const gridEl = document.getElementById('grid');
+    const gridWrap = document.getElementById('gridWrap');
+    const toastEl = document.getElementById('toast');
+    const letterPanelEl = document.getElementById('letterPanel');
+    const letterWheelEl = document.getElementById('letterWheel');
+    const progressTextEl = document.getElementById('progressText');
+    const foundListEl = document.getElementById('foundList');
+    const lbList = document.getElementById('lbList');
+    const bannerEl = document.getElementById('banner');
+
+    let currentPuzzle = null;
+    let currentBaseLetters = null;
+    let toastTimer = null;
+
+    function buildCellMap(rows, cols, words) {
+      const map = Array.from({ length: rows }, () => Array(cols).fill(null));
+      words.forEach(w => {
+        for (let i = 0; i < w.length; i++) {
+          const r = w.row + (w.direction === 'down' ? i : 0);
+          const c = w.col + (w.direction === 'across' ? i : 0);
+          if (!map[r][c]) map[r][c] = { letter: '' };
+          if (w.answer) map[r][c].letter = w.answer[i];
+        }
+      });
+      return map;
+    }
+
+    function renderGrid(data) {
+      currentPuzzle = data;
+      const { rows, cols, words } = data;
+      const map = buildCellMap(rows, cols, words);
+
+      const cellSize = Math.floor(Math.min(gridWrap.clientWidth / cols, gridWrap.clientHeight / rows));
+
+      gridEl.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
+      gridEl.style.gridTemplateRows = `repeat(${rows}, ${cellSize}px)`;
+      gridEl.style.fontSize = `${cellSize}px`;
+      gridEl.innerHTML = '';
+
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+          const cellData = map[r][c];
+          const div = document.createElement('div');
+          div.className = 'cell' + (cellData ? ' open' : '');
+          if (cellData) {
+            const letter = document.createElement('div');
+            letter.className = 'letter';
+            letter.textContent = cellData.letter || '';
+            div.appendChild(letter);
+          }
+          gridEl.appendChild(div);
+        }
+      }
+    }
+
+    // Roda huruf cuma tampilan (buat mancing rasa penasaran penonton di layar live) --
+    // jawaban sebenernya masuk lewat komentar TikTok, bukan lewat drag di layar ini.
+    function renderLetterWheel(baseLetters) {
+      if (currentBaseLetters === baseLetters) return; // gak usah re-render kalau huruf sama
+      currentBaseLetters = baseLetters;
+
+      letterWheelEl.innerHTML = '<div class="hub"></div>';
+      if (!baseLetters) return;
+
+      const letters = baseLetters.split('');
+      const n = letters.length;
+      const radius = 50 - 27 / 2; // persen dari container, biar bubble pas di tepi
+
+      letters.forEach((ch, i) => {
+        const angle = (2 * Math.PI * i / n) - Math.PI / 2;
+        const cx = 50 + radius * Math.cos(angle);
+        const cy = 50 + radius * Math.sin(angle);
+
+        const bubble = document.createElement('div');
+        bubble.className = 'letter-bubble';
+        bubble.textContent = ch;
+        bubble.style.left = `${cx}%`;
+        bubble.style.top = `${cy}%`;
+        bubble.style.transform = 'translate(-50%, -50%)';
+        letterWheelEl.appendChild(bubble);
+      });
+    }
+
+    function renderProgress(words) {
+      const total = words.length;
+      const solved = words.filter(w => w.answer).length;
+
+      if (solved === total && total > 0) {
+        letterPanelEl.classList.add('done');
+        progressTextEl.innerHTML = '🎉 Semua kata ketemu!';
+      } else {
+        letterPanelEl.classList.remove('done');
+        progressTextEl.innerHTML = `<span class="num-solved">${solved}</span> / ${total} kata`;
+      }
+    }
+
+    function renderFoundWords(words) {
+      const found = words.filter(w => w.answer);
+      if (found.length === 0) {
+        foundListEl.innerHTML = '<div class="empty-hint">Belum ada kata yang ketemu</div>';
+        return;
+      }
+      foundListEl.innerHTML = found.map(w => `<span class="found-chip">${w.answer}</span>`).join('');
+    }
+
+    function renderLeaderboard(list) {
+      if (!list || list.length === 0) {
+        lbList.innerHTML = '<div class="empty-hint">Belum ada yang jawab</div>';
+        return;
+      }
+      lbList.innerHTML = list.slice(0, 3).map((row, i) => `
+        <div class="lb-row">
+          <span class="lb-rank">${i + 1}</span>
+          <span class="lb-name">${escapeHtml(row.player)}</span>
+          <span class="lb-score">${row.score}</span>
+        </div>`).join('');
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    function showToast(data) {
+      toastEl.textContent = `${data.player} benar! ${data.answer ? data.answer.toUpperCase() : ''}`;
+      toastEl.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3000);
+    }
+
+    function showBanner(text) { bannerEl.textContent = text; bannerEl.classList.add('show'); }
+    function hideBanner() { bannerEl.classList.remove('show'); }
+
+    // Avatar system (sama kayak family100 / cari-kata)
+    const avatarZone = document.getElementById('avatarZone');
+    const activeAvatars = {};
+
+    function spawnAvatar(player, emoji) {
+      if (activeAvatars[player]) return;
+      const el = document.createElement('div');
+      el.className = 'mini-avatar';
+      el.innerHTML = `<span class="emoji">${emoji}</span><span class="name-tag">${player}</span>`;
+      avatarZone.appendChild(el);
+      const startLeft = Math.random() * Math.max(0, avatarZone.clientWidth - 40);
+      el.style.left = startLeft + 'px';
+      activeAvatars[player] = { el, timer: null };
+      walkRandomly(player);
+    }
+
+    function walkRandomly(player) {
+      const entry = activeAvatars[player];
+      if (!entry) return;
+      const zoneWidth = avatarZone.clientWidth || 300;
+      const avatarWidth = entry.el.offsetWidth || 40;
+      const maxLeft = Math.max(0, zoneWidth - avatarWidth);
+      const currentLeft = parseFloat(entry.el.style.left) || 0;
+      const targetLeft = Math.random() * maxLeft;
+      const duration = 2.5 + Math.random() * 3;
+      entry.el.classList.toggle('facing-right', targetLeft > currentLeft);
+      entry.el.style.transition = `left ${duration}s linear`;
+      entry.el.style.left = targetLeft + 'px';
+      entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
+    }
+
+    function showComment(player, text) {
+      const entry = activeAvatars[player];
+      if (!entry) return;
+      let bubble = entry.el.querySelector('.comment-bubble');
+      if (!bubble) {
+        bubble = document.createElement('span');
+        bubble.className = 'comment-bubble';
+        entry.el.appendChild(bubble);
+      }
+      bubble.textContent = text;
+      clearTimeout(entry.commentTimer);
+      entry.commentTimer = setTimeout(() => bubble.remove(), 4000);
+    }
+
+    function clearAllAvatars() {
+      Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => {
+        clearTimeout(timer);
+        clearTimeout(commentTimer);
+        el.remove();
+      });
+      for (const key in activeAvatars) delete activeAvatars[key];
+    }
+
+    function removeAvatar(player) {
+      const entry = activeAvatars[player];
+      if (!entry) return;
+      clearTimeout(entry.timer);
+      clearTimeout(entry.commentTimer);
+      entry.el.remove();
+      delete activeAvatars[player];
+    }
+
+    socket.on('avatar:spawn', ({ player, emoji }) => spawnAvatar(player, emoji));
+    socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach(({ player, emoji }) => spawnAvatar(player, emoji)); });
+    socket.on('avatar:reset', clearAllAvatars);
+    socket.on('avatar:remove', ({ player }) => removeAvatar(player));
+    socket.on('chat:comment', ({ player, text }) => showComment(player, text));
+
+    socket.on('game:switched', () => window.location.reload());
+    socket.on('update', (data) => {
+      renderGrid(data);
+      renderLetterWheel(data.baseLetters);
+      renderProgress(data.words);
+      renderFoundWords(data.words);
+    });
+    socket.on('answer:correct', (data) => showToast(data));
+    socket.on('leaderboard:update', (list) => renderLeaderboard(list));
+    socket.on('puzzle:completed', () => showBanner('🎉 Semua kata ketemu! Menyiapkan soal baru...'));
+    socket.on('puzzle:new', () => { currentBaseLetters = null; hideBanner(); });
+    socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
+
+    window.addEventListener('resize', () => {
+      if (!currentPuzzle) return;
+      renderGrid(currentPuzzle);
+    });
+
+    // ===== Nahan layar HP biar gak mati sendiri, kayak pas nonton video =====
+    let wakeLock = null;
+    let noSleepStarted = false;
+
+    function startNoSleepFallback() {
+      if (noSleepStarted) return;
+      noSleepStarted = true;
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = 2; canvas.height = 2;
+        canvas.getContext('2d').fillRect(0, 0, 2, 2);
+        const stream = canvas.captureStream(1);
+        const video = document.createElement('video');
+        video.muted = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+        video.setAttribute('autoplay', '');
+        video.style.cssText = 'position:fixed;bottom:0;right:0;width:1px;height:1px;opacity:0.01;pointer-events:none;';
+        video.srcObject = stream;
+        document.body.appendChild(video);
+        video.play().catch(() => {});
+      } catch (e) {
+        console.error('⚠️ Fallback nahan layar gagal:', e.message);
+      }
+    }
+
+    async function requestWakeLock() {
+      if ('wakeLock' in navigator) {
+        try {
+          wakeLock = await navigator.wakeLock.request('screen');
+          wakeLock.addEventListener('release', () => { wakeLock = null; });
+          return;
+        } catch (e) {
+          console.error('⚠️ Wake Lock API gagal, pakai fallback:', e.message);
+        }
+      }
+      startNoSleepFallback();
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
+    });
+
+    requestWakeLock();
+
+  document.body.addEventListener('click', function goFullscreen() {
+    document.documentElement.requestFullscreen().catch(() => {});
+    requestWakeLock();
+    document.body.removeEventListener('click', goFullscreen);
+  }, { once: true });
+</script>
+<script src="/shared/vote-overlay.js"></script>
+</body>
+</html>

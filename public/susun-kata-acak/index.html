@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susun Kata Acak Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#14101f">
+<style>
+  :root {
+    --bg-deep: #14101f;
+    --panel: #1f1a33;
+    --panel-light: #2a2340;
+    --accent: #8b6ef5;
+    --accent-soft: rgba(139, 110, 245, 0.25);
+    --gold: #f5b942;
+    --silver: #c9c9d4;
+    --bronze: #d08a5b;
+    --green: #4ade80;
+    --text-primary: #f5f3fb;
+    --text-muted: #9b93b8;
+    --cell-bg: #f5f3fb;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+  /* position:fixed + inset:0 dipilih SENGAJA, bukan 100vh/100vw.
+     100vh itu ngukur "layout viewport" yang TETEP gede penuh walau
+     keyboard Android lagi muncul -- makanya konten di bawah ketutup
+     keyboard tapi tetep dianggap "ada" sama browser (makanya nggak keliatan).
+     position:fixed ngikutin "visual viewport" yang beneran keliatan di
+     layar, jadi otomatis ngecil pas keyboard muncul dan seluruh isinya
+     tetep ada di area yang keliatan. Ditambah JS di bawah
+     sebagai jaga-jaga buat WebView Android yang nggak sepenuhnya nurut. */
+  #app {
+    position: fixed; inset: 0;
+    display: flex; flex-direction: column;
+    padding: 2.4vh 3vw;
+    gap: 1.6vh;
+  }
+  #headerBar {
+    flex: 0 0 auto;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #headerBar .title {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(14px, 3.6vw, 20px);
+    background: rgba(139, 110, 245, 0.18);
+    color: var(--accent);
+    padding: 6px 16px; border-radius: 999px;
+    letter-spacing: 0.3px;
+  }
+
+  #slotGrid {
+    flex: 0 0 auto; display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 1.8vh 3vw;
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .slot {
+    background: var(--panel);
+    border-radius: 14px;
+    width: 100%;
+    min-height: clamp(64px, 17vw, 90px);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 6px; padding: 10px 12px;
+    position: relative;
+    transition: background .25s ease, transform .25s ease;
+  }
+  .slot .num-badge {
+    position: absolute; top: -8px; left: -8px;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: 11px;
+    background: var(--accent); color: #fff;
+    min-width: 20px; height: 20px; padding: 0 5px;
+    border-radius: 999px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    flex-shrink: 0;
+  }
+  .slot .letters {
+    display: flex; gap: 4px; flex-wrap: wrap; justify-content: center; max-width: 100%;
+  }
+  .slot .letter-tile {
+    background: var(--cell-bg); color: #241c3a;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(14px, 3.4vw, 20px);
+    width: clamp(22px, 5.4vw, 32px); height: clamp(22px, 5.4vw, 32px);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  }
+
+  /* Status "solved" -- kejawab, tampilin jawaban + siapa yang jawab.
+     (Dulu namanya "cooldown"; server sekarang ngirim status "solved", jadi
+     selector lama nggak pernah kena dan slot yang kejawab nggak berubah.) */
+  .slot.solved { background: #1c3a24; }
+  .slot.solved .letters { display: none; }
+  .slot .solved-answer {
+    display: none;
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: clamp(15px, 3.6vw, 22px);
+    color: var(--green); letter-spacing: 1px;
+  }
+  .slot.solved .solved-answer { display: block; animation: popIn .3s ease; }
+  .slot .solved-by {
+    display: none;
+    font-size: clamp(9px, 2vw, 11px); color: var(--text-muted); font-weight: 600;
+  }
+  .slot.solved .solved-by { display: block; }
+
+  @keyframes popIn { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  @keyframes flashGreen {
+    0% { background: var(--panel); }
+    40% { background: #234a2c; }
+    100% { background: #1c3a24; }
+  }
+  @keyframes slotBounce {
+    0%   { transform: scale(1); }
+    35%  { transform: scale(1.09); }
+    65%  { transform: scale(0.97); }
+    100% { transform: scale(1); }
+  }
+  .slot.just-solved { animation: flashGreen .5s ease, slotBounce .5s ease; }
+
+  /* Toast + confetti pas ada yang jawab benar (pola sama kayak family100) */
+  #toast {
+    position: fixed; top: 9vh; left: 50%;
+    background: var(--accent); color: #14101f;
+    padding: 12px 22px; border-radius: 999px; font-weight: 800;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: clamp(14px, 3.6vw, 19px); white-space: nowrap;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    opacity: 0; pointer-events: none; z-index: 50;
+    transform: translate(-50%, -60%) scale(0.5);
+  }
+  #toast.show {
+    animation: toastPop 0.55s cubic-bezier(.34,1.56,.64,1) forwards,
+               toastGlow 0.55s ease-out forwards;
+  }
+  @keyframes toastPop {
+    0%   { transform: translate(-50%, -60%) scale(0.4) rotate(-4deg); opacity: 0; }
+    55%  { transform: translate(-50%, 12%) scale(1.22) rotate(2deg); opacity: 1; }
+    75%  { transform: translate(-50%, -6%) scale(0.94) rotate(-1deg); }
+    100% { transform: translate(-50%, 0%) scale(1) rotate(0deg); opacity: 1; }
+  }
+  @keyframes toastGlow {
+    0% { box-shadow: 0 0 0 rgba(0,0,0,0); }
+    50% { box-shadow: 0 0 32px 6px var(--toast-glow, rgba(139,110,245,0.7)); }
+    100% { box-shadow: 0 0 14px 2px var(--toast-glow, rgba(139,110,245,0.4)); }
+  }
+  .confetti-piece {
+    position: absolute; top: 50%; left: 50%;
+    width: 7px; height: 7px; border-radius: 2px;
+    pointer-events: none; z-index: 7;
+    animation: confettiBurst 0.85s cubic-bezier(.25,.8,.35,1) forwards;
+  }
+  @keyframes confettiBurst {
+    0%   { transform: translate(-50%, -50%) translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.4); opacity: 0; }
+  }
+
+  /* Avatar zone (viewer TikTok yang lagi komen) -- pola sama kayak
+     sambung-kata/family100. Ngisi ruang yang dulu kepake sama kartu
+     slot pas masih gede, sekarang jadi arena avatar jalan-jalan. */
+  #avatarZone {
+    flex: 0 0 auto;
+    height: clamp(60px, 13vh, 120px);
+    position: relative;
+    background: transparent;
+    overflow: visible;
+  }
+  .mini-avatar {
+    position: absolute;
+    bottom: 4px;
+    display: flex; flex-direction: column; align-items: center;
+    pointer-events: none;
+    will-change: left;
+  }
+  .mini-avatar .emoji {
+    display: block; font-size: 26px; line-height: 1;
+    animation: avatarBob 0.5s ease-in-out infinite alternate;
+  }
+  .mini-avatar.facing-right .emoji { transform: scaleX(-1); }
+  .mini-avatar .name-tag {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 8px;
+    color: var(--text-primary); background: rgba(0,0,0,0.45);
+    padding: 1px 6px; border-radius: 999px; margin-bottom: 2px;
+    white-space: nowrap; max-width: 84px; overflow: hidden; text-overflow: ellipsis;
+    order: -1;
+  }
+  .mini-avatar .comment-bubble {
+    font-family: 'Inter', sans-serif; font-weight: 600; font-size: 9.5px;
+    color: #14101f; background: var(--text-primary);
+    padding: 3px 9px; border-radius: 10px; margin-bottom: 4px;
+    white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    position: relative; order: -2;
+  }
+  .mini-avatar .comment-bubble::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+    border-width: 4px 4px 0 4px; border-style: solid;
+    border-color: var(--text-primary) transparent transparent transparent;
+  }
+  @keyframes avatarBob {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-4px); }
+  }
+
+  #leaderboard {
+    position: absolute; top: 8px; right: 8px; z-index: 4;
+    background: rgba(31, 26, 51, 0.82); border-radius: 12px;
+    padding: 8px 10px; display: flex; flex-direction: column;
+    min-width: 120px; max-width: 44vw;
+  }
+  #leaderboard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: 10px; color: var(--gold);
+    margin-bottom: 5px; display: flex; align-items: center; gap: 4px;
+  }
+  #lbList { display: flex; flex-direction: column; gap: 3px; }
+  .lb-row { display: flex; align-items: center; gap: 6px; }
+  .lb-rank {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: 10px; width: 12px; text-align: center; color: var(--text-muted);
+  }
+  .lb-row:nth-child(1) .lb-rank { color: var(--gold); }
+  .lb-row:nth-child(2) .lb-rank { color: var(--silver); }
+  .lb-row:nth-child(3) .lb-rank { color: var(--bronze); }
+  .lb-name { font-size: 10px; font-weight: 600; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 90px; }
+  .lb-score { font-size: 10px; font-weight: 800; color: var(--text-primary); }
+  .empty-hint { font-size: 10px; color: var(--text-muted); }
+
+  #hint {
+    flex: 0 0 auto; text-align: center;
+    font-size: clamp(11px, 2.6vw, 14px); color: var(--text-muted); font-weight: 600;
+  }
+  #hint b { color: var(--gold); font-weight: 800; }
+
+  /* Hint fitur vote ganti/skip, running text 1 baris -- pola sama kayak
+     Family 100 & Sambung Kata */
+  #voteHintInline {
+    flex: 0 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(12px, 3vw, 15px);
+    font-weight: 600;
+    color: var(--text-muted);
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    padding: 2px 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+    mask-image: linear-gradient(90deg, transparent, black 4%, black 96%, transparent);
+  }
+  #voteHintInline b { color: var(--gold); font-weight: 800; }
+  #voteHintInline .marquee-track {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marqueeScroll 20s linear infinite;
+  }
+  @keyframes marqueeScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="headerBar"><div class="title">🔤 Susun Kata Acak</div></div>
+  <div id="voteHintInline"><div class="marquee-track">💬 Komen <b>SKIP 10x</b> rame-rame kalo kesulitan &nbsp;•&nbsp; ketik <b>GANTI 10x</b> buat ganti game &nbsp;•&nbsp; kalo kalian nggak bisa nerima kenyataan dari kekalahan, komen <b>NYERAH 10x</b> 🤣🤣🤣 niscaya aku kasih jawabannya</div></div>
+  <div id="avatarZone"></div>
+  <div id="slotGrid"></div>
+  <div id="hint">Langsung ketik jawabannya aja (contoh: "kursi")</div>
+</div>
+<div id="toast"></div>
+
+<div id="leaderboard">
+  <div class="label">🏆 Top Skor</div>
+  <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io();
+  </script>
+  <script src="/shared/game-switch-watcher.js"></script>
+  <script>
+  const slotGridEl = document.getElementById('slotGrid');
+  const lbList = document.getElementById('lbList');
+  let slotEls = {}; // id -> element, dibikin sekali biar gak re-render dari nol tiap update
+
+  function ensureSlotEl(id) {
+    if (slotEls[id]) return slotEls[id];
+    const el = document.createElement('div');
+    el.className = 'slot';
+    el.innerHTML = `
+      <div class="num-badge">${id}</div>
+      <div class="letters"></div>
+      <div class="solved-answer"></div>
+      <div class="solved-by"></div>
+    `;
+    slotGridEl.appendChild(el);
+    slotEls[id] = el;
+    return el;
+  }
+
+  function renderSlots(slots) {
+    slots.forEach(slot => {
+      const el = ensureSlotEl(slot.id);
+      const wasActive = !el.classList.contains('solved');
+
+      if (slot.status === 'solved') {
+        el.classList.add('solved');
+        if (wasActive) el.classList.add('just-solved'); // baru aja kejawab -> flash + mantul sekali
+        el.querySelector('.solved-answer').textContent = slot.answer || '';
+        el.querySelector('.solved-by').textContent = slot.solvedBy ? `oleh ${slot.solvedBy}` : '';
+      } else {
+        el.classList.remove('solved', 'just-solved');
+        const lettersEl = el.querySelector('.letters');
+        const chars = (slot.scrambled || '').split('');
+        // Cuma re-render huruf kalau beneran beda, biar gak flicker tiap update kecil
+        if (lettersEl.dataset.word !== slot.scrambled) {
+          lettersEl.dataset.word = slot.scrambled;
+          lettersEl.innerHTML = chars.map(c => `<div class="letter-tile">${c}</div>`).join('');
+        }
+      }
+    });
+  }
+
+  function renderLeaderboard(list) {
+    if (!list || list.length === 0) {
+      lbList.innerHTML = '<div class="empty-hint">Belum ada yang jawab</div>';
+      return;
+    }
+    lbList.innerHTML = list.map((row, i) => `
+      <div class="lb-row">
+        <span class="lb-rank">${i + 1}</span>
+        <span class="lb-name">${escapeHtml(row.player)}</span>
+        <span class="lb-score">${row.score}</span>
+      </div>`).join('');
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  // Confetti muncul dari slot yang barusan kejawab (kalau nomornya ada), bukan
+  // dari tengah layar, biar jelas slot mana yang kena.
+  function spawnConfetti(originEl, count = 16) {
+    const wrap = originEl || document.getElementById('app');
+    const colors = ['#f5b942', '#f472b6', '#5eead4', '#8b6ef5', '#4ade80'];
+    for (let i = 0; i < count; i++) {
+      const piece = document.createElement('div');
+      piece.className = 'confetti-piece';
+      const angle = Math.random() * Math.PI * 2;
+      const dist = 50 + Math.random() * 80;
+      piece.style.setProperty('--tx', `${Math.cos(angle) * dist}px`);
+      piece.style.setProperty('--ty', `${Math.sin(angle) * dist}px`);
+      piece.style.setProperty('--rot', `${(Math.random() - 0.5) * 540}deg`);
+      piece.style.background = colors[i % colors.length];
+      piece.style.animationDelay = `${Math.random() * 0.08}s`;
+      wrap.appendChild(piece);
+      setTimeout(() => piece.remove(), 1000);
+    }
+  }
+
+  function showToast(data) {
+    const toast = document.getElementById('toast');
+    toast.textContent = `🎉 ${data.player} BENAR! "${data.answer}" +${data.points}`;
+    toast.classList.remove('show');
+    void toast.offsetWidth; // paksa reflow biar animasi bisa diputar ulang
+    toast.classList.add('show');
+    spawnConfetti(slotEls[data.number]);
+    clearTimeout(showToast._hideT);
+    showToast._hideT = setTimeout(() => toast.classList.remove('show'), 2400);
+  }
+
+  socket.on('game:switched', () => window.location.reload());
+  socket.on('update', (data) => { if (data && data.slots) renderSlots(data.slots); });
+  socket.on('answer:correct', (data) => showToast(data));
+  socket.on('leaderboard:update', (list) => renderLeaderboard(list));
+
+  fetch('/api/grid').then(r => r.json()).then(data => { if (data && data.slots) renderSlots(data.slots); }).catch(() => {});
+
+  // Avatar system (sama kayak sambung-kata/family100) -- server.js udah
+  // emit event ini secara generik, gak digate per-game, jadi tinggal
+  // dengerin aja di sini.
+  const avatarZone = document.getElementById('avatarZone');
+  const activeAvatars = {};
+
+  function spawnAvatar(player, emoji) {
+    if (activeAvatars[player]) return;
+    const el = document.createElement('div');
+    el.className = 'mini-avatar';
+    el.innerHTML = `<span class="emoji">${emoji}</span><span class="name-tag">${escapeHtml(player)}</span>`;
+    avatarZone.appendChild(el);
+    const startLeft = Math.random() * Math.max(0, avatarZone.clientWidth - 40);
+    el.style.left = startLeft + 'px';
+    activeAvatars[player] = { el, timer: null };
+    walkRandomly(player);
+  }
+
+  function walkRandomly(player) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    const zoneWidth = avatarZone.clientWidth || 300;
+    const avatarWidth = entry.el.offsetWidth || 40;
+    const maxLeft = Math.max(0, zoneWidth - avatarWidth);
+    const currentLeft = parseFloat(entry.el.style.left) || 0;
+    const targetLeft = Math.random() * maxLeft;
+    const duration = 2.5 + Math.random() * 3;
+    entry.el.classList.toggle('facing-right', targetLeft > currentLeft);
+    entry.el.style.transition = `left ${duration}s linear`;
+    entry.el.style.left = targetLeft + 'px';
+    entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
+  }
+
+  function showComment(player, text) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    let bubble = entry.el.querySelector('.comment-bubble');
+    if (!bubble) {
+      bubble = document.createElement('span');
+      bubble.className = 'comment-bubble';
+      entry.el.appendChild(bubble);
+    }
+    bubble.textContent = text;
+    clearTimeout(entry.commentTimer);
+    entry.commentTimer = setTimeout(() => bubble.remove(), 4000);
+  }
+
+  function clearAllAvatars() {
+    Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => {
+      clearTimeout(timer);
+      clearTimeout(commentTimer);
+      el.remove();
+    });
+    for (const key in activeAvatars) delete activeAvatars[key];
+  }
+
+  function removeAvatar(player) {
+    const entry = activeAvatars[player];
+    if (!entry) return;
+    clearTimeout(entry.timer);
+    clearTimeout(entry.commentTimer);
+    entry.el.remove();
+    delete activeAvatars[player];
+  }
+
+  socket.on('avatar:spawn', ({ player, emoji }) => spawnAvatar(player, emoji));
+  socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach(({ player, emoji }) => spawnAvatar(player, emoji)); });
+  socket.on('avatar:reset', clearAllAvatars);
+  socket.on('avatar:remove', ({ player }) => removeAvatar(player));
+  socket.on('chat:comment', ({ player, text }) => showComment(player, text));
+
+  // ===== Jaga-jaga buat keyboard Android yang nutupin bagian bawah layar =====
+  // #app udah pakai position:fixed+inset:0 (ngikutin visual viewport di
+  // sebagian besar browser modern), tapi beberapa WebView Android (dipakai
+  // di STB/box TV) kadang masih ngotot pake ukuran layout viewport lama.
+  // Ini backup: baca window.visualViewport (kalau ada di WebView-nya) dan
+  // paksa tinggi #app + posisi top ngikutin area yang BENERAN keliatan.
+  const appEl = document.getElementById('app');
+  function syncVisibleArea() {
+    if (window.visualViewport) {
+      const vv = window.visualViewport;
+      appEl.style.height = vv.height + 'px';
+      appEl.style.top = vv.offsetTop + 'px';
+    } else {
+      appEl.style.height = window.innerHeight + 'px';
+    }
+  }
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', syncVisibleArea);
+    window.visualViewport.addEventListener('scroll', syncVisibleArea);
+  }
+  window.addEventListener('resize', syncVisibleArea);
+  syncVisibleArea();
+
+  // ===== Nahan layar HP biar gak mati sendiri =====
+  let wakeLock = null;
+  let noSleepStarted = false;
+
+  function startNoSleepFallback() {
+    if (noSleepStarted) return;
+    noSleepStarted = true;
+    try {
+      const canvas = document.createElement('canvas');
+      canvas.width = 2; canvas.height = 2;
+      canvas.getContext('2d').fillRect(0, 0, 2, 2);
+      const stream = canvas.captureStream(1);
+      const video = document.createElement('video');
+      video.muted = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.setAttribute('autoplay', '');
+      video.style.cssText = 'position:fixed;bottom:0;right:0;width:1px;height:1px;opacity:0.01;pointer-events:none;';
+      video.srcObject = stream;
+      document.body.appendChild(video);
+      video.play().catch(() => {});
+    } catch (e) {}
+  }
+
+  async function requestWakeLock() {
+    if ('wakeLock' in navigator) {
+      try {
+        wakeLock = await navigator.wakeLock.request('screen');
+        wakeLock.addEventListener('release', () => { wakeLock = null; });
+        return;
+      } catch (e) {}
+    }
+    startNoSleepFallback();
+  }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
+  });
+  requestWakeLock();
+
+  document.body.addEventListener('click', function goFullscreen() {
+    document.documentElement.requestFullscreen().catch(() => {});
+    requestWakeLock();
+    document.body.removeEventListener('click', goFullscreen);
+  }, { once: true });
+</script>
+<script src="/shared/vote-overlay.js"></script>
+</body>
+</html>

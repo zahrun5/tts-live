@@ -1,0 +1,9 @@
+{
+  "name": "Susun Kata Acak Live",
+  "short_name": "Susun Kata Acak",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14101f",
+  "theme_color": "#14101f",
+  "orientation": "portrait"
+}

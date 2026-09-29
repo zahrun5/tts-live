@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTS Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#14101f">
+<style>
+  :root {
+    --bg-deep: #14101f;
+    --panel: #1f1a33;
+    --panel-light: #2a2340;
+    --accent: #8b6ef5;
+    --accent-soft: rgba(139, 110, 245, 0.25);
+    --gold: #f5b942;
+    --silver: #c9c9d4;
+    --bronze: #d08a5b;
+    --text-primary: #f5f3fb;
+    --text-muted: #9b93b8;
+    --cell-bg: #f5f3fb;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 100vw; height: 100vh;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+  }
+  #app {
+    display: flex; flex-direction: column;
+    width: 100vw; height: 100vh;
+    padding: 3vh 3vw 2vh;
+    gap: 1.6vh;
+  }
+  #activeClue {
+    flex: 0 0 auto;
+    background: var(--gold);
+    border-radius: 12px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 3px 12px rgba(245, 185, 66, 0.3);
+  }
+  #activeClue .activeClue-label {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    font-size: clamp(8px, 2vw, 10px);
+    color: #5c3d00;
+    background: rgba(0,0,0,0.12);
+    padding: 3px 7px;
+    border-radius: 999px;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+    flex: 0 0 auto;
+  }
+  #activeClue .activeClue-no {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 800;
+    font-size: clamp(14px, 3.6vw, 18px);
+    color: #241c3a;
+    flex: 0 0 auto;
+  }
+  #activeClue .activeClue-dir {
+    font-size: clamp(11px, 2.8vw, 14px);
+    color: #4a3300;
+    flex: 0 0 auto;
+  }
+  #activeClue .activeClue-text {
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: clamp(12px, 3vw, 14px);
+    color: #241c3a;
+    line-height: 1.2;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  #activeClue.done {
+    background: #4ade80;
+  }
+  #activeClue.done .activeClue-text,
+  #activeClue.done .activeClue-no,
+  #activeClue.done .activeClue-dir { color: #0f3d1f; }
+
+  #gridWrap {
+    flex: 2; display: flex; align-items: center; justify-content: center;
+    min-height: 0; position: relative;
+  }
+  #grid { display: grid; gap: 2px; }
+  .cell { position: relative; background: transparent; }
+  .cell.open { background: var(--cell-bg); border-radius: 3px; }
+  .cell .num {
+    position: absolute; top: 2px; left: 3px;
+    font-size: 0.26em; font-weight: 700; color: var(--accent);
+    font-family: 'Inter', sans-serif;
+  }
+  .cell .letter {
+    width: 100%; height: 100%; display: flex;
+    align-items: center; justify-content: center;
+    font-family: 'Baloo 2', sans-serif; font-weight: 700;
+    color: #241c3a; font-size: 0.55em;
+  }
+  #toast {
+    position: absolute; top: -6px; left: 50%;
+    transform: translate(-50%, -130%);
+    background: var(--accent); color: #14101f;
+    padding: 10px 18px; border-radius: 999px; font-weight: 700;
+    font-size: clamp(12px, 3vw, 15px); white-space: nowrap;
+    box-shadow: 0 6px 20px var(--accent-soft);
+    opacity: 0; transition: transform .35s ease, opacity .35s ease;
+    pointer-events: none; z-index: 5;
+  }
+  #toast.show { transform: translate(-50%, 0%); opacity: 1; }
+
+  #tickerCard {
+    flex: 1.2; background: var(--panel); border-radius: 16px;
+    padding: 14px 16px; display: flex; flex-direction: column;
+    min-height: 0; overflow: hidden;
+  }
+  #tickerCard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: clamp(11px, 2.6vw, 14px); color: var(--accent);
+    margin-bottom: 8px;
+  }
+  #clueColumns { flex: 1; display: flex; gap: 12px; min-height: 0; }
+  .clue-col { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+  .clue-col .col-title {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700; letter-spacing: 0.5px;
+    font-size: clamp(10px, 2.4vw, 12px); color: var(--text-muted);
+    margin-bottom: 6px; flex: 0 0 auto; display: flex; align-items: center; gap: 6px;
+  }
+  .col-title .solved-count {
+    font-family: 'Inter', sans-serif; font-weight: 600; color: #4ade80;
+    letter-spacing: 0; font-size: 0.95em;
+  }
+  .col-list {
+    flex: 1; overflow: hidden; position: relative;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+  .col-track {
+    position: absolute; top: 0; left: 0; width: 100%;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .col-track.scrolling { animation-name: colScroll; animation-timing-function: linear; animation-iteration-count: infinite; }
+  @keyframes colScroll { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+  .clue-row {
+    display: flex; gap: 7px; align-items: flex-start;
+    border-radius: 8px; padding: 6px 9px;
+    font-size: clamp(11px, 2.6vw, 13.5px); line-height: 1.3;
+  }
+  .clue-row.pending {
+    background: var(--gold); color: #241c3a; font-weight: 700;
+  }
+  .clue-row.pending .clue-no { color: #4a3300; }
+  .clue-row.solved {
+    background: transparent; color: var(--text-muted); font-weight: 500;
+    opacity: 0.55; text-decoration: line-through; text-decoration-thickness: 1.5px;
+  }
+  .clue-row.solved .clue-no { color: #4ade80; text-decoration: none; }
+  .clue-row .clue-no {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800; flex: 0 0 auto;
+  }
+  .clue-row .clue-check { flex: 0 0 auto; }
+
+  #leaderboard {
+    position: absolute; top: 8px; right: 8px; z-index: 4;
+    background: rgba(31, 26, 51, 0.82); border-radius: 12px;
+    padding: 8px 10px; display: flex; flex-direction: column;
+    min-width: 120px; max-width: 44vw;
+  }
+  #leaderboard .label {
+    font-family: 'Baloo 2', sans-serif; font-weight: 600;
+    font-size: 10px; color: var(--gold);
+    margin-bottom: 5px; display: flex; align-items: center; gap: 4px;
+  }
+  #lbList { display: flex; flex-direction: column; gap: 3px; }
+  .lb-row {
+    display: flex; align-items: center; gap: 6px;
+    background: transparent; border-radius: 0; padding: 0;
+  }
+  .lb-rank {
+    font-family: 'Baloo 2', sans-serif; font-weight: 800;
+    font-size: 10px; width: 12px; text-align: center; color: var(--text-muted);
+  }
+  .lb-row:nth-child(1) .lb-rank { color: var(--gold); }
+  .lb-row:nth-child(2) .lb-rank { color: var(--silver); }
+  .lb-row:nth-child(3) .lb-rank { color: var(--bronze); }
+  .lb-name { flex: 1; font-weight: 600; font-size: 10.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 20vw; }
+  .lb-score { font-family: 'Baloo 2', sans-serif; font-weight: 700; color: var(--accent); font-size: 10.5px; }
+  .empty-hint { color: var(--text-muted); font-size: 13px; text-align: center; padding-top: 10px; }
+
+  #banner {
+    position: fixed; bottom: 2vh; left: 50%; transform: translateX(-50%);
+    background: var(--panel-light); border: 1px solid var(--accent);
+    color: var(--text-primary); padding: 10px 20px; border-radius: 999px;
+    font-size: 13px; font-weight: 600; display: none; z-index: 10;
+  }
+  #banner.show { display: block; }
+
+  /* Mode landscape: panel "Semua Pertanyaan" pindah ke kanan, grid di kiri */
+  @media (orientation: landscape) {
+    #app {
+      display: grid;
+      grid-template-columns: 1fr minmax(240px, 32%);
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "active active"
+        "grid   ticker"
+        "avatars avatars";
+      gap: 1.4vh 1.6vw;
+      padding: 2vh 2.4vw;
+    }
+    #activeClue { grid-area: active; }
+    #gridWrap { grid-area: grid; min-width: 0; }
+    #tickerCard { grid-area: ticker; flex: unset; min-height: 0; }
+    #clueColumns { flex-direction: column; gap: 10px; }
+    #avatarZone { grid-area: avatars; }
+  }
+
+  #avatarZone {
+    flex: 0 0 64px;
+    position: relative;
+    background: transparent;
+    border-radius: 12px;
+    overflow: visible;
+    min-height: 64px;
+  }
+  .mini-avatar {
+    position: absolute;
+    bottom: 4px;
+    display: flex; flex-direction: column; align-items: center;
+    pointer-events: none;
+    will-change: left;
+  }
+  .mini-avatar .emoji {
+    display: block; font-size: 26px; line-height: 1;
+    animation: avatarBob 0.5s ease-in-out infinite alternate;
+  }
+  .mini-avatar.facing-left .emoji { transform: scaleX(-1); }
+  .mini-avatar .name-tag {
+    font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 8px;
+    color: var(--text-primary); background: rgba(0,0,0,0.45);
+    padding: 1px 6px; border-radius: 999px; margin-bottom: 2px;
+    white-space: nowrap; max-width: 84px; overflow: hidden; text-overflow: ellipsis;
+    order: -1;
+  }
+  .mini-avatar .comment-bubble {
+    font-family: 'Inter', sans-serif; font-weight: 600; font-size: 9.5px;
+    color: #14101f; background: var(--text-primary);
+    padding: 3px 9px; border-radius: 10px; margin-bottom: 4px;
+    white-space: nowrap; max-width: 150px; overflow: hidden; text-overflow: ellipsis;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    position: relative; order: -2;
+  }
+  .mini-avatar .comment-bubble::after {
+    content: '';
+    position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%);
+    border-width: 4px 4px 0 4px; border-style: solid;
+    border-color: var(--text-primary) transparent transparent transparent;
+  }
+  @keyframes avatarBob {
+    from { transform: translateY(0); }
+    to   { transform: translateY(-4px); }
+  }
+</style>
+</head>
+<body>
+  <div id="app">
+    <div id="activeClue">
+      <span class="activeClue-label">SEDANG DICARI</span>
+      <span class="activeClue-no"></span>
+      <span class="activeClue-dir"></span>
+      <span class="activeClue-text">Menunggu soal...</span>
+    </div>
+
+    <div id="gridWrap">
+      <div id="toast"></div>
+      <div id="grid"></div>
+      <div id="leaderboard">
+        <div class="label">🏆 Papan Juara</div>
+        <div id="lbList"><div class="empty-hint">Belum ada yang jawab</div></div>
+      </div>
+    </div>
+
+    <div id="tickerCard">
+      <div class="label">📋 Semua Pertanyaan</div>
+      <div id="clueColumns">
+        <div class="clue-col">
+          <div class="col-title">MENDATAR <span class="solved-count" id="acrossSolved"></span></div>
+          <div class="col-list" id="acrossList"><div class="col-track" id="acrossTrack"></div></div>
+        </div>
+        <div class="clue-col">
+          <div class="col-title">MENURUN <span class="solved-count" id="downSolved"></span></div>
+          <div class="col-list" id="downList"><div class="col-track" id="downTrack"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="avatarZone"></div>
+  </div>
+
+  <div id="banner"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+  </script>
+  <script src="/shared/game-switch-watcher.js"></script>
+  <script src="/shared/vote-overlay.js"></script>
+  <script>
+    const gridEl = document.getElementById('grid');
+    const gridWrap = document.getElementById('gridWrap');
+    const toastEl = document.getElementById('toast');
+    const acrossListEl = document.getElementById('acrossList');
+    const downListEl = document.getElementById('downList');
+    const acrossTrackEl = document.getElementById('acrossTrack');
+    const downTrackEl = document.getElementById('downTrack');
+    const acrossSolvedEl = document.getElementById('acrossSolved');
+    const downSolvedEl = document.getElementById('downSolved');
+    const lbList = document.getElementById('lbList');
+    const bannerEl = document.getElementById('banner');
+    const activeClueEl = document.getElementById('activeClue');
+    const activeClueNoEl = activeClueEl.querySelector('.activeClue-no');
+    const activeClueDirEl = activeClueEl.querySelector('.activeClue-dir');
+    const activeClueTextEl = activeClueEl.querySelector('.activeClue-text');
+
+    let currentPuzzle = null;
+    let toastTimer = null;
+
+    function buildCellMap(rows, cols, words) {
+      const map = Array.from({ length: rows }, () => Array(cols).fill(null));
+      words.forEach(w => {
+        for (let i = 0; i < w.length; i++) {
+          const r = w.row + (w.direction === 'down' ? i : 0);
+          const c = w.col + (w.direction === 'across' ? i : 0);
+          if (!map[r][c]) map[r][c] = { number: null, letter: '' };
+          if (i === 0 && !map[r][c].number) map[r][c].number = w.number;
+          if (w.answer) map[r][c].letter = w.answer[i];
+        }
+      });
+      return map;
+    }
+
+    function renderGrid(data) {
+      currentPuzzle = data;
+      const { rows, cols, words } = data;
+      const map = buildCellMap(rows, cols, words);
+
+      const cellSize = Math.floor(Math.min(gridWrap.clientWidth / cols, gridWrap.clientHeight / rows));
+
+      gridEl.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
+      gridEl.style.gridTemplateRows = `repeat(${rows}, ${cellSize}px)`;
+      gridEl.style.fontSize = `${cellSize}px`;
+      gridEl.innerHTML = '';
+
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+          const cellData = map[r][c];
+          const div = document.createElement('div');
+          div.className = 'cell' + (cellData ? ' open' : '');
+          if (cellData) {
+            if (cellData.number) {
+              const num = document.createElement('span');
+              num.className = 'num';
+              num.textContent = cellData.number;
+              div.appendChild(num);
+            }
+            const letter = document.createElement('div');
+            letter.className = 'letter';
+            letter.textContent = cellData.letter || '';
+            div.appendChild(letter);
+          }
+          gridEl.appendChild(div);
+        }
+      }
+    }
+
+    // Scroll otomatis per kolom (Mendatar/Menurun terpisah, ngukur sendiri-sendiri).
+    // Soal yang udah kejawab disingkirin dari list, cuma dihitung di label kolom.
+    // Animasi CUMA nyala kalau soalnya kepanjangan buat muat di kolom -
+    // kalau muat semua, kolomnya diem aja, gak dipaksa scroll.
+    function renderClueRow(w) {
+      return `<div class="clue-row pending"><span class="clue-no">${w.number}</span><span>${w.clue}</span></div>`;
+    }
+
+    function renderClueColumn(trackEl, listEl, items) {
+      const rowsHtml = items.map(renderClueRow).join('') || '<div class="empty-hint">Semua kejawab</div>';
+      trackEl.classList.remove('scrolling');
+      trackEl.style.animationDuration = '';
+      trackEl.innerHTML = rowsHtml;
+
+      if (items.length === 0) return;
+
+      requestAnimationFrame(() => {
+        const overflow = trackEl.scrollHeight > listEl.clientHeight + 4;
+        if (overflow) {
+          trackEl.innerHTML = rowsHtml + rowsHtml; // duplikat konten buat loop mulus
+          trackEl.style.animationDuration = `${Math.max(8, items.length * 2.5)}s`;
+          trackEl.classList.add('scrolling');
+        }
+      });
+    }
+
+    function renderClueList(words) {
+      const across = words.filter(w => w.direction === 'across');
+      const down = words.filter(w => w.direction === 'down');
+      const acrossPending = across.filter(w => !w.answer);
+      const downPending = down.filter(w => !w.answer);
+      const acrossSolved = across.length - acrossPending.length;
+      const downSolved = down.length - downPending.length;
+
+      acrossSolvedEl.textContent = acrossSolved ? `${acrossSolved} terjawab ✓` : '';
+      downSolvedEl.textContent = downSolved ? `${downSolved} terjawab ✓` : '';
+
+      renderClueColumn(acrossTrackEl, acrossListEl, acrossPending);
+      renderClueColumn(downTrackEl, downListEl, downPending);
+    }
+
+    // Nyari pertanyaan pertama yang belum kejawab (belum ada w.answer),
+    // biar penonton fokus ke 1 soal aja tanpa harus scroll list.
+    function renderActiveClue(words) {
+      const unsolved = words.find(w => !w.answer);
+
+      if (!unsolved) {
+        activeClueEl.classList.add('done');
+        activeClueNoEl.textContent = '';
+        activeClueDirEl.textContent = '';
+        activeClueTextEl.textContent = '🎉 Semua pertanyaan terjawab!';
+        return;
+      }
+
+      activeClueEl.classList.remove('done');
+      activeClueNoEl.textContent = unsolved.number;
+      activeClueDirEl.textContent = unsolved.direction === 'across' ? '→' : '↓';
+      activeClueTextEl.textContent = unsolved.clue;
+    }
+
+    function renderLeaderboard(list) {
+      if (!list || list.length === 0) {
+        lbList.innerHTML = '<div class="empty-hint">Belum ada yang jawab</div>';
+        return;
+      }
+      lbList.innerHTML = list.map((row, i) => `
+        <div class="lb-row">
+          <span class="lb-rank">${i + 1}</span>
+          <span class="lb-name">${escapeHtml(row.player)}</span>
+          <span class="lb-score">${row.score}</span>
+        </div>`).join('');
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    function showToast(data) {
+      toastEl.textContent = `${data.player} benar! No.${data.number}: ${data.answer.toUpperCase()}`;
+      toastEl.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3000);
+    }
+
+    function showBanner(text) { bannerEl.textContent = text; bannerEl.classList.add('show'); }
+    function hideBanner() { bannerEl.classList.remove('show'); }
+
+    socket.on('game:switched', () => window.location.reload());
+    socket.on('update', (data) => { renderGrid(data); renderClueList(data.words); renderActiveClue(data.words); });
+    socket.on('answer:correct', (data) => showToast(data));
+    socket.on('leaderboard:update', (list) => renderLeaderboard(list));
+    socket.on('puzzle:completed', () => showBanner('🎉 Puzzle selesai! Menyiapkan soal baru...'));
+    socket.on('puzzle:new', () => hideBanner());
+    socket.on('puzzle:error', (data) => { showBanner('⚠️ ' + data.message); setTimeout(hideBanner, 4000); });
+
+    // ===== Avatar viewer =====
+    const avatarZone = document.getElementById('avatarZone');
+    const activeAvatars = {};
+
+    function spawnAvatar(player, emoji) {
+      if (activeAvatars[player]) return;
+      const el = document.createElement('div');
+      el.className = 'mini-avatar';
+      el.innerHTML = `<span class="emoji">${emoji}</span><span class="name-tag">${player}</span>`;
+      avatarZone.appendChild(el);
+      el.style.left = (Math.random() * Math.max(0, avatarZone.clientWidth - 40)) + 'px';
+      activeAvatars[player] = { el, timer: null };
+      walkRandomly(player);
+    }
+
+    function walkRandomly(player) {
+      const entry = activeAvatars[player];
+      if (!entry) return;
+      const zoneWidth = avatarZone.clientWidth || 300;
+      const avatarWidth = entry.el.offsetWidth || 40;
+      const maxLeft = Math.max(0, zoneWidth - avatarWidth);
+      const currentLeft = parseFloat(entry.el.style.left) || 0;
+      const targetLeft = Math.random() * maxLeft;
+      const duration = 2.5 + Math.random() * 3;
+      entry.el.classList.toggle('facing-left', targetLeft < currentLeft);
+      entry.el.style.transition = `left ${duration}s linear`;
+      entry.el.style.left = targetLeft + 'px';
+      entry.timer = setTimeout(() => walkRandomly(player), duration * 1000);
+    }
+
+    function showComment(player, text) {
+      const entry = activeAvatars[player];
+      if (!entry) return;
+      let bubble = entry.el.querySelector('.comment-bubble');
+      if (!bubble) {
+        bubble = document.createElement('span');
+        bubble.className = 'comment-bubble';
+        entry.el.appendChild(bubble);
+      }
+      bubble.textContent = text;
+      clearTimeout(entry.commentTimer);
+      entry.commentTimer = setTimeout(() => bubble.remove(), 4000);
+    }
+
+    function clearAllAvatars() {
+      Object.values(activeAvatars).forEach(({ el, timer, commentTimer }) => {
+        clearTimeout(timer); clearTimeout(commentTimer); el.remove();
+      });
+      for (const key in activeAvatars) delete activeAvatars[key];
+    }
+
+    function removeAvatar(player) {
+      const entry = activeAvatars[player];
+      if (!entry) return;
+      clearTimeout(entry.timer); clearTimeout(entry.commentTimer);
+      entry.el.remove(); delete activeAvatars[player];
+    }
+
+    socket.on('avatar:spawn', ({ player, emoji }) => spawnAvatar(player, emoji));
+    socket.on('avatar:sync', (list) => { clearAllAvatars(); list.forEach(({ player, emoji }) => spawnAvatar(player, emoji)); });
+    socket.on('avatar:reset', clearAllAvatars);
+    socket.on('avatar:remove', ({ player }) => removeAvatar(player));
+    socket.on('chat:comment', ({ player, text }) => showComment(player, text));
+
+    window.addEventListener('resize', () => {
+      if (!currentPuzzle) return;
+      renderGrid(currentPuzzle);
+      renderClueList(currentPuzzle.words); // tinggi kolom berubah pas rotasi, jadi status scroll harus dihitung ulang
+    });
+
+    // ===== Nahan layar HP biar gak mati sendiri, kayak pas nonton video =====
+    let wakeLock = null;
+    let noSleepStarted = false;
+
+    function startNoSleepFallback() {
+      if (noSleepStarted) return;
+      noSleepStarted = true;
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = 2; canvas.height = 2;
+        canvas.getContext('2d').fillRect(0, 0, 2, 2);
+        const stream = canvas.captureStream(1);
+        const video = document.createElement('video');
+        video.muted = true;
+        video.setAttribute('muted', '');
+        video.setAttribute('playsinline', '');
+        video.setAttribute('autoplay', '');
+        video.style.cssText = 'position:fixed;bottom:0;right:0;width:1px;height:1px;opacity:0.01;pointer-events:none;';
+        video.srcObject = stream;
+        document.body.appendChild(video);
+        video.play().catch(() => {});
+      } catch (e) {
+        console.error('⚠️ Fallback nahan layar gagal:', e.message);
+      }
+    }
+
+    async function requestWakeLock() {
+      if ('wakeLock' in navigator) {
+        try {
+          wakeLock = await navigator.wakeLock.request('screen');
+          wakeLock.addEventListener('release', () => { wakeLock = null; });
+          return;
+        } catch (e) {
+          console.error('⚠️ Wake Lock API gagal, pakai fallback:', e.message);
+        }
+      }
+      startNoSleepFallback();
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible' && wakeLock === null) requestWakeLock();
+    });
+
+    requestWakeLock();
+ 
+  document.body.addEventListener('click', function goFullscreen() {
+    document.documentElement.requestFullscreen().catch(() => {});
+    requestWakeLock();
+    document.body.removeEventListener('click', goFullscreen);
+  }, { once: true });
+</script>
+</body>
+</html>

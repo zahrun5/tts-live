@@ -1,0 +1,928 @@
+[
+  {
+    "theme": "Hewan darat pemakan tumbuhan",
+    "words": [
+      "SAPI",
+      "KUDA",
+      "RUSA",
+      "DOMBA",
+      "UNTA",
+      "GAJAH",
+      "ZEBRA",
+      "BADAK"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Kota di Indonesia berawalan huruf S",
+    "words": [
+      "SURABAYA",
+      "SEMARANG",
+      "SUKABUMI",
+      "SALATIGA",
+      "SUMEDANG",
+      "SIDOARJO",
+      "SIBOLGA",
+      "SINTANG",
+      "SUMENEP",
+      "SERANG",
+      "SABANG",
+      "SORONG",
+      "SUBANG",
+      "SAMPIT",
+      "SRAGEN",
+      "SOLO"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Olahraga yang menggunakan bola",
+    "words": [
+      "BASKET",
+      "VOLI",
+      "FUTSAL",
+      "TENIS",
+      "GOLF",
+      "KASTI",
+      "BILIAR",
+      "BOLING",
+      "BISBOL",
+      "KRIKET",
+      "POLO",
+      "PINGPONG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Profesi yang bekerja di lapangan",
+    "words": [
+      "PETANI",
+      "NELAYAN",
+      "POLISI",
+      "TENTARA",
+      "KURIR",
+      "SOPIR",
+      "SATPAM",
+      "MANDOR",
+      "KULI",
+      "TUKANG",
+      "PEMADAM",
+      "OJEK",
+      "KENEK",
+      "BURUH",
+      "PELAUT",
+      "PETERNAK",
+      "WASIT",
+      "ATLET"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda di dalam kotak pensil",
+    "words": [
+      "PENSIL",
+      "PULPEN",
+      "PENA",
+      "SPIDOL",
+      "RAUTAN",
+      "MISTAR",
+      "JANGKA",
+      "KRAYON",
+      "TINTA",
+      "KLIP",
+      "GUNTING",
+      "STABILO"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan kecil berkaki banyak",
+    "words": [
+      "SEMUT",
+      "LEBAH",
+      "LALAT",
+      "NYAMUK",
+      "KECOA",
+      "KEPITING",
+      "UDANG",
+      "BELALANG",
+      "JANGKRIK",
+      "CAPUNG",
+      "KUMBANG",
+      "KELABANG",
+      "LIPAN",
+      "KUTU",
+      "RAYAP",
+      "LOBSTER",
+      "GURITA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Buah segar yang memiliki biji",
+    "words": [
+      "APEL",
+      "JERUK",
+      "MELON",
+      "SALAK",
+      "SAWO",
+      "JAMBU",
+      "PIR",
+      "TOMAT",
+      "KURMA",
+      "LECI"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Menu hidangan untuk makan malam",
+    "words": [
+      "AYAM",
+      "BEBEK",
+      "RENDANG",
+      "GULAI",
+      "SEMUR",
+      "CAPCAY",
+      "SATE",
+      "BAKSO",
+      "KANGKUNG",
+      "TEMPE",
+      "TAHU",
+      "TELUR",
+      "RAWON",
+      "SOTO"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Perlengkapan olahraga air",
+    "words": [
+      "KACAMATA",
+      "PAPAN",
+      "TOPI",
+      "HANDUK",
+      "DAYUNG",
+      "ROMPI",
+      "MASKER",
+      "BAN",
+      "KANO",
+      "KAYAK",
+      "TABUNG",
+      "SIRIP",
+      "BAJU"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Menu hidangan makan malam",
+    "words": [
+      "SATE",
+      "SOTO",
+      "BAKSO",
+      "RAWON",
+      "GULAI",
+      "RENDANG",
+      "CAPCAY",
+      "SEMUR",
+      "OPOR",
+      "AYAM",
+      "BEBEK",
+      "IKAN",
+      "TEMPE",
+      "TAHU",
+      "PERKEDEL",
+      "TELUR",
+      "BISTIK",
+      "NASI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Tanaman hias di pekarangan rumah",
+    "words": [
+      "MAWAR",
+      "MELATI",
+      "ANGGREK",
+      "KAKTUS",
+      "BONSAI",
+      "KELADI",
+      "PAKIS",
+      "PALEM",
+      "CEMARA",
+      "KAMBOJA",
+      "DAHLIA",
+      "BEGONIA",
+      "SOKA"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda kecil yang sering dibawa di tas",
+    "words": [
+      "PONSEL",
+      "DOMPET",
+      "KUNCI",
+      "TISU",
+      "PENA",
+      "KARTU",
+      "UANG",
+      "KACAMATA",
+      "CERMIN",
+      "BEDAK",
+      "SISIR",
+      "PARFUM",
+      "LIPSTIK",
+      "JEPIT",
+      "OBAT",
+      "KABEL"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Alat untuk memasak dan makan di dapur",
+    "words": [
+      "PANCI",
+      "WAJAN",
+      "PISAU",
+      "GARPU",
+      "GELAS",
+      "TEKO",
+      "OVEN",
+      "COBEK",
+      "PARUT"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Makanan berkuah khas Indonesia",
+    "words": [
+      "SOTO",
+      "BAKSO",
+      "RAWON",
+      "GULAI",
+      "OPOR",
+      "LODEH",
+      "SEMUR",
+      "SUP"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Kegiatan santai menjelang tidur malam",
+    "words": [
+      "TIDUR",
+      "REBAH",
+      "DOA",
+      "BACA",
+      "MANDI",
+      "MINUM",
+      "REHAT",
+      "CUCI"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Tanaman yang tumbuh di daerah pegunungan",
+    "words": [
+      "PINUS",
+      "CEMARA",
+      "PAKIS",
+      "LUMUT",
+      "TEH",
+      "KOPI",
+      "KENTANG",
+      "WORTEL",
+      "KUBIS",
+      "STROBERI",
+      "APEL",
+      "JAMUR",
+      "SEMAK",
+      "RUMPUT",
+      "BAMBU",
+      "BROKOLI",
+      "SELADA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda untuk bersih-bersih rumah",
+    "words": [
+      "SAPU",
+      "PEL",
+      "LAP",
+      "SIKAT",
+      "SABUN",
+      "BUSA",
+      "EMBER",
+      "SEROK",
+      "TISU",
+      "KAIN"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Buah yang punya kulit tebal",
+    "words": [
+      "DURIAN",
+      "SEMANGKA",
+      "JERUK",
+      "NANAS",
+      "NANGKA",
+      "MELON",
+      "KELAPA",
+      "PISANG",
+      "ALPUKAT",
+      "DELIMA",
+      "SALAK",
+      "MANGGIS"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Benda yang dibawa saat bepergian",
+    "words": [
+      "KOPER",
+      "PASPOR",
+      "TIKET",
+      "DOMPET",
+      "KAMERA",
+      "TOPI",
+      "PAYUNG",
+      "JAKET",
+      "SANDAL",
+      "SEPATU",
+      "BOTOL",
+      "SISIR",
+      "HANDUK",
+      "OBAT",
+      "UANG",
+      "RANSEL"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Sayuran berwarna hijau",
+    "words": [
+      "BAYAM",
+      "SAWI",
+      "KANGKUNG",
+      "BROKOLI",
+      "BUNCIS",
+      "SELADA",
+      "SELEDRI",
+      "TIMUN",
+      "KUBIS",
+      "PARE",
+      "KELOR",
+      "OYONG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Alat makan dan minum di dapur",
+    "words": [
+      "SENDOK",
+      "GARPU",
+      "PIRING",
+      "MANGKUK",
+      "GELAS",
+      "CANGKIR",
+      "SUMPIT",
+      "SEDOTAN",
+      "TATAKAN",
+      "PISAU",
+      "CENTONG",
+      "TEKO",
+      "BOTOL",
+      "NAMPAN"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Bahan pembuat kue manis",
+    "words": [
+      "GULA",
+      "TERIGU",
+      "TELUR",
+      "SUSU",
+      "MENTEGA",
+      "COKELAT",
+      "KEJU",
+      "VANILI",
+      "RAGI",
+      "MADU",
+      "SANTAN",
+      "GARAM",
+      "SELAI",
+      "MESES"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Jajanan pasar tradisional Indonesia",
+    "words": [
+      "LEMPER",
+      "PASTEL",
+      "RISOL",
+      "BAKWAN",
+      "LUMPIA",
+      "APEM",
+      "CUCUR",
+      "KLEPON",
+      "BIKANG",
+      "PUTU",
+      "CENIL",
+      "LUPIS",
+      "GETUK",
+      "KROKET",
+      "COMBRO",
+      "NAGASARI",
+      "SERABI"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Benda cair yang ada di dapur",
+    "words": [
+      "AIR",
+      "KECAP",
+      "SAUS",
+      "CUKA",
+      "MADU",
+      "SUSU",
+      "SIRUP",
+      "KALDU",
+      "TEH"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Wadah untuk membawa barang",
+    "words": [
+      "TAS",
+      "KOPER",
+      "PETI",
+      "KOTAK",
+      "EMBER",
+      "BAK",
+      "DUS",
+      "SAKU"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Benda yang biasa ada di meja makan",
+    "words": [
+      "PIRING",
+      "SENDOK",
+      "GARPU",
+      "GELAS",
+      "MANGKUK",
+      "CANGKIR",
+      "TEKO",
+      "BOTOL",
+      "TAPLAK",
+      "SERBET",
+      "TISU",
+      "TUDUNG",
+      "NAMPAN",
+      "KECAP",
+      "SAUS",
+      "SAMBAL",
+      "TOPLES",
+      "SEDOTAN"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bumbu dapur alami untuk memasak",
+    "words": [
+      "BAWANG",
+      "CABAI",
+      "GARAM",
+      "GULA",
+      "KUNYIT",
+      "JAHE",
+      "LENGKUAS",
+      "MERICA",
+      "KETUMBAR",
+      "PALA",
+      "KEMIRI",
+      "TERASI",
+      "SERAI",
+      "SALAM",
+      "CENGKEH",
+      "ASAM",
+      "JINTAN"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan bersayap yang bisa terbang",
+    "words": [
+      "ELANG",
+      "GAGAK",
+      "LEBAH",
+      "LALAT",
+      "NURI",
+      "DARA",
+      "PIPIT",
+      "CAMAR"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Tanaman yang tumbuh di dataran rendah",
+    "words": [
+      "PADI",
+      "JAGUNG",
+      "KELAPA",
+      "TEBU",
+      "PISANG",
+      "KARET",
+      "KEDELAI",
+      "MANGGA",
+      "SINGKONG",
+      "PEPAYA",
+      "SEMANGKA",
+      "CABAI",
+      "MELON"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan yang hidup di air",
+    "words": [
+      "IKAN",
+      "PAUS",
+      "HIU",
+      "UDANG",
+      "CUMI",
+      "GURITA",
+      "KEPITING",
+      "BELUT",
+      "PENYU",
+      "LELE",
+      "NILA",
+      "KERANG",
+      "PATIN",
+      "BAWAL",
+      "BANDENG",
+      "CUPANG"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Pakaian dan alas pelindung kaki",
+    "words": [
+      "CELANA",
+      "SEPATU",
+      "SANDAL",
+      "BOT",
+      "SELOP",
+      "KASUT",
+      "STOKING",
+      "SARUNG",
+      "ROK",
+      "KULOT",
+      "LEGGING",
+      "DEKER",
+      "BAKIYAK"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Buah berukuran kecil",
+    "words": [
+      "CERI",
+      "DUKU",
+      "LECI",
+      "SAWO",
+      "KIWI",
+      "KURMA",
+      "SALAK",
+      "BERI",
+      "PLUM"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Tanaman yang tumbuh di pesisir pantai",
+    "words": [
+      "KELAPA",
+      "BAKAU",
+      "PANDAN",
+      "CEMARA",
+      "KETAPANG",
+      "WARU",
+      "NIPAH",
+      "PALEM",
+      "BINTARO",
+      "SUKUN",
+      "ALGA",
+      "RUMPUT"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Peralatan dapur untuk memasak dan makan",
+    "words": [
+      "GARPU",
+      "GELAS",
+      "PANCI",
+      "WAJAN",
+      "PISAU",
+      "TEKO",
+      "KUALI",
+      "OVEN"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bagian tubuh di area kepala dan leher",
+    "words": [
+      "MATA",
+      "PIPI",
+      "DAHI",
+      "DAGU",
+      "GIGI",
+      "ALIS",
+      "BIBIR",
+      "LIDAH",
+      "LEHER"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Kendaraan yang bergerak di air",
+    "words": [
+      "KAPAL",
+      "PERAHU",
+      "RAKIT",
+      "SAMPAN",
+      "FERI",
+      "SEKOCI",
+      "KANO",
+      "KAYAK",
+      "GETEK",
+      "PINISI",
+      "TONGKANG",
+      "GONDOLA",
+      "KLOTOK",
+      "TANKER"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Buah berwarna hijau",
+    "words": [
+      "ALPUKAT",
+      "SIRSAK",
+      "MELON",
+      "MANGGA",
+      "SRIKAYA",
+      "KELAPA",
+      "NANGKA",
+      "SUKUN",
+      "KIWI",
+      "JAMBU",
+      "APEL",
+      "PIR",
+      "ANGGUR",
+      "ZAITUN"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Nama kota dan kabupaten di Jawa Barat",
+    "words": [
+      "BANDUNG",
+      "BOGOR",
+      "BEKASI",
+      "DEPOK",
+      "CIMAHI",
+      "CIREBON",
+      "SUKABUMI",
+      "GARUT",
+      "CIANJUR",
+      "SUBANG",
+      "KARAWANG",
+      "KUNINGAN",
+      "CIAMIS",
+      "SUMEDANG"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Jenis tanaman hias di pekarangan rumah",
+    "words": [
+      "MAWAR",
+      "TULIP",
+      "LILI",
+      "ASTER",
+      "PALEM",
+      "PAKIS",
+      "ASOKA",
+      "BAMBU"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bumbu dan penyedap rasa di dapur",
+    "words": [
+      "GARAM",
+      "GULA",
+      "CABAI",
+      "LADA",
+      "JAHE",
+      "PALA",
+      "ASAM",
+      "CUKA",
+      "KECAP",
+      "SERAI"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bahan untuk membuat kue manis",
+    "words": [
+      "TERIGU",
+      "GULA",
+      "TELUR",
+      "MENTEGA",
+      "SUSU",
+      "COKELAT",
+      "KEJU",
+      "RAGI",
+      "VANILI",
+      "MESES",
+      "SELAI",
+      "MADU",
+      "PANDAN",
+      "SANTAN",
+      "KARAMEL",
+      "KISMIS",
+      "KACANG"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Pakaian dan perlengkapan lari pagi",
+    "words": [
+      "SEPATU",
+      "KAOS",
+      "CELANA",
+      "JAKET",
+      "TOPI",
+      "BOTOL",
+      "HANDUK",
+      "ROMPI",
+      "MANSET",
+      "BANDO",
+      "TAS",
+      "JAM"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Hewan pemakan tumbuhan berkaki empat",
+    "words": [
+      "SAPI",
+      "KAMBING",
+      "KUDA",
+      "DOMBA",
+      "KERBAU",
+      "KELINCI",
+      "RUSA",
+      "GAJAH",
+      "ZEBRA",
+      "JERAPAH",
+      "UNTA",
+      "KELEDAI",
+      "KANCIL",
+      "BADAK",
+      "TAPIR",
+      "BANTENG",
+      "BISON",
+      "PANDA"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Hewan yang pandai berenang",
+    "words": [
+      "HIU",
+      "IKAN",
+      "PAUS",
+      "BEBEK",
+      "KATAK",
+      "ANGSA",
+      "UDANG",
+      "PENYU",
+      "BELUT"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Benda yang ada di dalam kamar tidur",
+    "words": [
+      "KASUR",
+      "BANTAL",
+      "GULING",
+      "SELIMUT",
+      "SPREI",
+      "LAMPU",
+      "LEMARI",
+      "CERMIN",
+      "MEJA",
+      "KIPAS",
+      "GORDEN",
+      "KARPET",
+      "BONEKA",
+      "SISIR",
+      "JAM",
+      "BUKU"
+    ],
+    "level": 3
+  },
+  {
+    "theme": "Bagian tubuh di area kepala",
+    "words": [
+      "MATA",
+      "PIPI",
+      "DAGU",
+      "GIGI",
+      "LIDAH",
+      "ALIS",
+      "BIBIR",
+      "DAHI"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Bumbu penyedap rasa di dapur",
+    "words": [
+      "GARAM",
+      "GULA",
+      "LADA",
+      "CUKA",
+      "SAUS",
+      "KECAP",
+      "CABAI",
+      "JAHE",
+      "ASAM"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Makanan dan camilan bercita rasa asin",
+    "words": [
+      "KEJU",
+      "ABON",
+      "SOSIS",
+      "RISOL",
+      "KACANG",
+      "EMPING",
+      "KORNET",
+      "NUGGET",
+      "BAKWAN",
+      "CIRENG",
+      "PASTEL",
+      "KERUPUK",
+      "KERIPIK",
+      "BATAGOR"
+    ],
+    "level": 2
+  },
+  {
+    "theme": "Camilan manis teman minum teh",
+    "words": [
+      "BOLU",
+      "ROTI",
+      "DONAT",
+      "DODOL",
+      "WAJIK",
+      "PUTU",
+      "APEM",
+      "GETUK",
+      "LUPIS"
+    ],
+    "level": 1
+  },
+  {
+    "theme": "Benda di dalam ruang kantor",
+    "words": [
+      "MEJA",
+      "KURSI",
+      "PENA",
+      "BUKU",
+      "MAP",
+      "KLIP",
+      "MEMO",
+      "TINTA",
+      "RAK",
+      "LEM"
+    ],
+    "level": 1
+  }
+]

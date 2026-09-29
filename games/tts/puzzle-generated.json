@@ -1,0 +1,86 @@
+{
+  "rows": 7,
+  "cols": 7,
+  "words": [
+    {
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "col": 0,
+      "answer": "ANGIN",
+      "clue": "Udara yang bergerak"
+    },
+    {
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "col": 1,
+      "answer": "NAMA",
+      "clue": "Identitas diri seseorang"
+    },
+    {
+      "number": 3,
+      "direction": "across",
+      "row": 1,
+      "col": 0,
+      "answer": "SAPI",
+      "clue": "Hewan berkaki empat penghasil susu"
+    },
+    {
+      "number": 4,
+      "direction": "across",
+      "row": 1,
+      "col": 1,
+      "answer": "API",
+      "clue": "Panas dan menyala"
+    },
+    {
+      "number": 5,
+      "direction": "down",
+      "row": 1,
+      "col": 3,
+      "answer": "IKAN",
+      "clue": "Hewan air bersisik"
+    },
+    {
+      "number": 6,
+      "direction": "down",
+      "row": 1,
+      "col": 6,
+      "answer": "KAKI",
+      "clue": "Anggota tubuh untuk berjalan"
+    },
+    {
+      "number": 7,
+      "direction": "across",
+      "row": 2,
+      "col": 1,
+      "answer": "MAKAN",
+      "clue": "Aktivitas mengonsumsi makanan"
+    },
+    {
+      "number": 8,
+      "direction": "down",
+      "row": 2,
+      "col": 2,
+      "answer": "AWAN",
+      "clue": "Gumpalan uap air di langit"
+    },
+    {
+      "number": 9,
+      "direction": "down",
+      "row": 3,
+      "col": 4,
+      "answer": "MATA",
+      "clue": "Indera penglihatan"
+    },
+    {
+      "number": 10,
+      "direction": "across",
+      "row": 4,
+      "col": 3,
+      "answer": "NASI",
+      "clue": "Makanan pokok orang Indonesia"
+    }
+  ]
+}

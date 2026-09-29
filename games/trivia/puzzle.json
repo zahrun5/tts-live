@@ -1,0 +1,25 @@
+{
+  "category": "Geografi",
+  "question": "Ibu kota Indonesia adalah?",
+  "options": [
+    {
+      "letter": "A",
+      "text": "Jakarta"
+    },
+    {
+      "letter": "B",
+      "text": "Bandung"
+    },
+    {
+      "letter": "C",
+      "text": "Surabaya"
+    },
+    {
+      "letter": "D",
+      "text": "Yogyakarta"
+    }
+  ],
+  "correctLetter": "A",
+  "answered": false,
+  "winnerLetter": null
+}

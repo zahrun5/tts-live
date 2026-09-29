@@ -1,0 +1,9 @@
+{
+  "name": "TTS Live",
+  "short_name": "TTS Live",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14101f",
+  "theme_color": "#14101f",
+  "orientation": "portrait"
+}

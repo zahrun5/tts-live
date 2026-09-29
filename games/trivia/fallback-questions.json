@@ -1,0 +1,167 @@
+[
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Apa ibu kota Indonesia?",
+    "options": [
+      { "letter": "A", "text": "Jakarta" },
+      { "letter": "B", "text": "Bandung" },
+      { "letter": "C", "text": "Surabaya" },
+      { "letter": "D", "text": "Medan" }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Geografi",
+    "question": "Gunung tertinggi di Indonesia ada di provinsi mana?",
+    "options": [
+      { "letter": "A", "text": "Jawa Timur" },
+      { "letter": "B", "text": "Papua" },
+      { "letter": "C", "text": "Sumatera Utara" },
+      { "letter": "D", "text": "Bali" }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sains",
+    "question": "Planet apa yang dijuluki 'Planet Merah'?",
+    "options": [
+      { "letter": "A", "text": "Venus" },
+      { "letter": "B", "text": "Jupiter" },
+      { "letter": "C", "text": "Mars" },
+      { "letter": "D", "text": "Saturnus" }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Sejarah",
+    "question": "Indonesia merdeka pada tanggal berapa?",
+    "options": [
+      { "letter": "A", "text": "17 Agustus 1945" },
+      { "letter": "B", "text": "1 Juni 1945" },
+      { "letter": "C", "text": "28 Oktober 1928" },
+      { "letter": "D", "text": "10 November 1945" }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Olahraga",
+    "question": "Berapa jumlah pemain sepak bola dalam satu tim di lapangan?",
+    "options": [
+      { "letter": "A", "text": "9" },
+      { "letter": "B", "text": "10" },
+      { "letter": "C", "text": "11" },
+      { "letter": "D", "text": "12" }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Makanan",
+    "question": "Tempe terbuat dari bahan dasar apa?",
+    "options": [
+      { "letter": "A", "text": "Kacang tanah" },
+      { "letter": "B", "text": "Kedelai" },
+      { "letter": "C", "text": "Jagung" },
+      { "letter": "D", "text": "Beras" }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Hiburan",
+    "question": "Alat musik apa yang dimainkan dengan cara digoyangkan, khas Jawa Barat?",
+    "options": [
+      { "letter": "A", "text": "Gamelan" },
+      { "letter": "B", "text": "Angklung" },
+      { "letter": "C", "text": "Sasando" },
+      { "letter": "D", "text": "Kolintang" }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sains",
+    "question": "Berapa jumlah tulang pada tubuh manusia dewasa?",
+    "options": [
+      { "letter": "A", "text": "186" },
+      { "letter": "B", "text": "206" },
+      { "letter": "C", "text": "226" },
+      { "letter": "D", "text": "246" }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Geografi",
+    "question": "Pulau apa yang paling banyak penduduknya di Indonesia?",
+    "options": [
+      { "letter": "A", "text": "Sumatera" },
+      { "letter": "B", "text": "Kalimantan" },
+      { "letter": "C", "text": "Jawa" },
+      { "letter": "D", "text": "Sulawesi" }
+    ],
+    "correctLetter": "C"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Warna apa yang dihasilkan dari campuran warna biru dan kuning?",
+    "options": [
+      { "letter": "A", "text": "Ungu" },
+      { "letter": "B", "text": "Hijau" },
+      { "letter": "C", "text": "Oranye" },
+      { "letter": "D", "text": "Abu-abu" }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sejarah",
+    "question": "Siapa proklamator kemerdekaan Indonesia bersama Bung Karno?",
+    "options": [
+      { "letter": "A", "text": "Bung Tomo" },
+      { "letter": "B", "text": "Bung Hatta" },
+      { "letter": "C", "text": "Sudirman" },
+      { "letter": "D", "text": "Diponegoro" }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Sains",
+    "question": "Air mendidih pada suhu berapa derajat Celsius (di permukaan laut)?",
+    "options": [
+      { "letter": "A", "text": "90°C" },
+      { "letter": "B", "text": "100°C" },
+      { "letter": "C", "text": "110°C" },
+      { "letter": "D", "text": "120°C" }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Olahraga",
+    "question": "Bulu tangkis adalah olahraga yang paling identik dengan negara mana di Asia Tenggara?",
+    "options": [
+      { "letter": "A", "text": "Filipina" },
+      { "letter": "B", "text": "Indonesia" },
+      { "letter": "C", "text": "Vietnam" },
+      { "letter": "D", "text": "Laos" }
+    ],
+    "correctLetter": "B"
+  },
+  {
+    "category": "Makanan",
+    "question": "Rendang adalah masakan khas daerah mana?",
+    "options": [
+      { "letter": "A", "text": "Minangkabau" },
+      { "letter": "B", "text": "Betawi" },
+      { "letter": "C", "text": "Bali" },
+      { "letter": "D", "text": "Aceh" }
+    ],
+    "correctLetter": "A"
+  },
+  {
+    "category": "Pengetahuan Umum",
+    "question": "Berapa jumlah hari dalam satu tahun kabisat?",
+    "options": [
+      { "letter": "A", "text": "364" },
+      { "letter": "B", "text": "365" },
+      { "letter": "C", "text": "366" },
+      { "letter": "D", "text": "367" }
+    ],
+    "correctLetter": "C"
+  }
+]

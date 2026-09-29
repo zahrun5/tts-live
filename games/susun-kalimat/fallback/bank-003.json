@@ -1,0 +1,515 @@
+[
+  {
+    "sentence": "Sopir mengantar penumpang ke stasiun",
+    "words": [
+      "Sopir",
+      "mengantar",
+      "penumpang",
+      "ke",
+      "stasiun"
+    ]
+  },
+  {
+    "sentence": "Dokter memeriksa pasien dengan teliti",
+    "words": [
+      "Dokter",
+      "memeriksa",
+      "pasien",
+      "dengan",
+      "teliti"
+    ]
+  },
+  {
+    "sentence": "Perawat merawat pasien di rumah sakit",
+    "words": [
+      "Perawat",
+      "merawat",
+      "pasien",
+      "di",
+      "rumah",
+      "sakit"
+    ]
+  },
+  {
+    "sentence": "Polisi mengatur lalu lintas di jalan",
+    "words": [
+      "Polisi",
+      "mengatur",
+      "lalu",
+      "lintas",
+      "di",
+      "jalan"
+    ]
+  },
+  {
+    "sentence": "Pemadam kebakaran memadamkan api besar",
+    "words": [
+      "Pemadam",
+      "kebakaran",
+      "memadamkan",
+      "api",
+      "besar"
+    ]
+  },
+  {
+    "sentence": "Tukang kayu membuat kursi baru",
+    "words": [
+      "Tukang",
+      "kayu",
+      "membuat",
+      "kursi",
+      "baru"
+    ]
+  },
+  {
+    "sentence": "Montir memperbaiki mesin mobil rusak",
+    "words": [
+      "Montir",
+      "memperbaiki",
+      "mesin",
+      "mobil",
+      "rusak"
+    ]
+  },
+  {
+    "sentence": "Penjahit menjahit baju pengantin cantik",
+    "words": [
+      "Penjahit",
+      "menjahit",
+      "baju",
+      "pengantin",
+      "cantik"
+    ]
+  },
+  {
+    "sentence": "Pelukis melukis pemandangan gunung indah",
+    "words": [
+      "Pelukis",
+      "melukis",
+      "pemandangan",
+      "gunung",
+      "indah"
+    ]
+  },
+  {
+    "sentence": "Fotografer memotret pemandangan senja indah",
+    "words": [
+      "Fotografer",
+      "memotret",
+      "pemandangan",
+      "senja",
+      "indah"
+    ]
+  },
+  {
+    "sentence": "Wartawan menulis berita hari ini",
+    "words": [
+      "Wartawan",
+      "menulis",
+      "berita",
+      "hari",
+      "ini"
+    ]
+  },
+  {
+    "sentence": "Penulis menyelesaikan novel barunya",
+    "words": [
+      "Penulis",
+      "menyelesaikan",
+      "novel",
+      "barunya"
+    ]
+  },
+  {
+    "sentence": "Musisi memainkan piano dengan indah",
+    "words": [
+      "Musisi",
+      "memainkan",
+      "piano",
+      "dengan",
+      "indah"
+    ]
+  },
+  {
+    "sentence": "Anak kecil menangis mencari ibunya",
+    "words": [
+      "Anak",
+      "kecil",
+      "menangis",
+      "mencari",
+      "ibunya"
+    ]
+  },
+  {
+    "sentence": "Bayi tertidur pulas di ayunan",
+    "words": [
+      "Bayi",
+      "tertidur",
+      "pulas",
+      "di",
+      "ayunan"
+    ]
+  },
+  {
+    "sentence": "Remaja belajar naik sepeda motor",
+    "words": [
+      "Remaja",
+      "belajar",
+      "naik",
+      "sepeda",
+      "motor"
+    ]
+  },
+  {
+    "sentence": "Mahasiswa mengerjakan tugas di perpustakaan",
+    "words": [
+      "Mahasiswa",
+      "mengerjakan",
+      "tugas",
+      "di",
+      "perpustakaan"
+    ]
+  },
+  {
+    "sentence": "Siswa mengikuti ujian dengan tenang",
+    "words": [
+      "Siswa",
+      "mengikuti",
+      "ujian",
+      "dengan",
+      "tenang"
+    ]
+  },
+  {
+    "sentence": "Guru membagikan hasil ujian siswa",
+    "words": [
+      "Guru",
+      "membagikan",
+      "hasil",
+      "ujian",
+      "siswa"
+    ]
+  },
+  {
+    "sentence": "Kepala sekolah memberi sambutan singkat",
+    "words": [
+      "Kepala",
+      "sekolah",
+      "memberi",
+      "sambutan",
+      "singkat"
+    ]
+  },
+  {
+    "sentence": "Murid berbaris rapi di lapangan",
+    "words": [
+      "Murid",
+      "berbaris",
+      "rapi",
+      "di",
+      "lapangan"
+    ]
+  },
+  {
+    "sentence": "Karyawan bekerja lembur di kantor",
+    "words": [
+      "Karyawan",
+      "bekerja",
+      "lembur",
+      "di",
+      "kantor"
+    ]
+  },
+  {
+    "sentence": "Manajer memimpin rapat pagi ini",
+    "words": [
+      "Manajer",
+      "memimpin",
+      "rapat",
+      "pagi",
+      "ini"
+    ]
+  },
+  {
+    "sentence": "Sekretaris mencatat hasil rapat penting",
+    "words": [
+      "Sekretaris",
+      "mencatat",
+      "hasil",
+      "rapat",
+      "penting"
+    ]
+  },
+  {
+    "sentence": "Pelanggan mengantre di depan kasir",
+    "words": [
+      "Pelanggan",
+      "mengantre",
+      "di",
+      "depan",
+      "kasir"
+    ]
+  },
+  {
+    "sentence": "Kasir menghitung uang dengan cepat",
+    "words": [
+      "Kasir",
+      "menghitung",
+      "uang",
+      "dengan",
+      "cepat"
+    ]
+  },
+  {
+    "sentence": "Satpam menjaga gerbang sepanjang malam",
+    "words": [
+      "Satpam",
+      "menjaga",
+      "gerbang",
+      "sepanjang",
+      "malam"
+    ]
+  },
+  {
+    "sentence": "Tetangga mengobrol di depan rumah",
+    "words": [
+      "Tetangga",
+      "mengobrol",
+      "di",
+      "depan",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Kakak membeli buku baru di toko",
+    "words": [
+      "Kakak",
+      "membeli",
+      "buku",
+      "baru",
+      "di",
+      "toko"
+    ]
+  },
+  {
+    "sentence": "Ayah pergi ke kantor naik motor",
+    "words": [
+      "Ayah",
+      "pergi",
+      "ke",
+      "kantor",
+      "naik",
+      "motor"
+    ]
+  },
+  {
+    "sentence": "Adik menangis karena jatuh dari sepeda",
+    "words": [
+      "Adik",
+      "menangis",
+      "karena",
+      "jatuh",
+      "dari",
+      "sepeda"
+    ]
+  },
+  {
+    "sentence": "Ibu menanak nasi di dapur",
+    "words": [
+      "Ibu",
+      "menanak",
+      "nasi",
+      "di",
+      "dapur"
+    ]
+  },
+  {
+    "sentence": "Kami makan bersama di ruang makan",
+    "words": [
+      "Kami",
+      "makan",
+      "bersama",
+      "di",
+      "ruang",
+      "makan"
+    ]
+  },
+  {
+    "sentence": "Dia sedang membaca novel di kamar",
+    "words": [
+      "Dia",
+      "sedang",
+      "membaca",
+      "novel",
+      "di",
+      "kamar"
+    ]
+  },
+  {
+    "sentence": "Mereka bermain bulu tangkis di halaman",
+    "words": [
+      "Mereka",
+      "bermain",
+      "bulu",
+      "tangkis",
+      "di",
+      "halaman"
+    ]
+  },
+  {
+    "sentence": "Saya pergi ke pasar pagi",
+    "words": [
+      "Saya",
+      "pergi",
+      "ke",
+      "pasar",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Mereka makan bakso di kantin",
+    "words": [
+      "Mereka",
+      "makan",
+      "bakso",
+      "di",
+      "kantin"
+    ]
+  },
+  {
+    "sentence": "Adik mencuci sepeda merah",
+    "words": [
+      "Adik",
+      "mencuci",
+      "sepeda",
+      "merah"
+    ]
+  },
+  {
+    "sentence": "Ayah membeli koran di toko",
+    "words": [
+      "Ayah",
+      "membeli",
+      "koran",
+      "di",
+      "toko"
+    ]
+  },
+  {
+    "sentence": "Rani menanam bunga di halaman",
+    "words": [
+      "Rani",
+      "menanam",
+      "bunga",
+      "di",
+      "halaman"
+    ]
+  },
+  {
+    "sentence": "Budi membantu ibu menyiram tanaman",
+    "words": [
+      "Budi",
+      "membantu",
+      "ibu",
+      "menyiram",
+      "tanaman"
+    ]
+  },
+  {
+    "sentence": "Kami menonton film di bioskop",
+    "words": [
+      "Kami",
+      "menonton",
+      "film",
+      "di",
+      "bioskop"
+    ]
+  },
+  {
+    "sentence": "Panen padi sangat melimpah tahun ini",
+    "words": [
+      "Panen",
+      "padi",
+      "sangat",
+      "melimpah",
+      "tahun",
+      "ini"
+    ]
+  },
+  {
+    "sentence": "Aku pergi ke pasar membeli sayur",
+    "words": [
+      "Aku",
+      "pergi",
+      "ke",
+      "pasar",
+      "membeli",
+      "sayur"
+    ]
+  },
+  {
+    "sentence": "Kakek menanam cabai di halaman rumah",
+    "words": [
+      "Kakek",
+      "menanam",
+      "cabai",
+      "di",
+      "halaman",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Ibu menyiram bunga kesayangan setiap sore",
+    "words": [
+      "Ibu",
+      "menyiram",
+      "bunga",
+      "kesayangan",
+      "setiap",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Kita harus belajar bersama di rumah",
+    "words": [
+      "Kita",
+      "harus",
+      "belajar",
+      "bersama",
+      "di",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Mereka makan siang di kantin sekolah",
+    "words": [
+      "Mereka",
+      "makan",
+      "siang",
+      "di",
+      "kantin",
+      "sekolah"
+    ]
+  },
+  {
+    "sentence": "Burung pipit minum air di kolam",
+    "words": [
+      "Burung",
+      "pipit",
+      "minum",
+      "air",
+      "di",
+      "kolam"
+    ]
+  },
+  {
+    "sentence": "Adik menyiram bunga di halaman",
+    "words": [
+      "Adik",
+      "menyiram",
+      "bunga",
+      "di",
+      "halaman"
+    ]
+  }
+]

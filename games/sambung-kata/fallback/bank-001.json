@@ -1,0 +1,26 @@
+[
+  {
+    "name": "keras-karet",
+    "baseLetters": "KERAST",
+    "words": [
+      { "answer": "KERAS", "direction": "across", "clue": "x" },
+      { "answer": "KARET", "direction": "down", "clue": "x" },
+      { "answer": "TERAS", "direction": "across", "clue": "x" },
+      { "answer": "SEKAT", "direction": "down", "clue": "x" },
+      { "answer": "SATE", "direction": "across", "clue": "x" },
+      { "answer": "ASET", "direction": "down", "clue": "x" }
+    ]
+  },
+  {
+    "name": "kartu-sukar",
+    "baseLetters": "KARTUS",
+    "words": [
+      { "answer": "KARTU", "direction": "across", "clue": "x" },
+      { "answer": "SUKAR", "direction": "down", "clue": "x" },
+      { "answer": "RUAS", "direction": "across", "clue": "x" },
+      { "answer": "SATU", "direction": "down", "clue": "x" },
+      { "answer": "ATUR", "direction": "across", "clue": "x" },
+      { "answer": "KUAT", "direction": "down", "clue": "x" }
+    ]
+  }
+]

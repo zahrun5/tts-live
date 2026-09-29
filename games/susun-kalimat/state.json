@@ -1,0 +1,130 @@
+{
+  "items": [
+    {
+      "number": 1,
+      "sentence": "Mereka makan siang di kantin sekolah",
+      "words": [
+        "Mereka",
+        "makan",
+        "siang",
+        "di",
+        "kantin",
+        "sekolah"
+      ],
+      "shuffled": [
+        "Mereka",
+        "kantin",
+        "sekolah",
+        "siang",
+        "makan",
+        "di"
+      ],
+      "solved": true,
+      "solvedBy": "Mamangharun",
+      "winnerAnswer": "Mereka makan siang di kantin sekolah"
+    },
+    {
+      "number": 2,
+      "sentence": "Ayah mencuci motor di halaman",
+      "words": [
+        "Ayah",
+        "mencuci",
+        "motor",
+        "di",
+        "halaman"
+      ],
+      "shuffled": [
+        "motor",
+        "di",
+        "Ayah",
+        "halaman",
+        "mencuci"
+      ],
+      "solved": true,
+      "solvedBy": "CCTV lintas pao",
+      "winnerAnswer": "ayah mencuci motor di halaman"
+    },
+    {
+      "number": 3,
+      "sentence": "Kami berkunjung ke rumah nenek",
+      "words": [
+        "Kami",
+        "berkunjung",
+        "ke",
+        "rumah",
+        "nenek"
+      ],
+      "shuffled": [
+        "ke",
+        "nenek",
+        "berkunjung",
+        "Kami",
+        "rumah"
+      ],
+      "solved": true,
+      "solvedBy": "CCTV lintas pao",
+      "winnerAnswer": "kami berkunjung ke rumah nenek"
+    },
+    {
+      "number": 4,
+      "sentence": "Adik belajar menulis huruf",
+      "words": [
+        "Adik",
+        "belajar",
+        "menulis",
+        "huruf"
+      ],
+      "shuffled": [
+        "belajar",
+        "Adik",
+        "menulis",
+        "huruf"
+      ],
+      "solved": true,
+      "solvedBy": "CCTV lintas pao",
+      "winnerAnswer": "adik belajar menulis huruf"
+    },
+    {
+      "number": 5,
+      "sentence": "Kami menonton film di bioskop",
+      "words": [
+        "Kami",
+        "menonton",
+        "film",
+        "di",
+        "bioskop"
+      ],
+      "shuffled": [
+        "film",
+        "menonton",
+        "Kami",
+        "di",
+        "bioskop"
+      ],
+      "solved": true,
+      "solvedBy": "Bintang Random",
+      "winnerAnswer": "kami menonton film di bioskop"
+    },
+    {
+      "number": 6,
+      "sentence": "Mahasiswa mengerjakan tugas di perpustakaan",
+      "words": [
+        "Mahasiswa",
+        "mengerjakan",
+        "tugas",
+        "di",
+        "perpustakaan"
+      ],
+      "shuffled": [
+        "Mahasiswa",
+        "perpustakaan",
+        "di",
+        "mengerjakan",
+        "tugas"
+      ],
+      "solved": true,
+      "solvedBy": "Arian",
+      "winnerAnswer": "mahasiswa mengerjakan tugas di perpustakaan"
+    }
+  ]
+}

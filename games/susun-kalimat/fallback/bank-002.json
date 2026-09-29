@@ -1,0 +1,509 @@
+[
+  {
+    "sentence": "Matahari terbit di timur",
+    "words": [
+      "Matahari",
+      "terbit",
+      "di",
+      "timur"
+    ]
+  },
+  {
+    "sentence": "Kami makan siang bersama keluarga",
+    "words": [
+      "Kami",
+      "makan",
+      "siang",
+      "bersama",
+      "keluarga"
+    ]
+  },
+  {
+    "sentence": "Bapak pergi ke kantor",
+    "words": [
+      "Bapak",
+      "pergi",
+      "ke",
+      "kantor"
+    ]
+  },
+  {
+    "sentence": "Bunga mawar itu sangat indah",
+    "words": [
+      "Bunga",
+      "mawar",
+      "itu",
+      "sangat",
+      "indah"
+    ]
+  },
+  {
+    "sentence": "Mereka menonton film di bioskop",
+    "words": [
+      "Mereka",
+      "menonton",
+      "film",
+      "di",
+      "bioskop"
+    ]
+  },
+  {
+    "sentence": "Ibu mencuci baju di kamar mandi",
+    "words": [
+      "Ibu",
+      "mencuci",
+      "baju",
+      "di",
+      "kamar",
+      "mandi"
+    ]
+  },
+  {
+    "sentence": "Kakek membaca koran di teras",
+    "words": [
+      "Kakek",
+      "membaca",
+      "koran",
+      "di",
+      "teras"
+    ]
+  },
+  {
+    "sentence": "Aku makan nasi di kantin",
+    "words": [
+      "Aku",
+      "makan",
+      "nasi",
+      "di",
+      "kantin"
+    ]
+  },
+  {
+    "sentence": "Adik menangis karena lapar",
+    "words": [
+      "Adik",
+      "menangis",
+      "karena",
+      "lapar"
+    ]
+  },
+  {
+    "sentence": "Bunga mawar tumbuh di halaman",
+    "words": [
+      "Bunga",
+      "mawar",
+      "tumbuh",
+      "di",
+      "halaman"
+    ]
+  },
+  {
+    "sentence": "Ayah pergi ke kantor pagi",
+    "words": [
+      "Ayah",
+      "pergi",
+      "ke",
+      "kantor",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Kami berlibur ke pantai bersama",
+    "words": [
+      "Kami",
+      "berlibur",
+      "ke",
+      "pantai",
+      "bersama"
+    ]
+  },
+  {
+    "sentence": "Dia menulis surat untuk sahabat",
+    "words": [
+      "Dia",
+      "menulis",
+      "surat",
+      "untuk",
+      "sahabat"
+    ]
+  },
+  {
+    "sentence": "Aku minum kopi panas setiap pagi",
+    "words": [
+      "Aku",
+      "minum",
+      "kopi",
+      "panas",
+      "setiap",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Kakak membeli buku tulis baru",
+    "words": [
+      "Kakak",
+      "membeli",
+      "buku",
+      "tulis",
+      "baru"
+    ]
+  },
+  {
+    "sentence": "Adik makan bakso di warung",
+    "words": [
+      "Adik",
+      "makan",
+      "bakso",
+      "di",
+      "warung"
+    ]
+  },
+  {
+    "sentence": "Kita harus menjaga kebersihan lingkungan",
+    "words": [
+      "Kita",
+      "harus",
+      "menjaga",
+      "kebersihan",
+      "lingkungan"
+    ]
+  },
+  {
+    "sentence": "Paman memancing ikan di sungai",
+    "words": [
+      "Paman",
+      "memancing",
+      "ikan",
+      "di",
+      "sungai"
+    ]
+  },
+  {
+    "sentence": "Nenek membuat kue untuk kami",
+    "words": [
+      "Nenek",
+      "membuat",
+      "kue",
+      "untuk",
+      "kami"
+    ]
+  },
+  {
+    "sentence": "Matahari terbenam di ufuk timur",
+    "words": [
+      "Matahari",
+      "terbenam",
+      "di",
+      "ufuk",
+      "timur"
+    ]
+  },
+  {
+    "sentence": "Dia belajar matematika bersama temannya",
+    "words": [
+      "Dia",
+      "belajar",
+      "matematika",
+      "bersama",
+      "temannya"
+    ]
+  },
+  {
+    "sentence": "Ayah minum kopi di teras rumah",
+    "words": [
+      "Ayah",
+      "minum",
+      "kopi",
+      "di",
+      "teras",
+      "rumah"
+    ]
+  },
+  {
+    "sentence": "Kakak membeli sayur di pasar pagi",
+    "words": [
+      "Kakak",
+      "membeli",
+      "sayur",
+      "di",
+      "pasar",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Adik menyiram bunga di halaman belakang",
+    "words": [
+      "Adik",
+      "menyiram",
+      "bunga",
+      "di",
+      "halaman",
+      "belakang"
+    ]
+  },
+  {
+    "sentence": "Kucing itu tidur di atas karpet",
+    "words": [
+      "Kucing",
+      "itu",
+      "tidur",
+      "di",
+      "atas",
+      "karpet"
+    ]
+  },
+  {
+    "sentence": "Burung berkicau riang di pohon mangga",
+    "words": [
+      "Burung",
+      "berkicau",
+      "riang",
+      "di",
+      "pohon",
+      "mangga"
+    ]
+  },
+  {
+    "sentence": "Ibu menjahit baju menggunakan mesin jahit",
+    "words": [
+      "Ibu",
+      "menjahit",
+      "baju",
+      "menggunakan",
+      "mesin",
+      "jahit"
+    ]
+  },
+  {
+    "sentence": "Mereka bermain layang-layang di sawah luas",
+    "words": [
+      "Mereka",
+      "bermain",
+      "layang-layang",
+      "di",
+      "sawah",
+      "luas"
+    ]
+  },
+  {
+    "sentence": "Adik bermain layangan di lapangan",
+    "words": [
+      "Adik",
+      "bermain",
+      "layangan",
+      "di",
+      "lapangan"
+    ]
+  },
+  {
+    "sentence": "Kakak menyapu halaman setiap pagi",
+    "words": [
+      "Kakak",
+      "menyapu",
+      "halaman",
+      "setiap",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Ibu menjemur pakaian di halaman",
+    "words": [
+      "Ibu",
+      "menjemur",
+      "pakaian",
+      "di",
+      "halaman"
+    ]
+  },
+  {
+    "sentence": "Ayah menyiram tanaman di kebun",
+    "words": [
+      "Ayah",
+      "menyiram",
+      "tanaman",
+      "di",
+      "kebun"
+    ]
+  },
+  {
+    "sentence": "Kami menonton berita di televisi",
+    "words": [
+      "Kami",
+      "menonton",
+      "berita",
+      "di",
+      "televisi"
+    ]
+  },
+  {
+    "sentence": "Semua anak bernyanyi bersama di kelas",
+    "words": [
+      "Semua",
+      "anak",
+      "bernyanyi",
+      "bersama",
+      "di",
+      "kelas"
+    ]
+  },
+  {
+    "sentence": "Nenek merajut syal untuk cucunya",
+    "words": [
+      "Nenek",
+      "merajut",
+      "syal",
+      "untuk",
+      "cucunya"
+    ]
+  },
+  {
+    "sentence": "Kakek berjalan santai di taman",
+    "words": [
+      "Kakek",
+      "berjalan",
+      "santai",
+      "di",
+      "taman"
+    ]
+  },
+  {
+    "sentence": "Paman berjualan sayur di pasar",
+    "words": [
+      "Paman",
+      "berjualan",
+      "sayur",
+      "di",
+      "pasar"
+    ]
+  },
+  {
+    "sentence": "Bibi menjahit gaun untuk pesta",
+    "words": [
+      "Bibi",
+      "menjahit",
+      "gaun",
+      "untuk",
+      "pesta"
+    ]
+  },
+  {
+    "sentence": "Rina menari di atas panggung",
+    "words": [
+      "Rina",
+      "menari",
+      "di",
+      "atas",
+      "panggung"
+    ]
+  },
+  {
+    "sentence": "Budi bersepeda ke sekolah pagi",
+    "words": [
+      "Budi",
+      "bersepeda",
+      "ke",
+      "sekolah",
+      "pagi"
+    ]
+  },
+  {
+    "sentence": "Siti menyapu lantai dengan rajin",
+    "words": [
+      "Siti",
+      "menyapu",
+      "lantai",
+      "dengan",
+      "rajin"
+    ]
+  },
+  {
+    "sentence": "Toni bermain gitar di kamar",
+    "words": [
+      "Toni",
+      "bermain",
+      "gitar",
+      "di",
+      "kamar"
+    ]
+  },
+  {
+    "sentence": "Dewi menyanyi lagu daerah merdu",
+    "words": [
+      "Dewi",
+      "menyanyi",
+      "lagu",
+      "daerah",
+      "merdu"
+    ]
+  },
+  {
+    "sentence": "Kami berkemah di puncak gunung",
+    "words": [
+      "Kami",
+      "berkemah",
+      "di",
+      "puncak",
+      "gunung"
+    ]
+  },
+  {
+    "sentence": "Ombak memecah di tepi pantai",
+    "words": [
+      "Ombak",
+      "memecah",
+      "di",
+      "tepi",
+      "pantai"
+    ]
+  },
+  {
+    "sentence": "Hujan turun sepanjang malam ini",
+    "words": [
+      "Hujan",
+      "turun",
+      "sepanjang",
+      "malam",
+      "ini"
+    ]
+  },
+  {
+    "sentence": "Angin bertiup kencang di sore",
+    "words": [
+      "Angin",
+      "bertiup",
+      "kencang",
+      "di",
+      "sore"
+    ]
+  },
+  {
+    "sentence": "Petani memanen padi di sawah",
+    "words": [
+      "Petani",
+      "memanen",
+      "padi",
+      "di",
+      "sawah"
+    ]
+  },
+  {
+    "sentence": "Nelayan menangkap ikan di laut",
+    "words": [
+      "Nelayan",
+      "menangkap",
+      "ikan",
+      "di",
+      "laut"
+    ]
+  },
+  {
+    "sentence": "Pedagang menjual buah di pasar",
+    "words": [
+      "Pedagang",
+      "menjual",
+      "buah",
+      "di",
+      "pasar"
+    ]
+  }
+]
